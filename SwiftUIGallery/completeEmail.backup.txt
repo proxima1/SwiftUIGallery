@@ -1,0 +1,558 @@
+//cut, didnt work
+//cut. got funny results
+//it fails, ignored by POP
+
+Return-Path: <mikesmithwick+caf_=mikes=distantsuns.com@gmail.com>
+Delivered-To: mikes@distantsuns.com
+Received: from gator3296.hostgator.com
+	by gator3296.hostgator.com with LMTP
+	id eNV8EtNI1mAr+gIA3KnJoA
+	(envelope-from <mikesmithwick+caf_=mikes=distantsuns.com@gmail.com>)
+	for <mikes@distantsuns.com>; Fri, 25 Jun 2021 16:21:23 -0500
+Return-path: <mikesmithwick+caf_=mikes=distantsuns.com@gmail.com>
+Envelope-to: mikes@distantsuns.com
+Delivery-date: Fri, 25 Jun 2021 16:21:23 -0500
+Received: from mail-ua1-f49.google.com ([209.85.222.49]:35638)
+	by gator3296.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <mikesmithwick+caf_=mikes=distantsuns.com@gmail.com>)
+	id 1lwtGM-000rHk-Bi
+	for mikes@distantsuns.com; Fri, 25 Jun 2021 16:21:23 -0500
+Received: by mail-ua1-f49.google.com with SMTP id n61so4088062uan.2
+        for <mikes@distantsuns.com>; Fri, 25 Jun 2021 14:21:15 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-original-authentication-results:x-gm-message-state:delivered-to
+         :from:mime-version:subject:message-id:references:to:date;
+        bh=0pVfF88WwntMiUryBktND/cCB02wA6Eoyd3CZm7zgd0=;
+        b=jz4II//UF5IdDNGGWRX8qwVAXn/R+YzNvR1ncuFQ+Zyxi86Khj5A5VsCWpWBZr10EU
+         QStiAKtYXjSxPbwyFIxR3MVTobMQvqI7uAegk8mgKuiK2MiAQrMedjHQ0dEOxKFLmOmw
+         WDQebqbQIfL9GoxT2X0PiElEwo/RGEr5cBIPpSZY7W8DCNPAM7LpZMa77Uj1zV50age5
+         GYM6nbh53p/K31dif93cOHv9pMcnw0MNQr7nvxmbHXMUHNxILvHAhxFtpPuHhEbvqnV1
+         jwDtYHzPVnzjJThMQqFV9irBSxvkirCKIuo6UCptd411E4/l95xuw0826QUShn/1Qsyr
+         WNEw==
+X-Original-Authentication-Results: mx.google.com;       spf=pass (google.com: domain of mikes@distantsuns.com designates 192.185.145.184 as permitted sender) smtp.mailfrom=mikes@distantsuns.com
+X-Gm-Message-State: AOAM533bK2yy5TMlz+1zCL/uW2GNI1utZqwkt6hYDTSqqRlwelAwRiu9
+	/IfWuYIdEGsOEuT+nR5ActKITLyYIFiNAccwGOyoDyIrW0zbzVLm3g==
+X-Received: by 2002:ab0:30c8:: with SMTP id c8mr14365774uam.56.1624656068407;
+        Fri, 25 Jun 2021 14:21:08 -0700 (PDT)
+X-Forwarded-To: mikes@distantsuns.com
+X-Forwarded-For: mikesmithwick@gmail.com mikes@distantsuns.com
+Delivered-To: mike.smithwick@gmail.com
+Received: by 2002:a67:ea52:0:0:0:0:0 with SMTP id r18csp1643782vso;
+        Fri, 25 Jun 2021 14:21:07 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxoeILqbSt7Of4v0fHdOEJVxXCTir20qobqhLbiq36Q63f27AR6LODKPCgll2LArmLIYwmT
+X-Received: by 2002:a05:6402:c92:: with SMTP id cm18mr17716849edb.29.1624656067131;
+        Fri, 25 Jun 2021 14:21:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1624656067; cv=none;
+        d=google.com; s=arc-20160816;
+        b=y1PngyqphQhVfIX/6Tw75ckjPQj6zJVUsoPYvimnixmeFMvoKoRz1zPp8rnPe7Libc
+         smZ8bOEV8w/aBP4cJw1M0nU98kAhJizOfl88rco43/GJMNdWv6Lcc7dTdu3w8ySCc3m/
+         bMPgrhDAV+6ffBab+BC1zr1A2OTIux35GLrO/L7Dm3Gm+aG8WyZG1fWnBFpm/A9NZF+2
+         s7Qzi8l8+LO6aJ6opRAEYK/2gFfu1AnqC5Vt7duMVpMe7f4cfI8BUwEFgjstsCX/14mH
+         bilDKkfyEBI6UQU8iSNPUBIvyM7rHk0QDkS0oCKgzVZSs6aEWQg03nhC+/ZdK7Psm22e
+         Zaiw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:to:references:message-id:subject:mime-version:from;
+        bh=0pVfF88WwntMiUryBktND/cCB02wA6Eoyd3CZm7zgd0=;
+        b=DiKIory0Ecm7ZYW1w6CGo7bjhmiutpRIFf24R+gaSMKZ9BOpbN1BLhuAolCQh/WtFD
+         ybfQo2GYCJH09aSeD6ZhdQTiRBCQtmtuLhopZwBLQIBxGejpTidTDjGOF9x2Gk26ktI3
+         kU+V85GDpypxZH4l3fAO/OpAgJ0Bu0STk2FxC8wYrZ05AVIE/KO3N80B0h7KiU3S0oTw
+         3VTBw5Y/0WmvpLBgEsgEja6goGWzhi9m9XfHUSuJpj18JeWCMawfktPdBwEroUM6FqBa
+         1Tb7uYE2nOe3ledQOdKSgCteQaU1UPUCAXTuY7XqOOLNDAIpwnXjiq0Y/OFsZT09zBrt
+         hvgg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of mikes@distantsuns.com designates 192.185.145.184 as permitted sender) smtp.mailfrom=mikes@distantsuns.com
+Received: from gateway32.websitewelcome.com (gateway32.websitewelcome.com. [192.185.145.184])
+        by mx.google.com with ESMTPS id h3si7979257edf.193.2021.06.25.14.21.06
+        for <mike.smithwick@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 25 Jun 2021 14:21:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mikes@distantsuns.com designates 192.185.145.184 as permitted sender) client-ip=192.185.145.184;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of mikes@distantsuns.com designates 192.185.145.184 as permitted sender) smtp.mailfrom=mikes@distantsuns.com
+Received: from cm17.websitewelcome.com (cm17.websitewelcome.com [100.42.49.20])
+	by gateway32.websitewelcome.com (Postfix) with ESMTP id 15AA84CE9
+	for <mike.smithwick@gmail.com>; Fri, 25 Jun 2021 16:20:43 -0500 (CDT)
+Received: from gator3296.hostgator.com ([192.254.250.160])
+	by cmsmtp with SMTP
+	id wtFile0ljMGeEwtFilGZLI; Fri, 25 Jun 2021 16:20:43 -0500
+X-Authority-Reason: ss=1
+Received: from c-73-70-155-225.hsd1.ca.comcast.net ([73.70.155.225]:51866 helo=[192.168.0.10])
+	by gator3296.hostgator.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <mikes@distantsuns.com>)
+	id 1lwtFi-000qzD-Da
+	for mike.smithwick@gmail.com; Fri, 25 Jun 2021 16:20:42 -0500
+From: mike <mikes@distantsuns.com>
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_C00AEF7A-0499-46ED-9C17-BB5D9D9CA0D8"
+Mime-Version: 1.0 (Mac OS X Mail 14.0 \(3654.60.0.2.2\))
+Subject: Fwd: Reminder: Invoice 3340 from Outco Inc.
+Message-Id: <D10D4F18-8C69-489B-AB2F-09D087BD0072@distantsuns.com>
+References: <4XSVLOrbSweHDit8sYnP5A@geopod-ismtpd-6-0>
+To: mike.smithwick@gmail.com
+Date: Fri, 25 Jun 2021 14:20:37 -0700
+X-Mailer: Apple Mail (2.3654.60.0.2.2)
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - gator3296.hostgator.com
+X-AntiAbuse: Original Domain - gmail.com
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - distantsuns.com
+X-BWhitelist: no
+X-Source-IP: 73.70.155.225
+X-Source-L: No
+X-Exim-ID: 1lwtFi-000qzD-Da
+X-Source:
+X-Source-Args:
+X-Source-Dir:
+X-Source-Sender: c-73-70-155-225.hsd1.ca.comcast.net ([192.168.0.10]) [73.70.155.225]:51866
+X-Source-Auth: mikes@distantsuns.com
+X-Email-Count: 3
+X-Source-Cap: cHJveGltYTtwcm94aW1hO2dhdG9yMzI5Ni5ob3N0Z2F0b3IuY29t
+X-Local-Domain: yes
+X-Spam-Status: No, score=0.4
+X-Spam-Score: 4
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+
+--Apple-Mail=_C00AEF7A-0499-46ED-9C17-BB5D9D9CA0D8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=utf-8
+
+
+
+> Begin forwarded message:
+>=20
+> From: "Outco Inc." <quickbooks@notification.intuit.com>
+> Subject: Reminder: Invoice 3340 from Outco Inc.
+> Date: June 25, 2021 at 10:00:47 AM PDT
+> To: mikes@distantsuns.com
+> Reply-To: outcoder.success@outco.io
+>=20
+>  =09
+> INVOICE 3340
+>=20
+> Outco Inc.
+>=20
+>=20
+> DUE 07/19/2021
+> USD 10,000.00
+> Review and pay =
+<http://links.notification.intuit.com/ls/click?upn=3DLEV65WI9EZ1l5TkUt4hKq=
+zq6J49VEXJMRhUxqRckK3UK6eeEy0A-2FylQ0WpPN9IR9nATq3WhntsTLMCi919IHWDoLBaB5M=
+SPU8xKkR-2FcdZZA2wwf0mPbojCtqX-2Bf11WBKwg4e5JQp518JNynstiNeYlPjZpOW-2F57AB=
+-2Fi5rdiBTCtGSEPw5I-2FJwv9BEhrtGC4rtIOdy9fta-2BVy7dFttWtkXQE5QCGBltSl7JMqp=
+ulcH1RShYPQXtLRCpplPsF1sC4KVIEPZtXPCfUmJ8WJtKqEqQ-3D-3DAWJ9_HkSateCpac4Dn-=
+2BzEmopYthwJ-2FVCnbugPYicaBYROxO2rb75DWUSggd47qLSjzbjXwBsXK1hmdBIcuapZVDMK=
+Dgxk0VWajPtOSePfzysLRYYXiQz-2Bx6LmILaERwZ-2BtG6M9TKc2jc5RfNCj-2FlrU0P9pCkg=
+4BGNG9oF5TAQwTetyCHY5xLtKEs71NpOSwW4wKJhBwxLCxj8LegwpQAYKkXQw0M2uS9B0wUhSA=
+u3emW2XZwgEvvpPpgRc9SawKxEoMgxrVXGI5Hi-2FAJ4-2BoNyEyvbk6-2Fh4M5s4U4NYacsq-=
+2BkKCguouU8PTCPGKnBDbbSkHKIbqpP2qH3qv-2BGFWiOFTf2WiAGfYU0laeYC02BJ-2BWyY0y=
+uCoSKaMvPRe0Myq00EaOeb0Dswih3JXQ2qXqunelFhAEB2NbHgpJpfIZykYyTIdydaQnJZ16FU=
+2OjqML0bxWJIlwPAldC1S6q4m9w8Qh-2BwGP6lSkG-2Bo50oZIA79Z7XgxcP-2BLDwBCzZrzwx=
+-2BJoZEm5q0RY-2BLm0lq43BUIckYeuGSYez1ArxjJxgR6X1OuzbCyED5PGwY4i716T-2BglaO=
+smm-2FRLU06TKL4bN5E04SwS-2Bia5UX0kGa0ZFQQGj1laDaZss-3D>
+> Powered by QuickBooks
+> Dear Mike Smithwick,
+>=20
+> Just a reminder that we have not received a payment for this invoice =
+yet. Let us know if you have questions.
+>=20
+> Please watch our video tutorial on how to pay your invoice: =
+https://youtu.be/r7fB6ZEiLvA =
+<http://links.notification.intuit.com/ls/click?upn=3DLEV65WI9EZ1l5TkUt4hKq=
+xmw7ZRBKFN2f62RbmpBUpAiK-2BDLermU7Ha9INwMJ8JtKnE3_HkSateCpac4Dn-2BzEmopYth=
+wJ-2FVCnbugPYicaBYROxO2rb75DWUSggd47qLSjzbjXwBsXK1hmdBIcuapZVDMKDgxk0VWajP=
+tOSePfzysLRYYXiQz-2Bx6LmILaERwZ-2BtG6M9TKc2jc5RfNCj-2FlrU0P9pCkg4BGNG9oF5T=
+AQwTetyCHY5xLtKEs71NpOSwW4wKJhBwxLCxj8LegwpQAYKkXQw0M2uS9B0wUhSAu3emW2XZwg=
+EvvpPpgRc9SawKxEoMgxrVXGI5Hi-2FAJ4-2BoNyEyvbk6-2Fh4M5s4U4NYacsq-2BkKCguouU=
+8PTCPGKnBDbbSkHKIbqpP2qH3qv-2BGFWiOFTf2WiAGfYU0laeYC02BJ-2BWyY0yuCoSKaMvPR=
+e0Myq00EaOeb0Dswih3JXQ2qXqunelFhAIW01B6Gc1MuscYtAdj6qRKM93ecrLjOJFpMSaHeqR=
+y0y2PcGhYrK964vk9Ee5a1y-2FtbM2rCEi-2BYu6zQ-2BD-2Fxkgglxj7FaJZOSJgXNdoQcz55=
+WTmMfnkEPCfTa1uIIyY7CSkhMM76xMn536x3fdlb6zaqyntyAibAvpQZVAG7IjTus1kIr3S9Nk=
+2ZSitO98gZ362qtRxTVCoUBSudCdnSBtI-3D>
+>=20
+> If you have any additional questions please e-mail payments@outco.io =
+<mailto:payments@outco.io>
+>=20
+> Thanks for your business!
+> The Outco Team
+>=20
+> Outco Inc.
+> outcoder.success@outco.io <mailto:outcoder.success@outco.iohttp>http =
+<mailto:outcoder.success@outco.iohttp>://outco.io
+> If you receive an email that seems fraudulent, please check with the =
+business owner before paying.
+>  =
+<http://links.notification.intuit.com/ls/click?upn=3DLEV65WI9EZ1l5TkUt4hKq=
+8-2FVBbYuuj0nDg25Ut8MlRk7KabmTeKnCw6LVYtMSGH036LdJvE-2F7kxSEi1KXvACa12simZ=
+JeFWpXodkcmPOYOMea3n4-2FgS6wyIcvtwS2-2F4StZbY_HkSateCpac4Dn-2BzEmopYthwJ-2=
+FVCnbugPYicaBYROxO2rb75DWUSggd47qLSjzbjXwBsXK1hmdBIcuapZVDMKDgxk0VWajPtOSe=
+PfzysLRYYXiQz-2Bx6LmILaERwZ-2BtG6M9TKc2jc5RfNCj-2FlrU0P9pCkg4BGNG9oF5TAQwT=
+etyCHY5xLtKEs71NpOSwW4wKJhBwxLCxj8LegwpQAYKkXQw0M2uS9B0wUhSAu3emW2XZwgEvvp=
+PpgRc9SawKxEoMgxrVXGI5Hi-2FAJ4-2BoNyEyvbk6-2Fh4M5s4U4NYacsq-2BkKCguouU8PTC=
+PGKnBDbbSkHKIbqpP2qH3qv-2BGFWiOFTf2WiAGfYU0laeYC02BJ-2BWyY0yuCoSKaMvPRe0My=
+q00EaOeb0Dswih3JXQ2qXqunelFhAJKL0gMRW5fV-2BjZi-2BOvblbT53lORlVZN1RUHZEOxql=
+-2Fiha-2B27EFbrYfbzbElbyb1JKDSN0zyw5N3-2B-2B3PH9hH8neZI8F5ek-2B5isgNl3qiLq=
+yBmFZUp7apqhyLAxks4mUBzAzNeUp2V4-2B6HBLF2uXY0EivvX2I3zxjhLB0EINxqxH2CSJFq0=
+OcOsyKduVO05Vd9rifKyMvu9GrQSUERuBrXJg-3D>
+> =C2=A9 Intuit, Inc. All rights reserved.Privacy =
+<http://links.notification.intuit.com/ls/click?upn=3DLEV65WI9EZ1l5TkUt4hKq=
+yNfdD7XsSyGjP-2FDmkGJ0tnq4AuWnklWqFBquYMugwyp-YPJ_HkSateCpac4Dn-2BzEmopYth=
+wJ-2FVCnbugPYicaBYROxO2rb75DWUSggd47qLSjzbjXwBsXK1hmdBIcuapZVDMKDgxk0VWajP=
+tOSePfzysLRYYXiQz-2Bx6LmILaERwZ-2BtG6M9TKc2jc5RfNCj-2FlrU0P9pCkg4BGNG9oF5T=
+AQwTetyCHY5xLtKEs71NpOSwW4wKJhBwxLCxj8LegwpQAYKkXQw0M2uS9B0wUhSAu3emW2XZwg=
+EvvpPpgRc9SawKxEoMgxrVXGI5Hi-2FAJ4-2BoNyEyvbk6-2Fh4M5s4U4NYacsq-2BkKCguouU=
+8PTCPGKnBDbbSkHKIbqpP2qH3qv-2BGFWiOFTf2WiAGfYU0laeYC02BJ-2BWyY0yuCoSKaMvPR=
+e0Myq00EaOeb0Dswih3JXQ2qXqunelFhAJhdM5GaEMBOWy98SIlifUiQuJKacUGQFFU9lg1VrP=
+WCsRxrm1NEpou73v7mmjJLjE62EGrEE16J8h5txRssiMJVOc-2FEHKXR5GA44dU58Xd7msbNh5=
+hwaUI8DLjOv-2BLnlzOzoB-2FriRgH-2FW-2BM3t4ys3-2F9D5xxN2pyDEJ0jby0Uu-2BxKYhU=
+al-2B6FAfylZR0BrpbUT8sCYuKzdHP6TcYhC-2FgFVY-3D> | Security =
+<http://links.notification.intuit.com/ls/click?upn=3DWdp-2Bokx3FDF4PLntBJI=
+h3afZMvmmLCoDYLeXSbsMjBMqIlLoawreFORQ356su6fIIsl5_HkSateCpac4Dn-2BzEmopYth=
+wJ-2FVCnbugPYicaBYROxO2rb75DWUSggd47qLSjzbjXwBsXK1hmdBIcuapZVDMKDgxk0VWajP=
+tOSePfzysLRYYXiQz-2Bx6LmILaERwZ-2BtG6M9TKc2jc5RfNCj-2FlrU0P9pCkg4BGNG9oF5T=
+AQwTetyCHY5xLtKEs71NpOSwW4wKJhBwxLCxj8LegwpQAYKkXQw0M2uS9B0wUhSAu3emW2XZwg=
+EvvpPpgRc9SawKxEoMgxrVXGI5Hi-2FAJ4-2BoNyEyvbk6-2Fh4M5s4U4NYacsq-2BkKCguouU=
+8PTCPGKnBDbbSkHKIbqpP2qH3qv-2BGFWiOFTf2WiAGfYU0laeYC02BJ-2BWyY0yuCoSKaMvPR=
+e0Myq00EaOeb0Dswih3JXQ2qXqunelFhANMzl3U3SSN-2FZJvJQFsiHL3djv-2FT8xbMlphRBU=
+aI-2BR87-2FdzCwS3PdC4RQisPyIMYz4jp5CNYUkjZbBAe6-2FHmw3ApyMrYTLq-2BKkgA0aZ4=
+6SLpTqsDGa-2F68ZFQmMmIP8p8sEvewIgSEMoyWBmx-2F0GopjbkvGO1jyaaYIUKHMzSofW7xT=
+NClAcMBXyJSifaOXi0zLBv9B4j25G4mVAnq8pJqqM-3D> | Terms of Service =
+<http://links.notification.intuit.com/ls/click?upn=3DLEV65WI9EZ1l5TkUt4hKq=
+zq6J49VEXJMRhUxqRckK3XsGEz5CzONqmbdXoqv99YHUQEwOrv079jeYfbmOG9u7g-3D-3DoXU=
+O_HkSateCpac4Dn-2BzEmopYthwJ-2FVCnbugPYicaBYROxO2rb75DWUSggd47qLSjzbjXwBsX=
+K1hmdBIcuapZVDMKDgxk0VWajPtOSePfzysLRYYXiQz-2Bx6LmILaERwZ-2BtG6M9TKc2jc5Rf=
+NCj-2FlrU0P9pCkg4BGNG9oF5TAQwTetyCHY5xLtKEs71NpOSwW4wKJhBwxLCxj8LegwpQAYKk=
+XQw0M2uS9B0wUhSAu3emW2XZwgEvvpPpgRc9SawKxEoMgxrVXGI5Hi-2FAJ4-2BoNyEyvbk6-2=
+Fh4M5s4U4NYacsq-2BkKCguouU8PTCPGKnBDbbSkHKIbqpP2qH3qv-2BGFWiOFTf2WiAGfYU0l=
+aeYC02BJ-2BWyY0yuCoSKaMvPRe0Myq00EaOeb0Dswih3JXQ2qXqunelFhABYdVGwpymq9Tlv-=
+2F-2BqbCC2cEa3pSMuR-2FhTTLzyCblMeO2g2Gdd-2B3gqdasWxBea3R3K105bRjpzkmJdABja=
+20c1cbp7gAZSUtF3jlU-2BJn4hE4dJJk8SSK49rbNr7XjR9VyzV0JOX18ISZ2W0cak-2Bl1jsM=
+lCIiRDTUIZvOyrdJMjlWZOQtUl0J6k2zjyEMfc2AdtZWbG4ZJZWuSpH-2Bj0mCuhY-3D>	=20=
+
+>=20
+
+Mike Smithwick, author: Distant Suns (+VR) for iOS-The Universe, =
+Reimagined since 2008
+Books: Pro OpenGL for iOS (Apress)
+twitter: lazyastronomer, distantsuns
+blog: www.distantsuns.com
+www.apolloupclose.com
+=20
+Hippopotomonstrosesquippedaliophobia: the fear of long words
+
+Aibohphobia: the fear of palindromes (the word itself is a palindrome)
+
+
+--Apple-Mail=_C00AEF7A-0499-46ED-9C17-BB5D9D9CA0D8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=utf-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dutf-8"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" class=3D""><br =
+class=3D""><div><br class=3D""><blockquote type=3D"cite" class=3D""><div =
+class=3D"">Begin forwarded message:</div><br =
+class=3D"Apple-interchange-newline"><div style=3D"margin-top: 0px; =
+margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" class=3D""><span=
+ style=3D"font-family: -webkit-system-font, Helvetica Neue, Helvetica, =
+sans-serif; color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">From: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D"">"Outco Inc." &lt;<a =
+href=3D"mailto:quickbooks@notification.intuit.com" =
+class=3D"">quickbooks@notification.intuit.com</a>&gt;<br =
+class=3D""></span></div><div style=3D"margin-top: 0px; margin-right: =
+0px; margin-bottom: 0px; margin-left: 0px;" class=3D""><span =
+style=3D"font-family: -webkit-system-font, Helvetica Neue, Helvetica, =
+sans-serif; color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">Subject: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D""><b class=3D"">Reminder: Invoice =
+3340 from Outco Inc.</b><br class=3D""></span></div><div =
+style=3D"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; =
+margin-left: 0px;" class=3D""><span style=3D"font-family: =
+-webkit-system-font, Helvetica Neue, Helvetica, sans-serif; =
+color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">Date: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D"">June 25, 2021 at 10:00:47 AM =
+PDT<br class=3D""></span></div><div style=3D"margin-top: 0px; =
+margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" class=3D""><span=
+ style=3D"font-family: -webkit-system-font, Helvetica Neue, Helvetica, =
+sans-serif; color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">To: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D""><a =
+href=3D"mailto:mikes@distantsuns.com" =
+class=3D"">mikes@distantsuns.com</a><br class=3D""></span></div><div =
+style=3D"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; =
+margin-left: 0px;" class=3D""><span style=3D"font-family: =
+-webkit-system-font, Helvetica Neue, Helvetica, sans-serif; =
+color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">Reply-To: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D""><a =
+href=3D"mailto:outcoder.success@outco.io" =
+class=3D"">outcoder.success@outco.io</a><br class=3D""></span></div><br =
+class=3D""><div class=3D""><meta charset=3D"UTF-8" class=3D""><div =
+id=3D"main" style=3D"caret-color: rgb(0, 0, 0); font-family: ArialMT; =
+font-size: 14px; font-style: normal; font-variant-caps: normal; =
+font-weight: normal; letter-spacing: normal; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none;" class=3D""><div data-reactroot=3D"" class=3D""><div =
+id=3D"mainContainer" class=3D"rfc-container rfc-email-flow" =
+style=3D"font-family: ArialMT, Arial, Helvetica, &quot;Times New =
+Roman&quot;; color: rgb(57, 58, 61); padding-top: 0.5in; padding-bottom: =
+0.25in;"><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" style=3D"font-family: ArialMT, Arial, Helvetica, =
+&quot;Times New Roman&quot;; color: rgb(57, 58, 61);" class=3D""><tbody =
+class=3D""><tr class=3D""><td class=3D"contentLeft" style=3D"font-size: =
+0px;">&nbsp;</td><td width=3D"768" align=3D"center" =
+class=3D"contentCenterTd"><table class=3D"width100 mainContentTable" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"font-family: =
+ArialMT, Arial, Helvetica, &quot;Times New Roman&quot;; color: rgb(57, =
+58, 61); width: 768px; table-layout: fixed;"><tbody class=3D""><tr =
+class=3D""><td class=3D""><div id=3D"titleContainer" =
+class=3D"titleContainer" style=3D"font-size: 13px; letter-spacing: 0px; =
+text-align: center; color: rgb(107, 108, 114); margin-bottom: =
+10px;">INVOICE 3340</div><div id=3D"header container" class=3D""><div =
+class=3D"row headerSec"><div class=3D"logoCenter" style=3D"width: =
+768px;"><table class=3D"logoAndNameTable width100" style=3D"font-family: =
+ArialMT, Arial, Helvetica, &quot;Times New Roman&quot;; color: rgb(57, =
+58, 61); width: 768px;"><tbody class=3D""><tr class=3D""><td =
+class=3D"templateLogo" style=3D"padding: 0px; width: 764px; text-align: =
+center;"><img alt=3D"" =
+src=3D"https://c31.qbo.intuit.com/qbo31/ext/Image/show/3379154480/1?147855=
+32230001" height=3D"144" style=3D"height: 144px;" class=3D""></td></tr><tr=
+ class=3D""><td class=3D"companyNameStyle" style=3D"font-size: 20px; =
+letter-spacing: 0px; text-align: center; padding: 14px 0px 0px; color: =
+rgb(79, 144, 187);">Outco Inc.</td></tr></tbody></table></div></div><br =
+class=3D""><br class=3D""><table id=3D"dueAmountContainer" =
+class=3D"width100 dueAmountContainer payButtonTop" cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0" style=3D"font-family: ArialMT, Arial, =
+Helvetica, &quot;Times New Roman&quot;; color: rgb(57, 58, 61); =
+text-align: center; align-items: center; width: 768px; font-size: 13px; =
+background-color: rgb(220, 233, 241);"><tbody class=3D""><tr =
+class=3D""><td class=3D"duwDateWrapper" style=3D"word-break: break-word; =
+padding: 31px 0px 29px;"><table class=3D"width100" cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0" style=3D"font-family: ArialMT, Arial, =
+Helvetica, &quot;Times New Roman&quot;; color: rgb(57, 58, 61); width: =
+768px;"><tbody class=3D""><tr class=3D""><td id=3D"dueDateContainer" =
+class=3D"dueDateContainer" height=3D"1" style=3D"padding: 0px; =
+font-size: 16px; font-weight: bold; letter-spacing: 0px; text-align: =
+center; color: rgb(57, 58, 61);">DUE 07/19/2021</td></tr><tr =
+class=3D""><td id=3D"amountDueContainer" class=3D"amountDueContainer" =
+height=3D"1" style=3D"font-size: 48px; letter-spacing: 0px; text-align: =
+center; color: rgb(57, 58, 61); padding: 9px 0px 12px;">USD =
+10,000.00</td></tr><tr class=3D""><td class=3D"reviewTabWrapper" =
+align=3D"center" style=3D"padding: 0px 0px 10px;"><table cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0" style=3D"font-family: ArialMT, Arial, =
+Helvetica, &quot;Times New Roman&quot;; color: rgb(57, 58, 61); margin: =
+auto;" class=3D""><tbody class=3D""><tr class=3D""><td class=3D"reviewTab"=
+ style=3D"width: 200px; height: 36px; border-top-left-radius: 4px; =
+border-top-right-radius: 4px; border-bottom-right-radius: 4px; =
+border-bottom-left-radius: 4px; font-size: 16px; text-align: center; =
+padding: 0px; background-color: rgb(57, 58, 61);"><a =
+class=3D"reviewTabLabel" =
+href=3D"http://links.notification.intuit.com/ls/click?upn=3DLEV65WI9EZ1l5T=
+kUt4hKqzq6J49VEXJMRhUxqRckK3UK6eeEy0A-2FylQ0WpPN9IR9nATq3WhntsTLMCi919IHWD=
+oLBaB5MSPU8xKkR-2FcdZZA2wwf0mPbojCtqX-2Bf11WBKwg4e5JQp518JNynstiNeYlPjZpOW=
+-2F57AB-2Fi5rdiBTCtGSEPw5I-2FJwv9BEhrtGC4rtIOdy9fta-2BVy7dFttWtkXQE5QCGBlt=
+Sl7JMqpulcH1RShYPQXtLRCpplPsF1sC4KVIEPZtXPCfUmJ8WJtKqEqQ-3D-3DAWJ9_HkSateC=
+pac4Dn-2BzEmopYthwJ-2FVCnbugPYicaBYROxO2rb75DWUSggd47qLSjzbjXwBsXK1hmdBIcu=
+apZVDMKDgxk0VWajPtOSePfzysLRYYXiQz-2Bx6LmILaERwZ-2BtG6M9TKc2jc5RfNCj-2FlrU=
+0P9pCkg4BGNG9oF5TAQwTetyCHY5xLtKEs71NpOSwW4wKJhBwxLCxj8LegwpQAYKkXQw0M2uS9=
+B0wUhSAu3emW2XZwgEvvpPpgRc9SawKxEoMgxrVXGI5Hi-2FAJ4-2BoNyEyvbk6-2Fh4M5s4U4=
+NYacsq-2BkKCguouU8PTCPGKnBDbbSkHKIbqpP2qH3qv-2BGFWiOFTf2WiAGfYU0laeYC02BJ-=
+2BWyY0yuCoSKaMvPRe0Myq00EaOeb0Dswih3JXQ2qXqunelFhAEB2NbHgpJpfIZykYyTIdydaQ=
+nJZ16FU2OjqML0bxWJIlwPAldC1S6q4m9w8Qh-2BwGP6lSkG-2Bo50oZIA79Z7XgxcP-2BLDwB=
+CzZrzwx-2BJoZEm5q0RY-2BLm0lq43BUIckYeuGSYez1ArxjJxgR6X1OuzbCyED5PGwY4i716T=
+-2BglaOsmm-2FRLU06TKL4bN5E04SwS-2Bia5UX0kGa0ZFQQGj1laDaZss-3D" =
+style=3D"font-weight: bold; text-align: center; vertical-align: middle; =
+color: rgb(255, 255, 255); text-decoration: none; padding: 10px 50px; =
+white-space: nowrap; width: 100%;">Review and =
+pay</a></td></tr></tbody></table></td></tr><tr class=3D""><td =
+class=3D"labelText" height=3D"1" style=3D"font-size: 15px; text-align: =
+center; color: rgb(57, 58, 61); font-weight: 300; padding: 0px;">Powered =
+by QuickBooks</td></tr></tbody></table></td></tr></tbody></table><div =
+id=3D"emailContainer" class=3D"emailContainer" style=3D"font-size: 18px; =
+line-height: 1.5; text-align: left; padding-left: 20px; margin-left: =
+20px;"><p class=3D"">Dear Mike Smithwick,<br class=3D""><br =
+class=3D"">Just a reminder that we have not received a payment for this =
+invoice yet. Let us know if you have questions.<br class=3D""><br =
+class=3D"">Please watch our video tutorial on how to pay your =
+invoice:<span class=3D"Apple-converted-space">&nbsp;</span><a =
+href=3D"http://links.notification.intuit.com/ls/click?upn=3DLEV65WI9EZ1l5T=
+kUt4hKqxmw7ZRBKFN2f62RbmpBUpAiK-2BDLermU7Ha9INwMJ8JtKnE3_HkSateCpac4Dn-2Bz=
+EmopYthwJ-2FVCnbugPYicaBYROxO2rb75DWUSggd47qLSjzbjXwBsXK1hmdBIcuapZVDMKDgx=
+k0VWajPtOSePfzysLRYYXiQz-2Bx6LmILaERwZ-2BtG6M9TKc2jc5RfNCj-2FlrU0P9pCkg4BG=
+NG9oF5TAQwTetyCHY5xLtKEs71NpOSwW4wKJhBwxLCxj8LegwpQAYKkXQw0M2uS9B0wUhSAu3e=
+mW2XZwgEvvpPpgRc9SawKxEoMgxrVXGI5Hi-2FAJ4-2BoNyEyvbk6-2Fh4M5s4U4NYacsq-2Bk=
+KCguouU8PTCPGKnBDbbSkHKIbqpP2qH3qv-2BGFWiOFTf2WiAGfYU0laeYC02BJ-2BWyY0yuCo=
+SKaMvPRe0Myq00EaOeb0Dswih3JXQ2qXqunelFhAIW01B6Gc1MuscYtAdj6qRKM93ecrLjOJFp=
+MSaHeqRy0y2PcGhYrK964vk9Ee5a1y-2FtbM2rCEi-2BYu6zQ-2BD-2Fxkgglxj7FaJZOSJgXN=
+doQcz55WTmMfnkEPCfTa1uIIyY7CSkhMM76xMn536x3fdlb6zaqyntyAibAvpQZVAG7IjTus1k=
+Ir3S9Nk2ZSitO98gZ362qtRxTVCoUBSudCdnSBtI-3D" =
+class=3D"">https://youtu.be/r7fB6ZEiLvA</a><br class=3D""><br =
+class=3D"">If you have any additional questions please e-mail<span =
+class=3D"Apple-converted-space">&nbsp;</span><a =
+href=3D"mailto:payments@outco.io" class=3D"">payments@outco.io</a><br =
+class=3D""><br class=3D"">Thanks for your business!<br class=3D"">The =
+Outco Team</p></div></div><table class=3D"companyAddrSection width100" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"font-family: =
+ArialMT, Arial, Helvetica, &quot;Times New Roman&quot;; color: rgb(57, =
+58, 61); width: 688px; border-top-width: 1px; border-top-style: dotted; =
+border-top-color: rgb(186, 190, 197); padding: 10px 40px 25px;"><tbody =
+class=3D""><tr class=3D""><td class=3D""><div class=3D""><div =
+class=3D"companyDetails" style=3D"font-size: 15px; text-align: center; =
+color: rgb(107, 108, 114); margin-top: 15px;">Outco Inc.</div><div =
+class=3D""></div><div class=3D"additionalDetailsContainer" =
+style=3D"text-align: center;"><div class=3D"companyDetails =
+additionalDetails" style=3D"font-size: 15px; text-align: center; color: =
+rgb(107, 108, 114); margin-top: 15px; display: inline-block; =
+margin-left: 10px; margin-right: 10px;"><a =
+href=3D"mailto:outcoder.success@outco.iohttp" =
+class=3D"">outcoder.success@outco.io</a></div><div class=3D"companyDetails=
+ additionalDetails" style=3D"font-size: 15px; text-align: center; color: =
+rgb(107, 108, 114); margin-top: 15px; display: inline-block; =
+margin-left: 10px; margin-right: 10px;"><a =
+href=3D"mailto:outcoder.success@outco.iohttp" class=3D"">http</a>://<a =
+href=3D"http://outco.io" =
+class=3D"">outco.io</a></div></div></div></td></tr></tbody></table><table =
+class=3D"spoofMsgContainer" style=3D"font-family: ArialMT, Arial, =
+Helvetica, &quot;Times New Roman&quot;; color: rgb(57, 58, 61); =
+border-top-width: 1px; border-top-style: dotted; border-top-color: =
+rgb(186, 190, 197);"><tbody class=3D""><tr class=3D""><td =
+class=3D"spoofMsg" style=3D"padding: 27px 0px 5px; font-size: 15px; =
+color: rgb(107, 108, 114); text-decoration: none; cursor: text;"><div =
+class=3D""><span class=3D"">If you receive an email that seems =
+fraudulent, please check with the business owner before =
+paying.</span></div></td></tr></tbody></table><div class=3D""><div =
+class=3D"qbLogoSection" style=3D"width: 768px; text-align: center; =
+padding-top: 30px; padding-bottom: 20px; display: block; border: =
+0px;"><a =
+href=3D"http://links.notification.intuit.com/ls/click?upn=3DLEV65WI9EZ1l5T=
+kUt4hKq8-2FVBbYuuj0nDg25Ut8MlRk7KabmTeKnCw6LVYtMSGH036LdJvE-2F7kxSEi1KXvAC=
+a12simZJeFWpXodkcmPOYOMea3n4-2FgS6wyIcvtwS2-2F4StZbY_HkSateCpac4Dn-2BzEmop=
+YthwJ-2FVCnbugPYicaBYROxO2rb75DWUSggd47qLSjzbjXwBsXK1hmdBIcuapZVDMKDgxk0VW=
+ajPtOSePfzysLRYYXiQz-2Bx6LmILaERwZ-2BtG6M9TKc2jc5RfNCj-2FlrU0P9pCkg4BGNG9o=
+F5TAQwTetyCHY5xLtKEs71NpOSwW4wKJhBwxLCxj8LegwpQAYKkXQw0M2uS9B0wUhSAu3emW2X=
+ZwgEvvpPpgRc9SawKxEoMgxrVXGI5Hi-2FAJ4-2BoNyEyvbk6-2Fh4M5s4U4NYacsq-2BkKCgu=
+ouU8PTCPGKnBDbbSkHKIbqpP2qH3qv-2BGFWiOFTf2WiAGfYU0laeYC02BJ-2BWyY0yuCoSKaM=
+vPRe0Myq00EaOeb0Dswih3JXQ2qXqunelFhAJKL0gMRW5fV-2BjZi-2BOvblbT53lORlVZN1RU=
+HZEOxql-2Fiha-2B27EFbrYfbzbElbyb1JKDSN0zyw5N3-2B-2B3PH9hH8neZI8F5ek-2B5isg=
+Nl3qiLqyBmFZUp7apqhyLAxks4mUBzAzNeUp2V4-2B6HBLF2uXY0EivvX2I3zxjhLB0EINxqxH=
+2CSJFq0OcOsyKduVO05Vd9rifKyMvu9GrQSUERuBrXJg-3D" target=3D"_blank" =
+class=3D""><img width=3D"147" height=3D"40" =
+src=3D"https://plugin-qbo.intuit.com/brand/1.1.9/product-specific-brand/as=
+sets/quickbooks-payments/logos/qbeinvoiceemail.png" style=3D"height: =
+40px; max-height: 40px; max-width: 147px;" class=3D""></a></div><div =
+style=3D"height: 10px;" class=3D""></div><div =
+class=3D"tosSection-container" style=3D"text-align: center;"><div =
+class=3D"tosSection" style=3D"font-size: 15px; text-align: center; =
+color: rgb(107, 108, 114); display: inline-block; margin: 10px;">=C2=A9 =
+Intuit, Inc.<span class=3D"Apple-converted-space">&nbsp;</span>All =
+rights reserved.</div><div class=3D"tosSection" style=3D"font-size: =
+15px; text-align: center; color: rgb(107, 108, 114); display: =
+inline-block; margin: 10px;"><a =
+href=3D"http://links.notification.intuit.com/ls/click?upn=3DLEV65WI9EZ1l5T=
+kUt4hKqyNfdD7XsSyGjP-2FDmkGJ0tnq4AuWnklWqFBquYMugwyp-YPJ_HkSateCpac4Dn-2Bz=
+EmopYthwJ-2FVCnbugPYicaBYROxO2rb75DWUSggd47qLSjzbjXwBsXK1hmdBIcuapZVDMKDgx=
+k0VWajPtOSePfzysLRYYXiQz-2Bx6LmILaERwZ-2BtG6M9TKc2jc5RfNCj-2FlrU0P9pCkg4BG=
+NG9oF5TAQwTetyCHY5xLtKEs71NpOSwW4wKJhBwxLCxj8LegwpQAYKkXQw0M2uS9B0wUhSAu3e=
+mW2XZwgEvvpPpgRc9SawKxEoMgxrVXGI5Hi-2FAJ4-2BoNyEyvbk6-2Fh4M5s4U4NYacsq-2Bk=
+KCguouU8PTCPGKnBDbbSkHKIbqpP2qH3qv-2BGFWiOFTf2WiAGfYU0laeYC02BJ-2BWyY0yuCo=
+SKaMvPRe0Myq00EaOeb0Dswih3JXQ2qXqunelFhAJhdM5GaEMBOWy98SIlifUiQuJKacUGQFFU=
+9lg1VrPWCsRxrm1NEpou73v7mmjJLjE62EGrEE16J8h5txRssiMJVOc-2FEHKXR5GA44dU58Xd=
+7msbNh5hwaUI8DLjOv-2BLnlzOzoB-2FriRgH-2FW-2BM3t4ys3-2F9D5xxN2pyDEJ0jby0Uu-=
+2BxKYhUal-2B6FAfylZR0BrpbUT8sCYuKzdHP6TcYhC-2FgFVY-3D" =
+class=3D"">Privacy</a><span =
+class=3D"Apple-converted-space">&nbsp;</span>|<span =
+class=3D"Apple-converted-space">&nbsp;</span><a =
+href=3D"http://links.notification.intuit.com/ls/click?upn=3DWdp-2Bokx3FDF4=
+PLntBJIh3afZMvmmLCoDYLeXSbsMjBMqIlLoawreFORQ356su6fIIsl5_HkSateCpac4Dn-2Bz=
+EmopYthwJ-2FVCnbugPYicaBYROxO2rb75DWUSggd47qLSjzbjXwBsXK1hmdBIcuapZVDMKDgx=
+k0VWajPtOSePfzysLRYYXiQz-2Bx6LmILaERwZ-2BtG6M9TKc2jc5RfNCj-2FlrU0P9pCkg4BG=
+NG9oF5TAQwTetyCHY5xLtKEs71NpOSwW4wKJhBwxLCxj8LegwpQAYKkXQw0M2uS9B0wUhSAu3e=
+mW2XZwgEvvpPpgRc9SawKxEoMgxrVXGI5Hi-2FAJ4-2BoNyEyvbk6-2Fh4M5s4U4NYacsq-2Bk=
+KCguouU8PTCPGKnBDbbSkHKIbqpP2qH3qv-2BGFWiOFTf2WiAGfYU0laeYC02BJ-2BWyY0yuCo=
+SKaMvPRe0Myq00EaOeb0Dswih3JXQ2qXqunelFhANMzl3U3SSN-2FZJvJQFsiHL3djv-2FT8xb=
+MlphRBUaI-2BR87-2FdzCwS3PdC4RQisPyIMYz4jp5CNYUkjZbBAe6-2FHmw3ApyMrYTLq-2BK=
+kgA0aZ46SLpTqsDGa-2F68ZFQmMmIP8p8sEvewIgSEMoyWBmx-2F0GopjbkvGO1jyaaYIUKHMz=
+SofW7xTNClAcMBXyJSifaOXi0zLBv9B4j25G4mVAnq8pJqqM-3D" =
+class=3D"">Security</a><span =
+class=3D"Apple-converted-space">&nbsp;</span>|<span =
+class=3D"Apple-converted-space">&nbsp;</span><a =
+href=3D"http://links.notification.intuit.com/ls/click?upn=3DLEV65WI9EZ1l5T=
+kUt4hKqzq6J49VEXJMRhUxqRckK3XsGEz5CzONqmbdXoqv99YHUQEwOrv079jeYfbmOG9u7g-3=
+D-3DoXUO_HkSateCpac4Dn-2BzEmopYthwJ-2FVCnbugPYicaBYROxO2rb75DWUSggd47qLSjz=
+bjXwBsXK1hmdBIcuapZVDMKDgxk0VWajPtOSePfzysLRYYXiQz-2Bx6LmILaERwZ-2BtG6M9TK=
+c2jc5RfNCj-2FlrU0P9pCkg4BGNG9oF5TAQwTetyCHY5xLtKEs71NpOSwW4wKJhBwxLCxj8Leg=
+wpQAYKkXQw0M2uS9B0wUhSAu3emW2XZwgEvvpPpgRc9SawKxEoMgxrVXGI5Hi-2FAJ4-2BoNyE=
+yvbk6-2Fh4M5s4U4NYacsq-2BkKCguouU8PTCPGKnBDbbSkHKIbqpP2qH3qv-2BGFWiOFTf2Wi=
+AGfYU0laeYC02BJ-2BWyY0yuCoSKaMvPRe0Myq00EaOeb0Dswih3JXQ2qXqunelFhABYdVGwpy=
+mq9Tlv-2F-2BqbCC2cEa3pSMuR-2FhTTLzyCblMeO2g2Gdd-2B3gqdasWxBea3R3K105bRjpzk=
+mJdABja20c1cbp7gAZSUtF3jlU-2BJn4hE4dJJk8SSK49rbNr7XjR9VyzV0JOX18ISZ2W0cak-=
+2Bl1jsMlCIiRDTUIZvOyrdJMjlWZOQtUl0J6k2zjyEMfc2AdtZWbG4ZJZWuSpH-2Bj0mCuhY-3=
+D" class=3D"">Terms of =
+Service</a></div></div></div></td></tr></tbody></table></td><td =
+class=3D"contentRight" style=3D"font-size: =
+0px;">&nbsp;</td></tr></tbody></table></div></div></div><img =
+src=3D"http://links.notification.intuit.com/wf/open?upn=3DpN0um77AqLhOJ2zH=
+PS0A4vQlZGuxHZbtaWrkFnGuvRI7B6Zc-2FvHoLMyJtShaqq-2F5kj5oz8Bscglk-2FD-2FPWu=
+6QaoSi2x9lvHLObWIlLyC7zEwU2Ocu35wCyeRmvRjKV8zaMBLjFIZjsmHUAiBPlQoa6gZQxG-2=
+FL0T-2Be-2BcKVvFtt3UEomJ-2BoKPzVYwfrvOpdJg6egg7hgbwJKuwg180RkS5WWlxngEq2cb=
+egjbSdilUCGpYRiF08CxCRVXQuVijP6FXJFot68xCyX83xyCuZaQHFWVp5qjxSfk4AB32L-2BW=
+gWf57QPbVYVhRaGxlRbfzJpoo8bgTFmnclbK4m5QPrOW4UVCWjxDPAJWn6wRyXYhw6CFh57eeR=
+7KLW3HLJ3aV4Uu2lxuE-2BvGMxfg-2BNyuT1t2TzLMJcaKn-2BJpS0xtQ21q39M7wbKxTwsmR8=
+7ivL3bajQFWs9VH8KU-2BYsun5kESgpTGwJcbzUThazxSa8eJcDnT-2F2bXm24RUELle2bCnt1=
+DpNV-2Be-2BQFgjmc84kycO1DnTKJnWkPqVdwEjS55Nr0KkeSGNjd0maLacDDxLyZpiTR3Jxg7=
+XxyN-2BW5pybTlffnRbqX4aZQr-2BTtDaUAtpCxoG8KQBDr9nF-2FS-2BVmV2ps3dqnr93OP" =
+alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"caret-color: =
+rgb(0, 0, 0); font-family: ArialMT; font-size: 14px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none; height: 1px !important; width: 1px !important; =
+border-width: 0px !important; margin: 0px !important; padding: 0px =
+!important;" class=3D""></div></blockquote></div><br class=3D""><div =
+class=3D"">
+<meta charset=3D"UTF-8" class=3D""><div dir=3D"auto" style=3D"caret-color:=
+ rgb(0, 0, 0); color: rgb(0, 0, 0); letter-spacing: normal; text-align: =
+start; text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none; word-wrap: break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;" class=3D""><div dir=3D"auto" style=3D"caret-color: =
+rgb(0, 0, 0); color: rgb(0, 0, 0); letter-spacing: normal; text-align: =
+start; text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none; word-wrap: break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;" class=3D"">Mike Smithwick, author: Distant&nbsp;Suns =
+(+VR) for iOS-The Universe,&nbsp;Reimagined since 2008<br =
+class=3D"">Books: Pro OpenGL for iOS&nbsp;(Apress)<br class=3D"">twitter: =
+lazyastronomer, distantsuns<br class=3D"">blog: <a =
+href=3D"http://www.distantsuns.com" class=3D"">www.distantsuns.com</a><br =
+class=3D""><a href=3D"http://www.apolloupclose.com" =
+class=3D"">www.apolloupclose.com</a></div><div dir=3D"auto" =
+style=3D"caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); letter-spacing: =
+normal; text-align: start; text-indent: 0px; text-transform: none; =
+white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none; word-wrap: break-word; -webkit-nbsp-mode: space; =
+line-break: after-white-space;" class=3D"">&nbsp;</div><div dir=3D"auto" =
+style=3D"caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); letter-spacing: =
+normal; text-align: start; text-indent: 0px; text-transform: none; =
+white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none; word-wrap: break-word; -webkit-nbsp-mode: space; =
+line-break: after-white-space;" =
+class=3D"">Hippopotomonstrosesquippedaliophobia: the fear of long =
+words<div></div><div class=3D""><br class=3D""></div><div =
+class=3D"">Aibohphobia: the fear of palindromes (the word itself is a =
+palindrome)</div></div></div>
+</div>
+
+<br class=3D""></body></html>=
+
+--Apple-Mail=_C00AEF7A-0499-46ED-9C17-BB5D9D9CA0D8--
+

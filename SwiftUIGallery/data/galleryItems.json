@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Button",
+		"description": "Things that are pressable",
+		"id": 2000,
+	},
+	{
+		"name": "Toggle",
+		"description": "Toggle on or off",
+		"id": 2004
+	},
+	{
+		"name": "TextEdit",
+		"description": "Inputs text",
+		"id": 2001
+	},
+	{
+		"name": "List",
+		"description": "List of Cells",
+		"id": 2001
+	},
+]
