@@ -46,10 +46,9 @@ extension menuItem: Identifiable {
 var _pickerItems: [menuItem] = [menuItem(title: "Wheel",  imageName: "paperclip", 	color: .red,  navTarget: AnyView(SwiftUIWheelPicker())),
 										  menuItem(title: "Inline",  imageName: "paperclip", 	color: .green,  navTarget: AnyView(SwiftUIInlinePicker())),
 										  menuItem(title: "Menu",  imageName: "paperclip", 	color: .blue,  navTarget: AnyView(SwiftUIMenuPicker())),
-										  menuItem(title: "Popup",  imageName: "paperclip", 	color: .purple,  navTarget: AnyView(SwiftUIPopupPicker())),
-										  menuItem(title: "Radio",  imageName: "paperclip", 	color: .orange,  navTarget: AnyView(SwiftUIRadioPicker())),
-										  menuItem(title: "Segmented",  imageName: "paperclip", 	color: .pink,  navTarget: AnyView(SwiftUISegmentedPicker())),
-										  menuItem(title: "Date",  imageName: "paperclip", 	color: .pink,  navTarget: AnyView(SwiftUIDatePicker()))
+										  menuItem(title: "Segmented",  imageName: "paperclip", 	color: .accentColor,  navTarget: AnyView(SwiftUISegmentedPicker())),
+                                          menuItem(title: "Color",  imageName: "paintpalette.fill",     color: .red,  navTarget: AnyView(SwiftUIColorPicker())),
+										  menuItem(title: "Date",  imageName: "paperclip", 	color: .purple,  navTarget: AnyView(SwiftUIDatePicker()))
 ]
 
 
@@ -61,6 +60,10 @@ var _menuItems: [menuItem] = [menuItem(title: "Buttons", imageName: "arrow.up", 
 										menuItem(title: "Stacks", 	imageName: "doc.circle.fill", color: .gray,  navTarget: AnyView(SwiftUIStacks())),
 										menuItem(title: "Toggles", imageName: "message", 	color: .gray,  navTarget: AnyView(SwiftUIToggles())),
 										menuItem(title: "Images",  imageName: "calendar", 	color: .gray,  navTarget: AnyView(SwiftUIImages())),
+                                        
+                                        //https://swiftui-lab.com/alignment-guides/
+                                        
+                                        menuItem(title: "Alignment Guides",  imageName: "calendar", color: .gray,navTarget: AnyView(SwiftUIImages())),
 										menuItem(title: "Color Support",  imageName: "paintbrush", 	color: .gray,  navTarget: AnyView(SwiftUIColor()))
 
 ]
@@ -82,11 +85,10 @@ struct ContentView: View
 						print("Show details for user")
 					}
 				}
-			}
-		}
+            }
+        }
 	}
 }
-
 
 //public struct NavigationLink<Label, Destination> : View where Label : View, Destination : View {
 

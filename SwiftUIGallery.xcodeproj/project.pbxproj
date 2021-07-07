@@ -26,12 +26,12 @@
 		CE521683268A9BB300C52279 /* SwiftUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE521682268A9BB300C52279 /* SwiftUIColor.swift */; };
 		CE521686268A9DD800C52279 /* SwiftUIInlinePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE521685268A9DD800C52279 /* SwiftUIInlinePicker.swift */; };
 		CE521688268A9DF800C52279 /* SwiftUIMenuPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE521687268A9DF800C52279 /* SwiftUIMenuPicker.swift */; };
-		CE52168A268A9E6300C52279 /* SwiftUIPopupPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE521689268A9E6300C52279 /* SwiftUIPopupPicker.swift */; };
-		CE52168C268A9E7900C52279 /* SwiftUIRadioPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52168B268A9E7900C52279 /* SwiftUIRadioPicker.swift */; };
 		CE52168E268A9EA400C52279 /* SwiftUISegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52168D268A9EA400C52279 /* SwiftUISegmentedPicker.swift */; };
 		CE521690268AA17200C52279 /* SwiftUIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52168F268AA17100C52279 /* SwiftUIDatePicker.swift */; };
+		CE74F3AA268FD6FE0058A8FC /* ApolloData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F3A9268FD6FE0058A8FC /* ApolloData.swift */; };
 		CEC5D8712687007900AD8333 /* SwiftUIShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5D8702687007900AD8333 /* SwiftUIShapes.swift */; };
 		CECECF40267C2A850069849B /* SwiftUIWheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECECF3F267C2A850069849B /* SwiftUIWheelPicker.swift */; };
+		CEFD014C2695471B004AB134 /* SwiftUIColorPicker .swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD014B2695471B004AB134 /* SwiftUIColorPicker .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,12 +77,12 @@
 		CE521682268A9BB300C52279 /* SwiftUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIColor.swift; sourceTree = "<group>"; };
 		CE521685268A9DD800C52279 /* SwiftUIInlinePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIInlinePicker.swift; sourceTree = "<group>"; };
 		CE521687268A9DF800C52279 /* SwiftUIMenuPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMenuPicker.swift; sourceTree = "<group>"; };
-		CE521689268A9E6300C52279 /* SwiftUIPopupPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPopupPicker.swift; sourceTree = "<group>"; };
-		CE52168B268A9E7900C52279 /* SwiftUIRadioPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRadioPicker.swift; sourceTree = "<group>"; };
 		CE52168D268A9EA400C52279 /* SwiftUISegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISegmentedPicker.swift; sourceTree = "<group>"; };
 		CE52168F268AA17100C52279 /* SwiftUIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDatePicker.swift; sourceTree = "<group>"; };
+		CE74F3A9268FD6FE0058A8FC /* ApolloData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApolloData.swift; path = SwiftUIGallery/Items/ApolloData.swift; sourceTree = SOURCE_ROOT; };
 		CEC5D8702687007900AD8333 /* SwiftUIShapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIShapes.swift; sourceTree = "<group>"; };
 		CECECF3F267C2A850069849B /* SwiftUIWheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWheelPicker.swift; sourceTree = "<group>"; };
+		CEFD014B2695471B004AB134 /* SwiftUIColorPicker .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIColorPicker .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,14 +176,15 @@
 		CE47278225426ACD00C27C3D /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				CE74F3A9268FD6FE0058A8FC /* ApolloData.swift */,
 				CE521684268A9CD200C52279 /* Pickers */,
 				CE47278325426B0900C27C3D /* SwiftUIButtons.swift */,
 				CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */,
-				CE521682268A9BB300C52279 /* SwiftUIColor.swift */,
 				CE37F9392543B2930068AF33 /* SwiftUILists.swift */,
 				CEC5D8702687007900AD8333 /* SwiftUIShapes.swift */,
 				CE37F93E2543B2D60068AF33 /* SwiftUIStacks.swift */,
 				CE37F9432543B3730068AF33 /* SwiftUIToggles.swift */,
+				CE521682268A9BB300C52279 /* SwiftUIColor.swift */,
 				CE37F9482543B4160068AF33 /* SwiftUIImages.swift */,
 			);
 			path = Items;
@@ -195,10 +196,9 @@
 				CECECF3F267C2A850069849B /* SwiftUIWheelPicker.swift */,
 				CE521685268A9DD800C52279 /* SwiftUIInlinePicker.swift */,
 				CE521687268A9DF800C52279 /* SwiftUIMenuPicker.swift */,
-				CE521689268A9E6300C52279 /* SwiftUIPopupPicker.swift */,
-				CE52168B268A9E7900C52279 /* SwiftUIRadioPicker.swift */,
 				CE52168D268A9EA400C52279 /* SwiftUISegmentedPicker.swift */,
 				CE52168F268AA17100C52279 /* SwiftUIDatePicker.swift */,
+				CEFD014B2695471B004AB134 /* SwiftUIColorPicker .swift */,
 			);
 			path = Pickers;
 			sourceTree = "<group>";
@@ -340,7 +340,6 @@
 				CEC5D8712687007900AD8333 /* SwiftUIShapes.swift in Sources */,
 				CE47273125421F6F00C27C3D /* SwiftUIGalleryApp.swift in Sources */,
 				CE47278425426B0900C27C3D /* SwiftUIButtons.swift in Sources */,
-				CE52168C268A9E7900C52279 /* SwiftUIRadioPicker.swift in Sources */,
 				CE52168E268A9EA400C52279 /* SwiftUISegmentedPicker.swift in Sources */,
 				CE37F9442543B3730068AF33 /* SwiftUIToggles.swift in Sources */,
 				CE472768254237D800C27C3D /* GalleryItem.swift in Sources */,
@@ -350,9 +349,10 @@
 				CE521686268A9DD800C52279 /* SwiftUIInlinePicker.swift in Sources */,
 				CE521690268AA17200C52279 /* SwiftUIDatePicker.swift in Sources */,
 				CE37F9352543B26D0068AF33 /* SwiftUISliders.swift in Sources */,
+				CEFD014C2695471B004AB134 /* SwiftUIColorPicker .swift in Sources */,
 				CE37F93A2543B2930068AF33 /* SwiftUILists.swift in Sources */,
-				CE52168A268A9E6300C52279 /* SwiftUIPopupPicker.swift in Sources */,
 				CECECF40267C2A850069849B /* SwiftUIWheelPicker.swift in Sources */,
+				CE74F3AA268FD6FE0058A8FC /* ApolloData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

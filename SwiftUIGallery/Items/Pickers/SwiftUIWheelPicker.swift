@@ -11,11 +11,6 @@ struct SwiftUIWheelPicker: View {
 	
 	@State private var apolloPatch = "Apollo 11"
 	
-//	let apolloPatches = ["Apollo 1","Apollo 7","Apollo 8","Apollo 9",
-//							  "Apollo 10","Apollo 11",
-//							  "Apollo 12","Apollo 13","Apollo 14",
-//							  "Apollo 15","Apollo 16","Apollo 17"]
-
 	var body: some View {
 		VStack{
 			customTumblerPicker()
@@ -27,21 +22,16 @@ struct customTumblerPicker: View {
 	
 	@State private var apolloPatch = "Apollo 11"
 	@State private var showPickers = false
-	
-	let apolloPatches = ["Apollo 1","Apollo 7","Apollo 8","Apollo 9",
-							  "Apollo 10","Apollo 11",
-							  "Apollo 12","Apollo 13","Apollo 14",
-							  "Apollo 15","Apollo 16","Apollo 17","Apollo 18"]
+	let apolloPatches = ApolloPatches().apolloPatches
 	
 //	https://stackoverflow.com/questions/63228081/swiftui-2-0-list-with-children-how-to-make-the-tappable-area-of-the-disclosure
 	
 	var body: some View {
 
-//			Text("The line beloc")
 			HStack{ Text("My favorite Apollo patch is \(apolloPatch)")
 				Image(apolloPatch).resizable().frame(width:20,height:20,alignment:.center)
 			}
-			Picker("What kind of cat can I get you today?",selection: $apolloPatch){
+			Picker("This Shouldnt show",selection: $apolloPatch){
 				ForEach(apolloPatches, id: \.self)
 				{
 					let tempText = Text($0)
@@ -58,8 +48,8 @@ struct customTumblerPicker: View {
 						tempImage
 					}
 				
-				}.pickerStyle(WheelPickerStyle())
-			}.accentColor(.red).padding()
+				}
+			}.accentColor(.red).padding().pickerStyle(WheelPickerStyle())
 			
 			Text(apolloPatch).foregroundColor(Color.red).font(.headline)
 			Image(apolloPatch).resizable().frame(width:100,height:100,alignment:.center)

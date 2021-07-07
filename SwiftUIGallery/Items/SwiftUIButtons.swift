@@ -31,6 +31,8 @@ struct SwiftUIButtons: View {
 				classyButton(labelText: "Classy button")
 
 				Spacer()
+                
+//                largeButton(labelText: "largeButton (iOS15)")
 			}
 			
 			Group{
@@ -46,6 +48,7 @@ struct SwiftUIButtons: View {
 				roundButtonWithCustomImage(imageName: "Compass.DistantSuns")
 
 				Spacer()
+                
 			}.accentColor(.blue)
 		}
 	}
@@ -89,6 +92,18 @@ struct classyButton: View {
 				.cornerRadius(40).shadow(color: Color.black.opacity(0.2),radius: 6, x: 4, y: 4)}
 	}
 }
+
+//struct largeButton: View {
+//    var labelText: String
+//
+//    var body: some View {
+//        Button(action:{
+//            print("hit \n(labelText)")
+//        }){
+//            Text(labelText).foregroundColor(.white).bold().padding().background(Color.accentColor).cornerRadius(40)
+//        }
+//    }.controlSize(.large)
+//}
 
 struct buttonWithSystemImage: View {
 
