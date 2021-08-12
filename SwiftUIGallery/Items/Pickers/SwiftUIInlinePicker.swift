@@ -43,8 +43,7 @@ struct SwiftUIInlinePicker: View {
 						}
 					}
 				}
-			}
-			.navigationBarTitle("Favorites").foregroundColor(.blue)
+			}.navigationBarTitle("inline picker", displayMode: .inline)
 		}
 	}
 }

@@ -1,0 +1,134 @@
+[
+    {
+        "name": "Apollo 7",
+        "patch": "Apollo 7",
+        "description": "first manned Apollo mission",
+        "date":"Oct. 11 to 22, 1968",
+        "crew":"Schirra, Cunningham, Eisele",
+        "code names": "none",
+        "bestpict":"A7",
+        "bestpictcaption":"This is the very first image taken from the surface of the moon.",
+        "crewpict":"A7.CrewPict"
+    },
+    {
+        "name": "Apollo 8",
+        "patch": "Apollo 8",
+        "description": "first manned lunar voyage",
+        "date": "December 21 to 27, 1968",
+        "crew": "Borman, Lovell, Anders",
+        "code names": "none",
+        "bestpict":"A8",
+        "bestpictcaption":"",
+        "crewpict":"A8.CrewPict"
+    },
+    {
+        "name": "Apollo 9",
+        "patch": "Apollo 9",
+        "description":"First manned flight of the lunar module",
+        "date": "March 3 to 13, 1969",
+        "crew": "McDivitt, Scott, Schweickart",
+        "code names":"Spider and Gumdrop",
+        "bestpict":"A9",
+        "bestpictcaption":"",
+        "crewpict":"A9.CrewPict"
+    },
+    {
+        "name": "Apollo 10",
+        "patch": "Apollo 10",
+        "description": "Second lunar mission,first with the Lunar Module",
+        "date":"May 18 to 26, 1969",
+        "crew":"Stafford, Young, Cernan",
+        "code names":"Snoopy and Charlie Brown",
+        "bestpict":"A10",
+        "bestpictcaption":"",
+        "crewpict":"A10.CrewPict"
+    },
+    {
+        "name": "Apollo 11",
+        "patch": "Apollo 11",
+        "description": "First Manned Lunar Landing",
+        "date":"July 16 to 24, 1869",
+        "crew":"Armstrong, Aldrin, Collins",
+        "code names":"Eagle and Columbia",
+        "bestpict":"A11.FirstPict",
+        "bestpictcaption":"A11",
+        "crewpict":"A11.CrewPict"
+    },
+    {
+        "name": "Apollo 12",
+        "patch": "Apollo 12",
+        "description": "Second Manned Lunar Landing",
+        "date":"Nov. 14 to 19, 1969",
+        "crew":"Conrad, Gordon, Bean",
+        "code names":"Intrepid and Yankee Clipper",
+        "bestpict":"A12",
+        "bestpictcaption":"",
+        "crewpict":"A12.CrewPict"
+    },
+    {
+        "name": "Apollo 13",
+        "patch": "Apollo 13",
+        "description": "Boom",
+        "date":"Apr. 11 to 17, 1970",
+        "crew":"Lovell, Mattingly, Haise",
+        "code names":"Odyssey and Aquarius",
+        "bestpict":"A13",
+        "bestpictcaption":"",
+        "crewpict":"A13.CrewPict"
+    },
+    {
+        "name": "Apollo 14",
+        "patch": "Apollo 14",
+        "description": "Third manned lunar landing",
+        "date":"Jan. 31 to Feb. 9, 1971",
+        "crew":"Cooper, Mitchell, Roosa",
+        "code names":"Antares and Kitty Hawk",
+        "bestpict":"A14",
+        "bestpictcaption":"",
+        "crewpict":"A14.CrewPict"
+    },
+    {
+        "name": "Apollo 15",
+        "patch": "Apollo 15",
+        "description": "First J, mission, first lunar rover",
+        "date":"July 26 to Aug. 7, 1971",
+        "crew":"Scott, Irwin, Worden",
+        "code names":"Falcon and Endeavour",
+        "bestpict":"A15",
+        "bestpictcaption":"",
+        "crewpict":"A15.CrewPict"
+    },
+    {
+        "name": "Apollo 16",
+        "patch": "Apollo 16",
+        "description": "",
+        "date":"Apr. 16 to 27, 1972",
+        "crew":"Young, Mattingly, Duke",
+        "code names":"Orion and Casper",
+        "bestpict":"A16",
+        "bestpictcaption":"",
+        "crewpict":"A16.CrewPict"
+    },
+    {
+        "name": "Apollo 17",
+        "patch": "Apollo 17",
+        "description": "Second J mission, second use of Lunar Rover",
+        "date":"Dec. 7 to 19",
+        "crew":"Cernan, Evans, Engle",
+        "code names":"Challenger and America",
+        "bestpict":"A17",
+        "bestpictcaption":"",
+        "crewpict":"A17.CrewPict"
+    },
+    {
+        "name": "Apollo 18",
+        "patch": "Apollo 18",
+        "description": "Fictitious Mission I just made up",
+        "date":"March 18 to 31, 1973",
+        "crew":"Gordon, Brand, Schmitt",
+        "code names":"Ranger and Cygnus",
+        "bestpict":"A18",
+        "bestpictcaption":"",
+        "crewpict":"A18.CrewPict"
+    },
+]

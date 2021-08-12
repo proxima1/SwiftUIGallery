@@ -30,6 +30,7 @@ struct SwiftUIMenuPicker: View {
 							let tempText = Text(patchName)
 							let tempImage = Image(patchName).resizable().frame(width:20,height:20,alignment:.leading)
 
+                            
 							HStack{
 								tempImage
 								tempText
@@ -38,8 +39,7 @@ struct SwiftUIMenuPicker: View {
 					}.pickerStyle(MenuPickerStyle())
 				}
 			}
-			.navigationBarTitle("Favorites").foregroundColor(.blue)
-		}
+        }.navigationBarTitle("menu picker", displayMode: .inline)
 	}
 }
 

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//original: https://www.swiftcompiled.com/swiftui-datepicker/
+
 struct SwiftUIDatePicker: View {
     @State private var randomDate = Date()
     let dateFormatter: DateFormatter = {
@@ -15,23 +17,22 @@ struct SwiftUIDatePicker: View {
         return formatter
     }()
     
+    @State var date: Date = Date()
+     
      var body: some View {
          VStack {
             Spacer()
-            
-            HStack{
-             DatePicker(selection: $randomDate, in: ...Date(), displayedComponents: .date) {
-                Text("Select a date").bold()
-             }.frame(minWidth: 150.0, idealWidth: 200.0, maxWidth: 250.0, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 100.0, maxHeight: 100.0, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).datePickerStyle(WheelDatePickerStyle())
-
-            }
-            
+             DatePicker("Date", selection: $date)
+                 .datePickerStyle(CompactDatePickerStyle())
+                .frame(height: 40)
+            DatePicker("", selection: $date)
+                 .datePickerStyle(WheelDatePickerStyle())
+             DatePicker("Date Picker", selection: $date)
+                 .datePickerStyle(GraphicalDatePickerStyle()).accentColor(.green)
+             Spacer()
             Spacer()
-            
-            Text("Date is \(randomDate, formatter: dateFormatter)")
-            Spacer()
-            
          }
+         .padding()
      }
 }
    

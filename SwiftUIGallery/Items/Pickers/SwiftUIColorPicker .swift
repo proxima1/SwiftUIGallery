@@ -30,7 +30,8 @@ struct SwiftUIColorPicker: View {
             ColorPicker("Pick Your Color", selection: $selectedColor).frame(maxWidth: 200.0, maxHeight: 150.0)
             
             Spacer()
-        }
+        }.navigationBarTitle("colors", displayMode: .inline)
+
     }
 }
 

@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-//struct Tree<Value: Hashable>: Hashable {
-//	 let value: Value
-//	 var children: [Tree]? = nil
-//}
-
-
-
-
-
 ////////////////////////////////////////////////////
 
 struct menuItem : View
@@ -57,17 +48,19 @@ var _menuItems: [menuItem] = [menuItem(title: "Buttons", imageName: "arrow.up", 
 										menuItem(title: "Pickers", imageName: "arrow.down", color: .blue,  navTarget: AnyView(SwiftUIWheelPicker()), children:_pickerItems),
 										menuItem(title: "Sliders", imageName: "cloud", 			color: .black,  navTarget: AnyView(SwiftUISliders())),
 										menuItem(title: "Lists", 	imageName: "paperplane", color: .orange,  navTarget: AnyView(SwiftUILists())),
-										menuItem(title: "Stacks", 	imageName: "doc.circle.fill", color: .gray,  navTarget: AnyView(SwiftUIStacks())),
+                                        menuItem(title: "Menus",     imageName: "paperplane", color: .orange,  navTarget: AnyView(SwiftUIMenu())),
+                                        menuItem(title: "Steppers",     imageName: "person.fill.and.arrow.left.and.arrow.right", color: .orange,  navTarget: AnyView(SwiftUISteppers())),
+                                        menuItem(title: "Stacks", 	imageName: "doc.circle.fill", color: .gray,  navTarget: AnyView(SwiftUIStacks())),
 										menuItem(title: "Toggles", imageName: "message", 	color: .gray,  navTarget: AnyView(SwiftUIToggles())),
 										menuItem(title: "Images",  imageName: "calendar", 	color: .gray,  navTarget: AnyView(SwiftUIImages())),
-                                        
+                                        menuItem(title: "Links",   imageName: "link",     color: .gray,  navTarget: AnyView(SwiftUILinks())),
+
                                         //https://swiftui-lab.com/alignment-guides/
                                         
                                         menuItem(title: "Alignment Guides",  imageName: "calendar", color: .gray,navTarget: AnyView(SwiftUIImages())),
-										menuItem(title: "Color Support",  imageName: "paintbrush", 	color: .gray,  navTarget: AnyView(SwiftUIColor()))
+//										menuItem(title: "Color Support",  imageName: "paintbrush", 	color: .gray,  navTarget: AnyView(SwiftUIColor()))
 
 ]
-
 
 struct ContentView: View
 {
@@ -112,8 +105,6 @@ struct navMenuItemView : View
 		link
 	}
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

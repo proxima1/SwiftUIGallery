@@ -9,7 +9,10 @@ import SwiftUI
 
 struct SwiftUIStacks: View {
     var body: some View {
+        NavigationView{
         Text("Stacks Land")
+        }.navigationBarTitle("stacks", displayMode: .inline)
+
     }
 }
 

@@ -49,8 +49,8 @@ struct SwiftUIButtons: View {
 
 				Spacer()
                 
-			}.accentColor(.blue)
-		}
+            }
+		}.navigationBarTitle("buttons", displayMode: .inline)
 	}
 }
 
