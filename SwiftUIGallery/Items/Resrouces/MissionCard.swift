@@ -26,7 +26,6 @@ struct MissionCard: View {
                     HStack(){
                         titleBlock(fontSize: fontSize, lineSpacing: lineSpacing)
                         contentBlock(fontSize: fontSize, lineSpacing: lineSpacing, mission: mission)
-
                     }.onAppear(perform: {
                                 print("mission: \(mission)")
                     })

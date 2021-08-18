@@ -1,0 +1,104 @@
+//
+//  SwiftUIText.swift
+//  SwiftUIGallery
+//
+//  Created by mike on 8/17/21.
+//
+
+import SwiftUI
+
+struct SwiftUIText: View {
+    @State var username=""
+    @State var isEditing = false
+    
+    var body: some View {
+        Form{
+            Section(header: Text("Text"))
+            {
+                Text("Plain Text")
+                HStack{
+                    Text(verbatim:"Weight:").fontWeight(.medium).font(.system(size: 15.0))
+                    Text(verbatim:"ultralight").fontWeight(.ultraLight).font(.system(size: 15.0))
+                    Text(verbatim:"thin").fontWeight(.thin).font(.system(size: 15.0))
+                    Text(verbatim:"light").fontWeight(.light).font(.system(size: 15.0))
+                    Text(verbatim:"regular").fontWeight(.regular).font(.system(size: 15.0))
+                    Text(verbatim:"medium").fontWeight(.medium).font(.system(size: 15.0))
+
+                    //                Text(verbatim: mission.name).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).font(.system(size: fontSize))
+                }
+                HStack{
+                    Text(verbatim:"semibold").fontWeight(.semibold).font(.system(size: 15.0))
+                    Text(verbatim:"bold").fontWeight(.bold).font(.system(size: 15.0))
+                    Text(verbatim:"heavy").fontWeight(.heavy).font(.system(size: 15.0))
+                    Text(verbatim:"black").fontWeight(.black).font(.system(size: 15.0))
+
+                }
+                HStack{
+                    Text(verbatim:"Size:").fontWeight(.regular).font(.system(size: 15.0))
+                    Text(verbatim:"15").fontWeight(.regular).font(.system(size: 25.0))
+                    Text(verbatim:"20").fontWeight(.regular).font(.system(size: 30.0))
+                    Text(verbatim:"25").fontWeight(.regular).font(.system(size: 35.0))
+
+                }
+                HStack{
+                    Text(verbatim:"Style:").fontWeight(.regular).font(.system(size: 15.0))
+                    Text(verbatim:"italic").italic().fontWeight(.regular).font(.system(size: 15.0))
+                    Text(verbatim:"underlined").underline().fontWeight(.regular).font(.system(size: 15.0))
+                    Text(verbatim:"strikethrough").strikethrough(true,color: Color.red).fontWeight(.regular).font(.system(size: 15.0))
+
+                }
+                HStack{
+                    Text(verbatim:"Design:").fontWeight(.regular).font(.system(size: 15.0))
+                    Text(verbatim:"standard").fontWeight(.regular).font(.system(size:20.0))
+                    Text(verbatim:"rounded").fontWeight(.regular).font(.system(size: 20.0,design: .rounded))
+                    Text(verbatim:"serif").fontWeight(.regular).font(.system(size: 20.0,design: .serif))
+
+                    //                    Text(verbatim:"strikethrough").strikethrough(true,color: Color.red).fontWeight(.regular).font(.system(size: 15.0))
+                }
+        
+            }
+            Section(header: Text("Typefaces")){
+            
+                    Text(verbatim:"Helvetica Neue").fontWeight(.regular).font(.custom("Helvetica Neue",size:20.0))
+                    Text(verbatim:"Ariel").fontWeight(.regular).font(.custom("Courier",size:20))
+                    Text(verbatim:"Courier").fontWeight(.regular).font(.custom("Courier",size:20))
+                    Text(verbatim:"Times New Roman").fontWeight(.regular).font(.custom("Times New Roman",size:20))
+                    Text(verbatim:"Avenir").fontWeight(.regular).font(.custom("Avenir",size:20))
+                    Text(verbatim:"Chalkboard").fontWeight(.regular).font(.custom("Chalkboard",size:20))
+
+                Text(verbatim:"Bradley Hand").fontWeight(.regular).font(.custom("Bradley Hand",size:20))
+                Text(verbatim:"Desdemona").fontWeight(.regular).font(.custom("Desdemona",size:20))
+                Text(verbatim:"Bodoni Ornaments").fontWeight(.regular).font(.custom("Bodoni Ornaments",size:20))
+                Text(verbatim:"Papyrus").fontWeight(.regular).font(.custom("Papyrus",size:20))
+
+                //                        .font(.custom("Helvetica Neue", size: 25))
+
+                    //                    Text(verbatim:"strikethrough").strikethrough(true,color: Color.red).fontWeight(.regular).font(.system(size: 15.0))
+
+            }
+                
+            Section(header: Text("TextField")){
+                TextField(
+                    "User name (email address)",
+                    text: $username
+                ) { isEditing in
+                    self.isEditing = isEditing
+                } onCommit: {
+                    print("Logging In: \(username)")
+                }
+                .padding(EdgeInsets(top:0, leading:20.0, bottom:0.0, trailing:10.0))
+                .autocapitalization(.none)
+                .disableAutocorrection(true)
+                .border(Color(UIColor.gray))
+                Text(username)
+                    .foregroundColor(isEditing ? .red : .blue)
+            }
+        }
+    }
+}
+
+struct SwiftUIText_Previews: PreviewProvider {
+    static var previews: some View {
+        SwiftUIText()
+    }
+}
