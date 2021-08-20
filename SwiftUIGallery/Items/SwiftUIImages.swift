@@ -121,8 +121,6 @@ struct SwiftUIImages: View {
                 }
             }.pickerStyle(WheelPickerStyle())
             
-//            Spacer()
-            
             Menu("Actions"){
         
                 Section{

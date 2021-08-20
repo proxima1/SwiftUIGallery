@@ -32,6 +32,8 @@
 		CE6C3F0C26BCB29A002C5778 /* SwiftUILinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */; };
 		CE74F3AA268FD6FE0058A8FC /* MissionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F3A9268FD6FE0058A8FC /* MissionData.swift */; };
 		CE8E0CAB26CC953700D2142C /* SwiftUIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */; };
+		CE8E0CAE26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */; };
+		CEA1A9EE26CF22AF0083D21D /* SwiftUIToolbars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */; };
 		CEB3016A269E2915007C4479 /* SwiftUILists.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB30169269E2915007C4479 /* SwiftUILists.swift */; };
 		CEB3016C269E51EE007C4479 /* Spacemissions.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB3016B269E51ED007C4479 /* Spacemissions.json */; };
 		CEB3016E269E7445007C4479 /* Spacemissions.onemissions.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB3016D269E7445007C4479 /* Spacemissions.onemissions.json */; };
@@ -91,6 +93,8 @@
 		CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUILinks.swift; sourceTree = "<group>"; };
 		CE74F3A9268FD6FE0058A8FC /* MissionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MissionData.swift; path = SwiftUIGallery/Items/Resrouces/MissionData.swift; sourceTree = SOURCE_ROOT; };
 		CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIText.swift; sourceTree = "<group>"; };
+		CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDynamicViewContentView.swift; sourceTree = "<group>"; };
+		CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIToolbars.swift; sourceTree = "<group>"; };
 		CEB30169269E2915007C4479 /* SwiftUILists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftUILists.swift; path = SwiftUIGallery/Items/SwiftUILists.swift; sourceTree = SOURCE_ROOT; };
 		CEB3016B269E51ED007C4479 /* Spacemissions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Spacemissions.json; sourceTree = "<group>"; };
 		CEB3016D269E7445007C4479 /* Spacemissions.onemissions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spacemissions.onemissions.json; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 				CE521684268A9CD200C52279 /* Pickers */,
 				CE47278325426B0900C27C3D /* SwiftUIButtons.swift */,
 				CE37F9482543B4160068AF33 /* SwiftUIImages.swift */,
+				CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */,
 				CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */,
 				CEB30169269E2915007C4479 /* SwiftUILists.swift */,
 				CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */,
@@ -207,6 +212,7 @@
 				CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */,
 				CE44F04326C7586D00DC7264 /* SwiftUITextEditor.swift */,
 				CE37F9432543B3730068AF33 /* SwiftUIToggles.swift */,
+				CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -380,11 +386,13 @@
 				CEB30172269FB506007C4479 /* MissionCard.swift in Sources */,
 				CE472768254237D800C27C3D /* GalleryItem.swift in Sources */,
 				CE8E0CAB26CC953700D2142C /* SwiftUIText.swift in Sources */,
+				CEA1A9EE26CF22AF0083D21D /* SwiftUIToolbars.swift in Sources */,
 				CE37F9492543B4160068AF33 /* SwiftUIImages.swift in Sources */,
 				CE47277B254254B100C27C3D /* GalleryItemRow.swift in Sources */,
 				CE521686268A9DD800C52279 /* SwiftUIInlinePicker.swift in Sources */,
 				CE521690268AA17200C52279 /* SwiftUIDatePicker.swift in Sources */,
 				CE6C3F0C26BCB29A002C5778 /* SwiftUILinks.swift in Sources */,
+				CE8E0CAE26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift in Sources */,
 				CE44F04026C46C8200DC7264 /* SwiftUISteppers.swift in Sources */,
 				CE44F04426C7586D00DC7264 /* SwiftUITextEditor.swift in Sources */,
 				CE31F73A26B0C44C00C30C68 /* SwiftUIMenu.swift in Sources */,

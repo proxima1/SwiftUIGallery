@@ -167,7 +167,7 @@ struct AllMissions
             
             if  (path != nil)
             {
-                print("Got file: \(path)")
+                print("Got file: \(String(describing: path))")
             }
                         
             let result = try String(contentsOfFile: path!, encoding: .utf8)

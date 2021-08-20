@@ -89,7 +89,9 @@ struct classyButton: View {
 			Text(labelText)
 				.foregroundColor(.black).bold().padding()
 				.background(Color.white)
-				.cornerRadius(40).shadow(color: Color.black.opacity(0.2),radius: 6, x: 4, y: 4)}
+				.cornerRadius(40).shadow(color: Color.black.opacity(0.2),radius: 6, x: 4, y: 4)
+            
+        }
 	}
 }
 
