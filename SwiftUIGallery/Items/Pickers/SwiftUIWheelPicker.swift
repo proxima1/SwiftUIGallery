@@ -27,8 +27,8 @@ struct customTumblerPicker: View {
 //	https://stackoverflow.com/questions/63228081/swiftui-2-0-list-with-children-how-to-make-the-tappable-area-of-the-disclosure
 	
 	var body: some View {
-        NavigationView{
-			HStack{ Text("My favorite Apollo patch is \(apolloPatch)")
+			HStack{
+                Text("My favorite Apollo patch is \(apolloPatch)")
 				Image(apolloPatch).resizable().frame(width:20,height:20,alignment:.center)
 			}
 			Picker("This Shouldnt show",selection: $apolloPatch){
@@ -53,7 +53,7 @@ struct customTumblerPicker: View {
 			
 			Text(apolloPatch).foregroundColor(Color.red).font(.headline)
 			Image(apolloPatch).resizable().frame(width:100,height:100,alignment:.center)
-        }.navigationBarTitle("tumbler picker", displayMode: .inline)
+//        }.navigationBarTitle("tumbler picker", displayMode: .inline)
     }
 }
 

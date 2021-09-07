@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SwiftUIMenuPicker: View {
 	let apolloPatches = ApolloPatches().apolloPatches
-	@State private var selectedFrameworkIndex = 0
-	
+    @State var apolloPatch: String = "Apollo 13"
+
 	var body: some View {
 		NavigationView {
 			
@@ -22,21 +22,18 @@ struct SwiftUIMenuPicker: View {
 			
 			Form {
 				Section {
-					Picker(selection: $selectedFrameworkIndex, label: Text("Apollo Patches")) {
-						ForEach(0 ..< apolloPatches.count) {
-//							Text(self.apolloPatches[$0])
-							
-							let patchName = apolloPatches[$0]
-							let tempText = Text(patchName)
-							let tempImage = Image(patchName).resizable().frame(width:20,height:20,alignment:.leading)
+                    Picker("Select Patch: ",selection: $apolloPatch){
+                        ForEach(apolloPatches, id: \.self){
 
-                            
-							HStack{
-								tempImage
-								tempText
-							}
-						}
-					}.pickerStyle(MenuPickerStyle())
+                            let tempText = Text($0)
+                            let tempImage = Image($0).resizable().frame(width:20,height:20,alignment:.leading)
+
+                            HStack{
+                                tempImage
+                                tempText
+                            }
+                        }
+                    }.pickerStyle(MenuPickerStyle())
 				}
 			}
         }.navigationBarTitle("menu picker", displayMode: .inline)
@@ -45,6 +42,6 @@ struct SwiftUIMenuPicker: View {
 
 struct SwiftUIMenuPicker_Previews: PreviewProvider {
     static var previews: some View {
-		SwiftUIMenuPicker()
+        SwiftUIMenuPicker(apolloPatch: "Apollo 13")
     }
 }

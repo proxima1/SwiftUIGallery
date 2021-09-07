@@ -20,11 +20,6 @@ struct SwiftUIMenu: View {
     
     var body: some View {
         Menu("Missions") {
-//            Button(){
-//
-//            }label: {
-//                Label("Choose mission", image: "Apollo 11")
-//            }
 
             ForEach(apolloPatches.reversed(), id: \.self)
             {
@@ -35,13 +30,36 @@ struct SwiftUIMenu: View {
                         print("hit button: \(patchName)")
                     
                 }){
-                    Label(patchName, image: patchName)
+                    Label(patchName, image: patchName).foregroundColor(.green)
                 }
             }
-        }.navigationBarTitle("menu", displayMode: .inline)
+        }.navigationBarTitle("menu", displayMode: .inline).foregroundColor(.green).font(.system(size: 30))
 
+        Text("Context Menu")
+            .padding()
+            .contextMenu {
+                Button("♥️ - Hearts", action: selectHearts)
+                Button("♣️ - Clubs", action: selectClubs)
+                Button("♠️ - Spades", action: selectSpades)
+                Button("♦️ - Diamonds", action: selectDiamonds)
+            }
     }
     
+    func selectHearts() {
+        print("Selecteed Hearts")
+    }
+    
+    func selectClubs() {
+        print("Selected Clubs")
+    }
+    
+    func selectSpades() {
+        print("Selected Spades")
+    }
+    
+    func selectDiamonds() {
+        print("Selected Diamonds")
+    }
 }
 
 struct SwiftUIMenu_Previews: PreviewProvider {

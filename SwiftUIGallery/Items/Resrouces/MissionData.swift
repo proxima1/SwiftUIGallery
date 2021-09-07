@@ -43,7 +43,8 @@ struct GeminiPatches{
 import Foundation
 
 // MARK: - Mission
-struct Mission: Codable {
+struct Mission: Codable{
+    var id = UUID()             //needed to make this work in a ForEach.
     let name, patch, missionDescription, date: String
     let crew, codeNames, crewpict: String
     let bestpict, bestpictcaption: String

@@ -18,8 +18,8 @@ struct SwiftUIInlinePicker: View {
 	@State private var selectedFrameworkIndex = 0
 	
 	var body: some View {
-		NavigationView {
-			
+//		NavigationView {
+        VStack{
 			//the InlinePicker is the default when adding to a form.
 			//PickerStyle can be used for other types. Interestingly enough
 			//specifying the InlinePickerStyle() forces the use of
@@ -30,7 +30,6 @@ struct SwiftUIInlinePicker: View {
 				Section {
 					Picker(selection: $selectedFrameworkIndex, label: Text("Apollo Patches")) {
 						ForEach(0 ..< apolloPatches.count) {
-//							Text(self.apolloPatches[$0])
 							
 							let patchName = apolloPatches[$0]
 							let tempText = Text(patchName)
@@ -43,8 +42,9 @@ struct SwiftUIInlinePicker: View {
 						}
 					}
 				}
-			}.navigationBarTitle("inline picker", displayMode: .inline)
+//			}.navigationBarTitle("inline picker", displayMode: .inline)
 		}
+        }
 	}
 }
 

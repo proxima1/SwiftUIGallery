@@ -10,26 +10,34 @@ import SwiftUI
 struct SwiftUIDynamicViewContentView: View {
     
 
-    @State private var fruits = [
-        "Apple",
-        "Banana",
-        "Papaya",
-        "Mango"
+    @State private var moonWalkers = [
+        "Armstrong",
+        "Aldrin",
+        "Conrad",
+        "Bean",
+        "Shepard",
+        "Mitchell",
+        "Scott",
+        "Irwin",
+        "Young",
+        "Duke",
+        "Cernan",
+        "Schmitt"
     ]
     
     var body: some View {
         NavigationView{
             List {
                 ForEach(
-                    fruits,
+                    moonWalkers,
                     id: \.self
-                ) { fruit in
-                    Text(fruit)
+                ) { walkers in
+                    Text(walkers)
                 }
-                .onDelete { self.deleteFruit(at :$0) }
-                .onMove { self.moveFruit(from: $0, to: $1) }
+                .onDelete { self.deleteMoonwalkers(at :$0) }
+                .onMove { self.moveMoonwalkers(from: $0, to: $1) }
             }
-            .navigationTitle("Fruits")
+            .navigationTitle("Moonwalkers")
             .toolbar { EditButton() }
         }
     }
@@ -43,11 +51,11 @@ func insert() {
 //    data.items.insert(string, at: 1)
   }
   
-  func deleteFruit(at offsets: IndexSet) {
-    fruits.remove(atOffsets: offsets)
+  func deleteMoonwalkers(at offsets: IndexSet) {
+    moonWalkers.remove(atOffsets: offsets)
   }
   
-  func moveFruit(from source: IndexSet, to destination: Int) {
+  func moveMoonwalkers(from source: IndexSet, to destination: Int) {
     print("Item moved from \(source) to \(destination)")
   }
   

@@ -54,7 +54,6 @@ struct SwiftUIButtons: View {
 	}
 }
 
-
 struct simpleButton: View {
 	var labelText: String
 	
@@ -82,30 +81,18 @@ struct filledSimpleButton: View {
 struct classyButton: View {
 	var labelText: String
 	
-	var body: some View {
-		Button(action:{
-			print("hit \n(labelText)")
-		}){
-			Text(labelText)
-				.foregroundColor(.black).bold().padding()
-				.background(Color.white)
-				.cornerRadius(40).shadow(color: Color.black.opacity(0.2),radius: 6, x: 4, y: 4)
-            
+    var body: some View {
+        Button(action:{
+            print("hit \n(labelText)")
+        }){
+            Text(labelText)
+                .foregroundColor(.black).bold().padding()
+                .frame(width:200,height:50)
+                .background(Color.white)
+                .cornerRadius(40).shadow(color: Color.black.opacity(0.2),radius: 6, x: 4, y: 4)
         }
-	}
+    }
 }
-
-//struct largeButton: View {
-//    var labelText: String
-//
-//    var body: some View {
-//        Button(action:{
-//            print("hit \n(labelText)")
-//        }){
-//            Text(labelText).foregroundColor(.white).bold().padding().background(Color.accentColor).cornerRadius(40)
-//        }
-//    }.controlSize(.large)
-//}
 
 struct buttonWithSystemImage: View {
 
@@ -121,7 +108,7 @@ struct buttonWithSystemImage: View {
 			HStack(spacing: 10) {
 				Image(systemName: imageName)
 				Text(labelText)
-			}.frame(minWidth:frame(minWidth: 100, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: 50, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) as? CGFloat)
+			}.frame(minWidth:frame(minWidth: 100, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: 50, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center) as? CGFloat)
 		}
 	}
 }

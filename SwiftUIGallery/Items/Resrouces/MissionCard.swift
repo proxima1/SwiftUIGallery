@@ -16,11 +16,9 @@ struct MissionCard: View {
     var body: some View {
         NavigationView {
             
-
             Form{
                 Image(mission.patch).resizable().frame(width:96,height:96,alignment:.center)
                 
-
                 Section(header: Text("Details"))
                 {
                     HStack(){
@@ -100,24 +98,24 @@ struct titleBlock: View{
     }
 }
 
-struct LableValueView: View{
-    
-    var label: String
-    var value: String
-    
-//    var mission: Mission = {
-    
-    var body: some View{
-        HStack(){
-            VStack(alignment:.leading){
-                Text(label).fontWeight(.light)
-            }
-            VStack(alignment:.leading){
-                Text(value).fontWeight(.bold)
-            }
-        }
-    }
-}
+//struct LableValueView: View{
+//
+//    var label: String
+//    var value: String
+//
+////    var mission: Mission = {
+//
+//    var body: some View{
+//        HStack(){
+//            VStack(alignment:.leading){
+//                Text(label).fontWeight(.light)
+//            }
+//            VStack(alignment:.leading){
+//                Text(value).fontWeight(.bold)
+//            }
+//        }
+//    }
+//}
     
 struct MissionCard_Previews: PreviewProvider {
     

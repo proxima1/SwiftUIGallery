@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2A6C7E26D0716C003CDA36 /* SwiftUILabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */; };
 		CE31F73A26B0C44C00C30C68 /* SwiftUIMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */; };
+		CE3328F526E182F600D12F3D /* SwiftUISheetsAndAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3328F426E182F600D12F3D /* SwiftUISheetsAndAlerts.swift */; };
+		CE3328F726E1869D00D12F3D /* SwiftUIActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3328F626E1869D00D12F3D /* SwiftUIActionSheet.swift */; };
 		CE37F9352543B26D0068AF33 /* SwiftUISliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */; };
 		CE37F93F2543B2D60068AF33 /* SwiftUIStacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F93E2543B2D60068AF33 /* SwiftUIStacks.swift */; };
 		CE37F9442543B3730068AF33 /* SwiftUIToggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F9432543B3730068AF33 /* SwiftUIToggles.swift */; };
@@ -34,13 +37,20 @@
 		CE8E0CAB26CC953700D2142C /* SwiftUIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */; };
 		CE8E0CAE26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */; };
 		CEA1A9EE26CF22AF0083D21D /* SwiftUIToolbars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */; };
+		CEA223A326E2EFC1007604E1 /* SwiftUIRadioButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA223A226E2EFC1007604E1 /* SwiftUIRadioButtons.swift */; };
+		CEA223A526E2F6CF007604E1 /* SwiftUIGroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */; };
+		CEA71B0F26E29CF100D0AAE0 /* SwiftUISliderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA71B0E26E29CF100D0AAE0 /* SwiftUISliderSheet.swift */; };
 		CEB3016A269E2915007C4479 /* SwiftUILists.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB30169269E2915007C4479 /* SwiftUILists.swift */; };
 		CEB3016C269E51EE007C4479 /* Spacemissions.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB3016B269E51ED007C4479 /* Spacemissions.json */; };
 		CEB3016E269E7445007C4479 /* Spacemissions.onemissions.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB3016D269E7445007C4479 /* Spacemissions.onemissions.json */; };
 		CEB30172269FB506007C4479 /* MissionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB30171269FB506007C4479 /* MissionCard.swift */; };
+		CEBE271B26D4420D00621C42 /* SwiftUIForms.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE271A26D4420D00621C42 /* SwiftUIForms.swift */; };
+		CEBE271D26D498E900621C42 /* SwiftUIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE271C26D498E900621C42 /* SwiftUIProgressView.swift */; };
 		CEC5D8712687007900AD8333 /* SwiftUIShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5D8702687007900AD8333 /* SwiftUIShapes.swift */; };
 		CECECF40267C2A850069849B /* SwiftUIWheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECECF3F267C2A850069849B /* SwiftUIWheelPicker.swift */; };
-		CEFD014C2695471B004AB134 /* SwiftUIColorPicker .swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD014B2695471B004AB134 /* SwiftUIColorPicker .swift */; };
+		CED926CC26E00F2C0005F5BA /* SwiftUIGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED926CB26E00F2C0005F5BA /* SwiftUIGroups.swift */; };
+		CED926D026E058FD0005F5BA /* USRussianMissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED926CF26E058FD0005F5BA /* USRussianMissions.swift */; };
+		CEFD014C2695471B004AB134 /* SwiftUIColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD014B2695471B004AB134 /* SwiftUIColorPicker.swift */; };
 		CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEFD014D2696918D004AB134 /* MissionPatches.plist */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +72,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILabels.swift; sourceTree = "<group>"; };
 		CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMenu.swift; sourceTree = "<group>"; };
+		CE3328F426E182F600D12F3D /* SwiftUISheetsAndAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISheetsAndAlerts.swift; sourceTree = "<group>"; };
+		CE3328F626E1869D00D12F3D /* SwiftUIActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIActionSheet.swift; sourceTree = "<group>"; };
 		CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISliders.swift; sourceTree = "<group>"; };
 		CE37F93E2543B2D60068AF33 /* SwiftUIStacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStacks.swift; sourceTree = "<group>"; };
 		CE37F9432543B3730068AF33 /* SwiftUIToggles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIToggles.swift; sourceTree = "<group>"; };
@@ -95,13 +108,20 @@
 		CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIText.swift; sourceTree = "<group>"; };
 		CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDynamicViewContentView.swift; sourceTree = "<group>"; };
 		CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIToolbars.swift; sourceTree = "<group>"; };
+		CEA223A226E2EFC1007604E1 /* SwiftUIRadioButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRadioButtons.swift; sourceTree = "<group>"; };
+		CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGroupBox.swift; sourceTree = "<group>"; };
+		CEA71B0E26E29CF100D0AAE0 /* SwiftUISliderSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUISliderSheet.swift; sourceTree = "<group>"; };
 		CEB30169269E2915007C4479 /* SwiftUILists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftUILists.swift; path = SwiftUIGallery/Items/SwiftUILists.swift; sourceTree = SOURCE_ROOT; };
 		CEB3016B269E51ED007C4479 /* Spacemissions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Spacemissions.json; sourceTree = "<group>"; };
 		CEB3016D269E7445007C4479 /* Spacemissions.onemissions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spacemissions.onemissions.json; sourceTree = "<group>"; };
 		CEB30171269FB506007C4479 /* MissionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionCard.swift; sourceTree = "<group>"; };
+		CEBE271A26D4420D00621C42 /* SwiftUIForms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIForms.swift; sourceTree = "<group>"; };
+		CEBE271C26D498E900621C42 /* SwiftUIProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIProgressView.swift; path = SwiftUIGallery/Items/SwiftUIProgressView.swift; sourceTree = SOURCE_ROOT; };
 		CEC5D8702687007900AD8333 /* SwiftUIShapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIShapes.swift; sourceTree = "<group>"; };
 		CECECF3F267C2A850069849B /* SwiftUIWheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWheelPicker.swift; sourceTree = "<group>"; };
-		CEFD014B2695471B004AB134 /* SwiftUIColorPicker .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIColorPicker .swift"; sourceTree = "<group>"; };
+		CED926CB26E00F2C0005F5BA /* SwiftUIGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGroups.swift; sourceTree = "<group>"; };
+		CED926CF26E058FD0005F5BA /* USRussianMissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USRussianMissions.swift; sourceTree = "<group>"; };
+		CEFD014B2695471B004AB134 /* SwiftUIColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIColorPicker.swift; sourceTree = "<group>"; };
 		CEFD014D2696918D004AB134 /* MissionPatches.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MissionPatches.plist; path = SwiftUIGallery/Resources/MissionPatches.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +150,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE3328F826E186BD00D12F3D /* ActionSheets */ = {
+			isa = PBXGroup;
+			children = (
+				CEA71B0E26E29CF100D0AAE0 /* SwiftUISliderSheet.swift */,
+				CE3328F626E1869D00D12F3D /* SwiftUIActionSheet.swift */,
+				CE3328F426E182F600D12F3D /* SwiftUISheetsAndAlerts.swift */,
+			);
+			path = ActionSheets;
+			sourceTree = "<group>";
+		};
 		CE47272425421F6F00C27C3D = {
 			isa = PBXGroup;
 			children = (
@@ -196,14 +226,20 @@
 		CE47278225426ACD00C27C3D /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				CE3328F826E186BD00D12F3D /* ActionSheets */,
 				CEB30170269FB278007C4479 /* Resrouces */,
 				CE521684268A9CD200C52279 /* Pickers */,
 				CE47278325426B0900C27C3D /* SwiftUIButtons.swift */,
-				CE37F9482543B4160068AF33 /* SwiftUIImages.swift */,
 				CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */,
+				CEBE271A26D4420D00621C42 /* SwiftUIForms.swift */,
+				CED926CB26E00F2C0005F5BA /* SwiftUIGroups.swift */,
+				CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */,
+				CE37F9482543B4160068AF33 /* SwiftUIImages.swift */,
+				CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */,
 				CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */,
 				CEB30169269E2915007C4479 /* SwiftUILists.swift */,
 				CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */,
+				CEBE271C26D498E900621C42 /* SwiftUIProgressView.swift */,
 				CE4F541C26CB4D4F0000ABCD /* SwiftUIScrollView.swift */,
 				CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */,
 				CEC5D8702687007900AD8333 /* SwiftUIShapes.swift */,
@@ -220,12 +256,13 @@
 		CE521684268A9CD200C52279 /* Pickers */ = {
 			isa = PBXGroup;
 			children = (
-				CECECF3F267C2A850069849B /* SwiftUIWheelPicker.swift */,
+				CEFD014B2695471B004AB134 /* SwiftUIColorPicker.swift */,
+				CE52168F268AA17100C52279 /* SwiftUIDatePicker.swift */,
 				CE521685268A9DD800C52279 /* SwiftUIInlinePicker.swift */,
 				CE521687268A9DF800C52279 /* SwiftUIMenuPicker.swift */,
+				CEA223A226E2EFC1007604E1 /* SwiftUIRadioButtons.swift */,
 				CE52168D268A9EA400C52279 /* SwiftUISegmentedPicker.swift */,
-				CE52168F268AA17100C52279 /* SwiftUIDatePicker.swift */,
-				CEFD014B2695471B004AB134 /* SwiftUIColorPicker .swift */,
+				CECECF3F267C2A850069849B /* SwiftUIWheelPicker.swift */,
 			);
 			path = Pickers;
 			sourceTree = "<group>";
@@ -235,6 +272,7 @@
 			children = (
 				CEB3016B269E51ED007C4479 /* Spacemissions.json */,
 				CEB3016D269E7445007C4479 /* Spacemissions.onemissions.json */,
+				CED926CF26E058FD0005F5BA /* USRussianMissions.swift */,
 				CE74F3A9268FD6FE0058A8FC /* MissionData.swift */,
 				CEB30171269FB506007C4479 /* MissionCard.swift */,
 			);
@@ -373,22 +411,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED926CC26E00F2C0005F5BA /* SwiftUIGroups.swift in Sources */,
+				CE2A6C7E26D0716C003CDA36 /* SwiftUILabels.swift in Sources */,
+				CE3328F726E1869D00D12F3D /* SwiftUIActionSheet.swift in Sources */,
 				CE47273325421F6F00C27C3D /* ContentView.swift in Sources */,
+				CEBE271D26D498E900621C42 /* SwiftUIProgressView.swift in Sources */,
 				CE37F93F2543B2D60068AF33 /* SwiftUIStacks.swift in Sources */,
+				CEA71B0F26E29CF100D0AAE0 /* SwiftUISliderSheet.swift in Sources */,
 				CE521688268A9DF800C52279 /* SwiftUIMenuPicker.swift in Sources */,
 				CE4727602542354600C27C3D /* GalleryItemList.swift in Sources */,
 				CEC5D8712687007900AD8333 /* SwiftUIShapes.swift in Sources */,
 				CE4F541D26CB4D4F0000ABCD /* SwiftUIScrollView.swift in Sources */,
 				CE47273125421F6F00C27C3D /* SwiftUIGalleryApp.swift in Sources */,
 				CE47278425426B0900C27C3D /* SwiftUIButtons.swift in Sources */,
+				CEBE271B26D4420D00621C42 /* SwiftUIForms.swift in Sources */,
 				CE52168E268A9EA400C52279 /* SwiftUISegmentedPicker.swift in Sources */,
 				CE37F9442543B3730068AF33 /* SwiftUIToggles.swift in Sources */,
 				CEB30172269FB506007C4479 /* MissionCard.swift in Sources */,
+				CEA223A526E2F6CF007604E1 /* SwiftUIGroupBox.swift in Sources */,
 				CE472768254237D800C27C3D /* GalleryItem.swift in Sources */,
 				CE8E0CAB26CC953700D2142C /* SwiftUIText.swift in Sources */,
 				CEA1A9EE26CF22AF0083D21D /* SwiftUIToolbars.swift in Sources */,
 				CE37F9492543B4160068AF33 /* SwiftUIImages.swift in Sources */,
+				CED926D026E058FD0005F5BA /* USRussianMissions.swift in Sources */,
 				CE47277B254254B100C27C3D /* GalleryItemRow.swift in Sources */,
+				CE3328F526E182F600D12F3D /* SwiftUISheetsAndAlerts.swift in Sources */,
 				CE521686268A9DD800C52279 /* SwiftUIInlinePicker.swift in Sources */,
 				CE521690268AA17200C52279 /* SwiftUIDatePicker.swift in Sources */,
 				CE6C3F0C26BCB29A002C5778 /* SwiftUILinks.swift in Sources */,
@@ -398,7 +445,8 @@
 				CE31F73A26B0C44C00C30C68 /* SwiftUIMenu.swift in Sources */,
 				CEB3016A269E2915007C4479 /* SwiftUILists.swift in Sources */,
 				CE37F9352543B26D0068AF33 /* SwiftUISliders.swift in Sources */,
-				CEFD014C2695471B004AB134 /* SwiftUIColorPicker .swift in Sources */,
+				CEFD014C2695471B004AB134 /* SwiftUIColorPicker.swift in Sources */,
+				CEA223A326E2EFC1007604E1 /* SwiftUIRadioButtons.swift in Sources */,
 				CECECF40267C2A850069849B /* SwiftUIWheelPicker.swift in Sources */,
 				CE74F3AA268FD6FE0058A8FC /* MissionData.swift in Sources */,
 			);

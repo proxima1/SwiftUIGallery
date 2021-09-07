@@ -33,13 +33,15 @@ struct SwiftUISegmentedPicker: View {
 //							let tempImage = Image(patchName).resizable().frame(width:20,height:20,alignment:.leading)
 							
 							HStack{
-//								tempImage
 								tempText
 							}
 						}
 					}
 				}.pickerStyle(SegmentedPickerStyle())//section
 				
+                //note that this takes the place of the traditional
+                //callback closure.
+                
 				HStack{
 					Spacer()
 					VStack{
@@ -49,7 +51,7 @@ struct SwiftUISegmentedPicker: View {
 					Spacer()
 				}
 			}	//Section
-		}.navigationBarTitle("inline picker", displayMode: .inline)
+		}.navigationBarTitle("segmented picker", displayMode: .inline)
 //Form
 	}//View
 }

@@ -13,6 +13,7 @@ struct SwiftUIText: View {
     @State private var password = ""
     
     var body: some View {
+        VStack{
         Form{
             Section(header: Text("Text"))
             {
@@ -79,11 +80,6 @@ struct SwiftUIText: View {
                 Text(verbatim:"Desdemona").fontWeight(.regular).font(.custom("Desdemona",size:20))
                 Text(verbatim:"Bodoni Ornaments").fontWeight(.regular).font(.custom("Bodoni Ornaments",size:20)).foregroundColor(Color("DarkBlue"))
                 Text(verbatim:"Papyrus").fontWeight(.regular).font(.custom("Papyrus",size:20)).foregroundColor(.blue)
-                
-                //                        .font(.custom("Helvetica Neue", size: 25))
-                
-                //                    Text(verbatim:"strikethrough").strikethrough(true,color: Color.red).fontWeight(.regular).font(.system(size: 15.0))
-                
             }
             
             Section(header: Text("Styles")){
@@ -133,7 +129,7 @@ struct SwiftUIText: View {
             }
  
             .border(Color(UIColor.separator))
-        }
+        }}.padding(2.0)
     }
 }
 

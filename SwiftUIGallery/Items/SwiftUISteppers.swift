@@ -12,7 +12,8 @@ let colors: [Color] = [.orange, .red, .gray, .blue,
 
 struct SwiftUISteppers: View {
     @State var stepperValue: Int = 0
-    
+    @State var colorStepperValue: Int = 0
+
     var body: some View {
         VStack {
             Form{
@@ -28,28 +29,28 @@ struct SwiftUISteppers: View {
                 }.padding(2.0)
                 
                 Section(header:Text("Not so simple").font(.headline)){
-                    Stepper(" Value: \(stepperValue) Color: \(colors[stepperValue].description)",
-                                 onIncrement: incrementStep,
+                    Stepper(" Value: \(colorStepperValue) Color: \(colors[colorStepperValue].description)",
+                            onIncrement: incrementStep,
                             onDecrement: decrementStep) {value in
                                 //tbis is for the closure onEditingChanged. It's called at
                                 //the start and end of an editing sequence. Here, it is called
                                 //by a downclick, then again on the release, which could be seconds apart
-                                print("got \(stepperValue), value is changed \(value)")
-                            }.background(colors[stepperValue])
+                                print("got \(colorStepperValue), value is changed \(value)")
+                            }.background(colors[colorStepperValue])
                     }
                     
-            }.padding(2)
+                }.padding(2)
             }
         }
     
     func incrementStep() {
-        stepperValue += 1
-        if stepperValue >= colors.count { stepperValue = 0 }
+        colorStepperValue += 1
+        if colorStepperValue >= colors.count { colorStepperValue = 0 }
     }
 
     func decrementStep() {
-        stepperValue -= 1
-        if stepperValue < 0 { stepperValue = colors.count - 1 }
+        colorStepperValue -= 1
+        if colorStepperValue < 0 { colorStepperValue = colors.count - 1 }
     }
 }
 

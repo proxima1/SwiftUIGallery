@@ -16,7 +16,7 @@ struct SwiftUIColorPicker: View {
     var body: some View {
         
         VStack{
-            
+            Spacer()
             Circle()
                 .fill(selectedColor)
                 .frame(width: 200, height: 200, alignment: .top)
