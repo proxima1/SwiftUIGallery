@@ -50,7 +50,7 @@ struct SwiftUIButtons: View {
 				Spacer()
                 
             }
-		}.navigationBarTitle("buttons", displayMode: .inline)
+		}.navigationTitle("Buttons")
 	}
 }
 

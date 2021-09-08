@@ -51,7 +51,7 @@ struct SwiftUISegmentedPicker: View {
 					Spacer()
 				}
 			}	//Section
-		}.navigationBarTitle("segmented picker", displayMode: .inline)
+		}.navigationBarTitle("Segmented Picker", displayMode: .inline)
 //Form
 	}//View
 }

@@ -32,7 +32,7 @@ struct SwiftUISliders: View {
             Slider(value: $rotation, in: 0...360).accentColor(.green)
                 .rotationEffect(.degrees(90.0),anchor: .center)
             
-        }.navigationBarTitle("sliders", displayMode: .inline)
+        }.navigationBarTitle("Sliders", displayMode: .inline)
 .padding()
         
     }

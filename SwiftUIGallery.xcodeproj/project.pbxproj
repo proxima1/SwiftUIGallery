@@ -34,6 +34,7 @@
 		CE521690268AA17200C52279 /* SwiftUIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52168F268AA17100C52279 /* SwiftUIDatePicker.swift */; };
 		CE6C3F0C26BCB29A002C5778 /* SwiftUILinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */; };
 		CE74F3AA268FD6FE0058A8FC /* MissionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F3A9268FD6FE0058A8FC /* MissionData.swift */; };
+		CE85B2A026E8920D00DDDA76 /* SwiftUILazyGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85B29F26E8920C00DDDA76 /* SwiftUILazyGrids.swift */; };
 		CE8E0CAB26CC953700D2142C /* SwiftUIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */; };
 		CE8E0CAE26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */; };
 		CEA1A9EE26CF22AF0083D21D /* SwiftUIToolbars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */; };
@@ -105,6 +106,7 @@
 		CE52168F268AA17100C52279 /* SwiftUIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDatePicker.swift; sourceTree = "<group>"; };
 		CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUILinks.swift; sourceTree = "<group>"; };
 		CE74F3A9268FD6FE0058A8FC /* MissionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MissionData.swift; path = SwiftUIGallery/Items/Resrouces/MissionData.swift; sourceTree = SOURCE_ROOT; };
+		CE85B29F26E8920C00DDDA76 /* SwiftUILazyGrids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILazyGrids.swift; sourceTree = "<group>"; };
 		CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIText.swift; sourceTree = "<group>"; };
 		CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDynamicViewContentView.swift; sourceTree = "<group>"; };
 		CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIToolbars.swift; sourceTree = "<group>"; };
@@ -235,14 +237,15 @@
 				CED926CB26E00F2C0005F5BA /* SwiftUIGroups.swift */,
 				CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */,
 				CE37F9482543B4160068AF33 /* SwiftUIImages.swift */,
+				CE85B29F26E8920C00DDDA76 /* SwiftUILazyGrids.swift */,
 				CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */,
 				CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */,
 				CEB30169269E2915007C4479 /* SwiftUILists.swift */,
 				CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */,
 				CEBE271C26D498E900621C42 /* SwiftUIProgressView.swift */,
 				CE4F541C26CB4D4F0000ABCD /* SwiftUIScrollView.swift */,
-				CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */,
 				CEC5D8702687007900AD8333 /* SwiftUIShapes.swift */,
+				CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */,
 				CE37F93E2543B2D60068AF33 /* SwiftUIStacks.swift */,
 				CE44F03F26C46C8200DC7264 /* SwiftUISteppers.swift */,
 				CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */,
@@ -414,6 +417,7 @@
 				CED926CC26E00F2C0005F5BA /* SwiftUIGroups.swift in Sources */,
 				CE2A6C7E26D0716C003CDA36 /* SwiftUILabels.swift in Sources */,
 				CE3328F726E1869D00D12F3D /* SwiftUIActionSheet.swift in Sources */,
+				CE85B2A026E8920D00DDDA76 /* SwiftUILazyGrids.swift in Sources */,
 				CE47273325421F6F00C27C3D /* ContentView.swift in Sources */,
 				CEBE271D26D498E900621C42 /* SwiftUIProgressView.swift in Sources */,
 				CE37F93F2543B2D60068AF33 /* SwiftUIStacks.swift in Sources */,
@@ -618,7 +622,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dangerouskittens.SwiftUIGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -640,7 +644,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dangerouskittens.SwiftUIGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

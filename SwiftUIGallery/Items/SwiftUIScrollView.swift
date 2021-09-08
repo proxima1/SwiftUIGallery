@@ -33,7 +33,7 @@ struct SwiftUIScrollView: View {
                 
                 Spacer()
             }
-        }
+        }.navigationBarTitle("Scrolling Views", displayMode: .inline)
     }
 }
 

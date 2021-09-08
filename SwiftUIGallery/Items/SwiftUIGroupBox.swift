@@ -47,7 +47,8 @@ struct groupBox: View{
                     Text(mission.crew).foregroundColor(.black).modifier(missionStyle())
                 }
             }
-        }.foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/).cornerRadius(20).padding()
+        }.navigationBarTitle("GroupBox", displayMode: .inline)
+        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/).cornerRadius(20).padding()
     }
 }
 

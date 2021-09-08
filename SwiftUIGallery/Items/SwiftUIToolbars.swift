@@ -36,19 +36,19 @@ struct SwiftUIToolbars: View {
     @State var color = Color.red
     
     var body: some View {
-        Text("Weird animal names").foregroundColor(color)
-            .toolbar {
-                ItemsToolbar {
-                    print("Spiny Lumpsucker")
-                    color = Color.red
-                } sort: {
-                    print("Tasselled Wobbegong")
-                    color = Color.blue
-                } filter: {
-                    print("Streaked Tenrec")
-                    color = Color("DarkGreen")
-                }
+        Text("Weird animal names").foregroundColor(color).toolbar
+        {
+            ItemsToolbar {
+                print("Spiny Lumpsucker")
+                color = Color.red
+            } sort: {
+                print("Tasselled Wobbegong")
+                color = Color.blue
+            } filter: {
+                print("Streaked Tenrec")
+                color = Color("DarkGreen")
             }
+        }.navigationBarTitle("ToolBars", displayMode: .inline)
     }
 }
 

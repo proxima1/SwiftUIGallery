@@ -25,7 +25,6 @@ struct menuItem : View
 			Text(title).foregroundColor(color).font(.title)
 		}.frame(maxWidth: .infinity, alignment: .leading)
 		.contentShape(Rectangle())
-		
 	}
 }
 
@@ -52,6 +51,7 @@ var _menuItems: [menuItem] = [menuItem(title: "Buttons", imageName: "arrow.up", 
                               menuItem(title: "Labels",     imageName: "moon.circle", color: Color("AccentColor"),  navTarget: AnyView(SwiftUILabels())),
                               menuItem(title: "Links",   imageName: "link",     color: .gray,  navTarget: AnyView(SwiftUILinks())),
                               menuItem(title: "Lists",     imageName: "paperplane", color: .primary,  navTarget: AnyView(SwiftUILists())),
+                              menuItem(title: "LazyGrids",     imageName: "clock", color: .primary,  navTarget: AnyView(SwiftUILazyGrids())),
                               menuItem(title: "Menus",     imageName: "paperplane", color: Color("DarkGreen"),  navTarget: AnyView(SwiftUIMenu())),
                               menuItem(title: "Pickers", imageName: "arrow.down", color: .blue,  navTarget: AnyView(SwiftUIWheelPicker()), children:_pickerItems),
                               menuItem(title: "ProgressView", imageName: "infinity", color: .orange,  navTarget: AnyView(SwiftUIProgressView())),
@@ -85,6 +85,7 @@ struct ContentView: View
 				}
             }
         }.navigationTitle(Text("SwiftUI HouseParty!"))
+        
     }
 }
 

@@ -25,7 +25,7 @@ struct SwiftUIToggles: View {
             customToggle(isOn:$isToggled, checktitle: "howdy").padding()
             
         }.padding()
-        .navigationBarTitle("toggles", displayMode: .inline)
+        .navigationBarTitle("Toggles", displayMode: .inline)
         .frame(maxWidth: 250).overlay(
             RoundedRectangle(cornerRadius: 10)
                 .stroke(lineWidth: isToggled ? 4 : 2)

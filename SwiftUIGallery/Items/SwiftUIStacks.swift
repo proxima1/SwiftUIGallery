@@ -11,8 +11,7 @@ struct SwiftUIStacks: View {
     var body: some View {
         NavigationView{
         Text("Stacks Land")
-        }.navigationBarTitle("stacks", displayMode: .inline)
-
+        }.navigationBarTitle("Stacks", displayMode: .inline)
     }
 }
 

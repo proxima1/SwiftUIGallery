@@ -24,7 +24,7 @@ struct SwiftUITextEditor: View {
             .font(.headline)
             
 //            Color.red.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-        }
+        }.navigationBarTitle("Text Editor", displayMode: .inline)
     }
 }
 

@@ -17,7 +17,7 @@ struct SwiftUISteppers: View {
     var body: some View {
         VStack {
             Form{
- 
+                
                 //note that the values use the same stepperValue so both
                 //will change
                 
@@ -32,16 +32,15 @@ struct SwiftUISteppers: View {
                     Stepper(" Value: \(colorStepperValue) Color: \(colors[colorStepperValue].description)",
                             onIncrement: incrementStep,
                             onDecrement: decrementStep) {value in
-                                //tbis is for the closure onEditingChanged. It's called at
-                                //the start and end of an editing sequence. Here, it is called
-                                //by a downclick, then again on the release, which could be seconds apart
-                                print("got \(colorStepperValue), value is changed \(value)")
-                            }.background(colors[colorStepperValue])
-                    }
-                    
-                }.padding(2)
-            }
+                        //tbis is for the closure onEditingChanged. It's called at
+                        //the start and end of an editing sequence. Here, it is called
+                        //by a downclick, then again on the release, which could be seconds apart
+                        print("got \(colorStepperValue), value is changed \(value)")
+                    }.background(colors[colorStepperValue])
+                }
+            }.padding(2).navigationBarTitle("Steppers", displayMode: .inline)
         }
+    }
     
     func incrementStep() {
         colorStepperValue += 1

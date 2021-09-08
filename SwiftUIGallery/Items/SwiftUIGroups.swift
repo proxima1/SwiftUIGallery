@@ -130,7 +130,7 @@ struct SwiftUIGroups: View {
             Section(header: Text("Outline Group")){
                 flightsList()
             }
-        }
+        }.navigationBarTitle("Disclousure and OutlineGroups", displayMode: .inline)
     }
 }
 

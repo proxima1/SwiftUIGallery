@@ -33,7 +33,7 @@ struct SwiftUIMenu: View {
                     Label(patchName, image: patchName).foregroundColor(.green)
                 }
             }
-        }.navigationBarTitle("menu", displayMode: .inline).foregroundColor(.green).font(.system(size: 30))
+        }.navigationBarTitle("Menus", displayMode: .inline).foregroundColor(.green).font(.system(size: 30))
 
         Text("Context Menu")
             .padding()

@@ -36,7 +36,7 @@ struct SwiftUIMenuPicker: View {
                     }.pickerStyle(MenuPickerStyle())
 				}
 			}
-        }.navigationBarTitle("menu picker", displayMode: .inline)
+        }.navigationBarTitle("Menu Picker", displayMode: .inline)
 	}
 }
 

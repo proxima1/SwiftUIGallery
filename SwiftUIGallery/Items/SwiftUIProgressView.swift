@@ -47,7 +47,7 @@ struct CustomCircularProgressViewStyle: ProgressViewStyle{
                     .opacity(0.8)
                     .foregroundColor(fractionCompleted < 1 ? .purple : .orange)
             }
-        }
+        }.navigationBarTitle("Progress Views", displayMode: .inline)
     }
 }
 

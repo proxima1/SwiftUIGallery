@@ -42,8 +42,8 @@ struct SwiftUIInlinePicker: View {
 						}
 					}
 				}
-//			}.navigationBarTitle("inline picker", displayMode: .inline)
-		}
+			}.navigationBarTitle("Inline Zpicker", displayMode: .inline)
+//		}
         }
 	}
 }

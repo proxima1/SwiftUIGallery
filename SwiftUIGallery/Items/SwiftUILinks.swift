@@ -32,7 +32,7 @@ struct SwiftUILinks: View {
                 Spacer()
                 Spacer()
             }
-        }.navigationBarTitle("links", displayMode: .inline)
+        }.navigationBarTitle("Links", displayMode: .inline)
 
     }
 }

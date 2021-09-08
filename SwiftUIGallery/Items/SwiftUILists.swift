@@ -116,8 +116,7 @@ struct SwiftUILists: View
                     print("Show details for user")
                 }
             }
-        }.navigationBarTitle("lists", displayMode: .inline)
-
+        }.navigationBarTitle("Lists", displayMode: .inline)
     }
 }
 

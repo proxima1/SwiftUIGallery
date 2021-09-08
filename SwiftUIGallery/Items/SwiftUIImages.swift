@@ -261,7 +261,7 @@ struct SwiftUIImages: View {
 
             Spacer()
             Spacer()
-        }.navigationBarTitle("images", displayMode: .inline)
+        }.navigationBarTitle("Images", displayMode: .inline)
     }
 }
 

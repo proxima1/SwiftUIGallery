@@ -107,7 +107,7 @@ struct SwiftUISheetsAndAlerts: View {
                     )
                 )
             }
-        }
+        }.navigationBarTitle("Sheets and Alerts", displayMode: .inline)
     }
 }
 

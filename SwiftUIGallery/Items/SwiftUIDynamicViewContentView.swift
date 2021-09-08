@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SwiftUIDynamicViewContentView: View {
     
+    @State var editMode: EditMode = .inactive // #1
 
     @State private var moonWalkers = [
         "Armstrong",
@@ -35,11 +36,19 @@ struct SwiftUIDynamicViewContentView: View {
                     Text(walkers)
                 }
                 .onDelete { self.deleteMoonwalkers(at :$0) }
-                .onMove { self.moveMoonwalkers(from: $0, to: $1) }
+                .onMove   { self.moveMoonwalkers(from: $0, to: $1) }
             }
-            .navigationTitle("Moonwalkers")
-            .toolbar { EditButton() }
         }
+        .navigationBarTitle("Moonwalkers", displayMode: .inline)
+        .navigationBarItems(trailing: EditButton())
+
+//        Go here to understand  this line:
+//            https://medium.com/geekculture/swiftui-and-the-intermittent-editmode-b714c923f536
+        .environment(\.editMode, $editMode) //#2
+
+//        .toolbar {
+//            EditButton()
+//        }
     }
 
     //this is from Apple's docs for EditButton

@@ -11,7 +11,7 @@ struct SwiftUIShapes: View {
     var body: some View {
         NavigationView{
             Text("Shapes")
-        }.navigationBarTitle("shapes", displayMode: .inline)
+        }.navigationBarTitle("Shapes", displayMode: .inline)
     }
 }
 

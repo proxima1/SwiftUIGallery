@@ -31,8 +31,9 @@ struct SwiftUIDatePicker: View {
                  .datePickerStyle(GraphicalDatePickerStyle()).accentColor(.green)
              Spacer()
             Spacer()
-         }
-         .padding()
+         }.padding()
+//         .navigationBarTitle("Date Picker", displayMode: .inline)
+         .navigationTitle("Date Picker")
      }
 }
    
