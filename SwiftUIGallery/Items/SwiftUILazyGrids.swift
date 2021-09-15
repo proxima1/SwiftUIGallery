@@ -8,48 +8,50 @@
 import SwiftUI
 
 struct SwiftUILazyGrids: View {
-    //    var body: some View {
-    //        Text("Hello, LazyGrids!")
     
-    private var flexibleLayout = [GridItem(.flexible()), GridItem(.flexible())]
-    private var fixedLayout = [GridItem(.fixed(100)), GridItem(.fixed(200))]
-    private var adaptiveLayout = [GridItem(.adaptive(minimum: 100))]
-    private var mixedLayout = [GridItem(.fixed(150)), GridItem(.adaptive(minimum: 50))]
+    private var vspace : CGFloat = 15.0
     
+//    private let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+//    private let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
+    private let columns = [GridItem(.fixed(200)), GridItem(.flexible()), GridItem(.flexible())]
+//    private let columns = [GridItem(.adaptive(minimum: 200))]
+//    private let columns = [GridItem(.fixed(100)), GridItem(.adaptive(minimum: 50))]
     var body: some View {
         NavigationView() {
             ScrollView {
-                // 1.
-//                LazyVGrid(columns: flexibleLayout, spacing: 20) {
-                    // 2.
-//                    LazyVGrid(columns: fixedLayout, spacing: 20) {
-                    // 3.
-//                    LazyVGrid(columns: adaptiveLayout, spacing: 20) {
-                    // 4.
-                    LazyVGrid(columns: mixedLayout, spacing: 20) {
-                    
-                    // Display the item
-                    ForEach((1...1000), id: \.self) {
-                        Text("\($0)")
-                            .font(.title)
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
-                            .background(Color.yellow)
+                LazyVGrid(columns: columns, spacing:vspace) {
+                    ForEach((0...79), id: \.self) {
+                        
+                        let codepoint = $0 + 0x1f600
+                        let codepointString = String(format: "%02X", codepoint)
+                        
+                        Text("\(codepointString)")
+                            .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 100, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 60, maxHeight: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .background(Color("AccentColor")).cornerRadius(10.0)
+                        
+                        let emoji = String(Character(UnicodeScalar(codepoint)!))
+                        
+                        Text("\(emoji)")
+                            .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 100, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 60, maxHeight: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .background(Color("DarkRed")).cornerRadius(10.0)
+                        
+                        Text("\(emoji)")
+                            .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 100, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 60, maxHeight: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .background(Color("Greenish")).cornerRadius(10.0)
                     }
-                }
+                }.font(.largeTitle)
             }
-            .navigationTitle("Lazy Grids")
+            .navigationBarTitle("Lazy Grids")
         }
         
     }
 }
 
-struct SwiftUILazyGrids_Previews : PreviewProvider {
+struct SwiftUILazyGrids_Previews: PreviewProvider {
     static var previews: some View {
-        return SwiftUILazyGrids().previewLayout(.fixed(width: 2688, height: 1242))
+        Group {
+            SwiftUILazyGrids()
+            SwiftUILazyGrids()
+        }
     }
 }
-//struct SwiftUILazyGrids_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SwiftUILazyGrids()
-//    }
-//}

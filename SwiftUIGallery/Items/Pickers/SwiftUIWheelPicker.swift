@@ -27,7 +27,7 @@ struct customTumblerPicker: View {
     //	https://stackoverflow.com/questions/63228081/swiftui-2-0-list-with-children-how-to-make-the-tappable-area-of-the-disclosure
     
     var body: some View {
-        NavigationView{
+        VStack{
             HStack{
                 Text("My favorite Apollo patch is \(apolloPatch)")
                 Image(apolloPatch).resizable().frame(width:20,height:20,alignment:.center)
@@ -57,20 +57,6 @@ struct customTumblerPicker: View {
         }.navigationBarTitle("Tumbler Picker", displayMode: .inline)
     }
 }
-
-//struct datePicker: View {
-////	var labelText: String
-//
-//	@State private var date = Date()
-//
-//	var body: some View {
-//		DatePicker(
-//			 "Start Date",
-//			 selection: $date,
-//			displayedComponents: [.date, .hourAndMinute]
-//		)
-//	}
-//}
 
 struct SwiftUIWheelPicker_Previews: PreviewProvider {
     static var previews: some View {

@@ -16,6 +16,15 @@ struct SwiftUIGroups: View {
 
     var body: some View {
         Form {
+            Section(header: Text("Plain Group")){
+                Group{
+                    Text("Apollo 7")
+                    Text("Apollo 8")
+                    Text("Apollo 9")
+                    Text("Apollo 10...")
+                }.foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            }
+            
             Section(header: Text("Disclosure Group")){
                 DisclosureGroup(isExpanded: $isProfileExpanded) {
                     Text("MR-3")
@@ -28,7 +37,7 @@ struct SwiftUIGroups: View {
                     DisclosureGroup("Test"){
                         Text("third level")
                         Text("third level")
-                    }
+                    }.foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 } label: {
                     Text("Mercury")
                         .font(.headline)
@@ -74,7 +83,7 @@ struct SwiftUIGroups: View {
                         .font(.headline)
                 }
             }
-            
+                
             Section(header: Text("Disclosure Group with Controls")){
                 DisclosureGroup{
                     Toggle("Toggle", isOn: .constant(true))

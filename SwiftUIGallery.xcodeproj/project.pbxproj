@@ -7,7 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE064DEE26F11DCC00F3F52A /* SwiftUITabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DED26F11DCC00F3F52A /* SwiftUITabs.swift */; };
+		CE064DF326F1746A00F3F52A /* SwiftUIGestureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DF226F1746A00F3F52A /* SwiftUIGestureManager.swift */; };
+		CE064DF526F1753900F3F52A /* SwiftUIMagnifyGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DF426F1753900F3F52A /* SwiftUIMagnifyGesture.swift */; };
+		CE064DF726F1755A00F3F52A /* SwiftUIRotationGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DF626F1755A00F3F52A /* SwiftUIRotationGesture.swift */; };
+		CE064DF926F1759100F3F52A /* SwiftUILongPressGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DF826F1759100F3F52A /* SwiftUILongPressGesture.swift */; };
+		CE064DFB26F175D600F3F52A /* SwiftUIDragGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFA26F175D500F3F52A /* SwiftUIDragGesture.swift */; };
+		CE064DFD26F175EB00F3F52A /* SwiftUICompoundGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFC26F175EB00F3F52A /* SwiftUICompoundGestures.swift */; };
 		CE2A6C7E26D0716C003CDA36 /* SwiftUILabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */; };
+		CE2A85CE26EAA498001D4C69 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85CA26EAA498001D4C69 /* Badge.swift */; };
+		CE2A85CF26EAA498001D4C69 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85CB26EAA498001D4C69 /* BadgeBackground.swift */; };
+		CE2A85D026EAA498001D4C69 /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85CC26EAA498001D4C69 /* BadgeSymbol.swift */; };
+		CE2A85D126EAA498001D4C69 /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85CD26EAA498001D4C69 /* RotatedBadgeSymbol.swift */; };
+		CE2A85D326EAA71C001D4C69 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85D226EAA71C001D4C69 /* HexagonParameters.swift */; };
+		CE2A85D526EABC76001D4C69 /* SwiftUIViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85D426EABC76001D4C69 /* SwiftUIViewBuilder.swift */; };
+		CE2A85D726EAD55E001D4C69 /* SwiftUIGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85D626EAD55E001D4C69 /* SwiftUIGeometryReader.swift */; };
+		CE2A85DA26EAF09D001D4C69 /* SwiftUIHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85D826EAF09D001D4C69 /* SwiftUIHostingViewController.swift */; };
+		CE2A85DB26EAF09D001D4C69 /* SwiftUIHostingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2A85D926EAF09D001D4C69 /* SwiftUIHostingViewController.xib */; };
+		CE2A85DD26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85DC26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift */; };
 		CE31F73A26B0C44C00C30C68 /* SwiftUIMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */; };
 		CE3328F526E182F600D12F3D /* SwiftUISheetsAndAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3328F426E182F600D12F3D /* SwiftUISheetsAndAlerts.swift */; };
 		CE3328F726E1869D00D12F3D /* SwiftUIActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3328F626E1869D00D12F3D /* SwiftUIActionSheet.swift */; };
@@ -73,7 +90,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE064DED26F11DCC00F3F52A /* SwiftUITabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITabs.swift; sourceTree = "<group>"; };
+		CE064DF226F1746A00F3F52A /* SwiftUIGestureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIGestureManager.swift; path = SwiftUIGallery/Items/SwiftUIGestureManager.swift; sourceTree = SOURCE_ROOT; };
+		CE064DF426F1753900F3F52A /* SwiftUIMagnifyGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMagnifyGesture.swift; sourceTree = "<group>"; };
+		CE064DF626F1755A00F3F52A /* SwiftUIRotationGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRotationGesture.swift; sourceTree = "<group>"; };
+		CE064DF826F1759100F3F52A /* SwiftUILongPressGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILongPressGesture.swift; sourceTree = "<group>"; };
+		CE064DFA26F175D500F3F52A /* SwiftUIDragGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDragGesture.swift; sourceTree = "<group>"; };
+		CE064DFC26F175EB00F3F52A /* SwiftUICompoundGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICompoundGestures.swift; sourceTree = "<group>"; };
 		CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILabels.swift; sourceTree = "<group>"; };
+		CE2A85CA26EAA498001D4C69 /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		CE2A85CB26EAA498001D4C69 /* BadgeBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
+		CE2A85CC26EAA498001D4C69 /* BadgeSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
+		CE2A85CD26EAA498001D4C69 /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
+		CE2A85D226EAA71C001D4C69 /* HexagonParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HexagonParameters.swift; path = ../../../../Swift/SwiftTutorials/SwiftUI/ApplesLandmarkApp/DrawingPathsAndShapes/Complete/Landmarks/Landmarks/HexagonParameters.swift; sourceTree = "<group>"; };
+		CE2A85D426EABC76001D4C69 /* SwiftUIViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewBuilder.swift; sourceTree = "<group>"; };
+		CE2A85D626EAD55E001D4C69 /* SwiftUIGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGeometryReader.swift; sourceTree = "<group>"; };
+		CE2A85D826EAF09D001D4C69 /* SwiftUIHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIHostingViewController.swift; path = SwiftUIGallery/SwiftUIHostingViewController.swift; sourceTree = "<group>"; };
+		CE2A85D926EAF09D001D4C69 /* SwiftUIHostingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwiftUIHostingViewController.xib; path = SwiftUIGallery/SwiftUIHostingViewController.xib; sourceTree = "<group>"; };
+		CE2A85DC26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBridgeUIKit.swift; sourceTree = "<group>"; };
 		CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMenu.swift; sourceTree = "<group>"; };
 		CE3328F426E182F600D12F3D /* SwiftUISheetsAndAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISheetsAndAlerts.swift; sourceTree = "<group>"; };
 		CE3328F626E1869D00D12F3D /* SwiftUIActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIActionSheet.swift; sourceTree = "<group>"; };
@@ -152,6 +186,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE064DF126F1742100F3F52A /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				CE064DF226F1746A00F3F52A /* SwiftUIGestureManager.swift */,
+				CE064DF426F1753900F3F52A /* SwiftUIMagnifyGesture.swift */,
+				CE064DF626F1755A00F3F52A /* SwiftUIRotationGesture.swift */,
+				CE064DF826F1759100F3F52A /* SwiftUILongPressGesture.swift */,
+				CE064DFA26F175D500F3F52A /* SwiftUIDragGesture.swift */,
+				CE064DFC26F175EB00F3F52A /* SwiftUICompoundGestures.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		CE2A85C926EAA3EF001D4C69 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A85CA26EAA498001D4C69 /* Badge.swift */,
+				CE2A85CB26EAA498001D4C69 /* BadgeBackground.swift */,
+				CE2A85CC26EAA498001D4C69 /* BadgeSymbol.swift */,
+				CE2A85CD26EAA498001D4C69 /* RotatedBadgeSymbol.swift */,
+				CE2A85D226EAA71C001D4C69 /* HexagonParameters.swift */,
+				CEC5D8702687007900AD8333 /* SwiftUIShapes.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
 		CE3328F826E186BD00D12F3D /* ActionSheets */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +225,8 @@
 		CE47272425421F6F00C27C3D = {
 			isa = PBXGroup;
 			children = (
+				CE2A85D826EAF09D001D4C69 /* SwiftUIHostingViewController.swift */,
+				CE2A85D926EAF09D001D4C69 /* SwiftUIHostingViewController.xib */,
 				CEFD014D2696918D004AB134 /* MissionPatches.plist */,
 				CE47272F25421F6F00C27C3D /* SwiftUIGallery */,
 				CE47274125421F7100C27C3D /* SwiftUIGalleryTests */,
@@ -228,12 +290,16 @@
 		CE47278225426ACD00C27C3D /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				CE064DF126F1742100F3F52A /* Gestures */,
+				CE2A85C926EAA3EF001D4C69 /* Shapes */,
 				CE3328F826E186BD00D12F3D /* ActionSheets */,
 				CEB30170269FB278007C4479 /* Resrouces */,
 				CE521684268A9CD200C52279 /* Pickers */,
+				CE2A85DC26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift */,
 				CE47278325426B0900C27C3D /* SwiftUIButtons.swift */,
 				CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */,
 				CEBE271A26D4420D00621C42 /* SwiftUIForms.swift */,
+				CE2A85D626EAD55E001D4C69 /* SwiftUIGeometryReader.swift */,
 				CED926CB26E00F2C0005F5BA /* SwiftUIGroups.swift */,
 				CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */,
 				CE37F9482543B4160068AF33 /* SwiftUIImages.swift */,
@@ -244,14 +310,15 @@
 				CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */,
 				CEBE271C26D498E900621C42 /* SwiftUIProgressView.swift */,
 				CE4F541C26CB4D4F0000ABCD /* SwiftUIScrollView.swift */,
-				CEC5D8702687007900AD8333 /* SwiftUIShapes.swift */,
 				CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */,
 				CE37F93E2543B2D60068AF33 /* SwiftUIStacks.swift */,
 				CE44F03F26C46C8200DC7264 /* SwiftUISteppers.swift */,
+				CE064DED26F11DCC00F3F52A /* SwiftUITabs.swift */,
 				CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */,
 				CE44F04326C7586D00DC7264 /* SwiftUITextEditor.swift */,
 				CE37F9432543B3730068AF33 /* SwiftUIToggles.swift */,
 				CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */,
+				CE2A85D426EABC76001D4C69 /* SwiftUIViewBuilder.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -385,6 +452,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2A85DB26EAF09D001D4C69 /* SwiftUIHostingViewController.xib in Resources */,
 				CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */,
 				CE47273825421F7000C27C3D /* Preview Assets.xcassets in Resources */,
 				CE47273525421F7000C27C3D /* Assets.xcassets in Resources */,
@@ -415,22 +483,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED926CC26E00F2C0005F5BA /* SwiftUIGroups.swift in Sources */,
+				CE2A85CE26EAA498001D4C69 /* Badge.swift in Sources */,
 				CE2A6C7E26D0716C003CDA36 /* SwiftUILabels.swift in Sources */,
 				CE3328F726E1869D00D12F3D /* SwiftUIActionSheet.swift in Sources */,
+				CE2A85D326EAA71C001D4C69 /* HexagonParameters.swift in Sources */,
+				CE2A85D526EABC76001D4C69 /* SwiftUIViewBuilder.swift in Sources */,
+				CE2A85CF26EAA498001D4C69 /* BadgeBackground.swift in Sources */,
 				CE85B2A026E8920D00DDDA76 /* SwiftUILazyGrids.swift in Sources */,
 				CE47273325421F6F00C27C3D /* ContentView.swift in Sources */,
 				CEBE271D26D498E900621C42 /* SwiftUIProgressView.swift in Sources */,
+				CE2A85D726EAD55E001D4C69 /* SwiftUIGeometryReader.swift in Sources */,
+				CE064DF526F1753900F3F52A /* SwiftUIMagnifyGesture.swift in Sources */,
 				CE37F93F2543B2D60068AF33 /* SwiftUIStacks.swift in Sources */,
 				CEA71B0F26E29CF100D0AAE0 /* SwiftUISliderSheet.swift in Sources */,
 				CE521688268A9DF800C52279 /* SwiftUIMenuPicker.swift in Sources */,
+				CE2A85DA26EAF09D001D4C69 /* SwiftUIHostingViewController.swift in Sources */,
 				CE4727602542354600C27C3D /* GalleryItemList.swift in Sources */,
 				CEC5D8712687007900AD8333 /* SwiftUIShapes.swift in Sources */,
+				CE2A85DD26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift in Sources */,
 				CE4F541D26CB4D4F0000ABCD /* SwiftUIScrollView.swift in Sources */,
+				CE2A85D126EAA498001D4C69 /* RotatedBadgeSymbol.swift in Sources */,
 				CE47273125421F6F00C27C3D /* SwiftUIGalleryApp.swift in Sources */,
 				CE47278425426B0900C27C3D /* SwiftUIButtons.swift in Sources */,
 				CEBE271B26D4420D00621C42 /* SwiftUIForms.swift in Sources */,
+				CE064DF726F1755A00F3F52A /* SwiftUIRotationGesture.swift in Sources */,
 				CE52168E268A9EA400C52279 /* SwiftUISegmentedPicker.swift in Sources */,
 				CE37F9442543B3730068AF33 /* SwiftUIToggles.swift in Sources */,
+				CE064DF926F1759100F3F52A /* SwiftUILongPressGesture.swift in Sources */,
 				CEB30172269FB506007C4479 /* MissionCard.swift in Sources */,
 				CEA223A526E2F6CF007604E1 /* SwiftUIGroupBox.swift in Sources */,
 				CE472768254237D800C27C3D /* GalleryItem.swift in Sources */,
@@ -438,16 +517,21 @@
 				CEA1A9EE26CF22AF0083D21D /* SwiftUIToolbars.swift in Sources */,
 				CE37F9492543B4160068AF33 /* SwiftUIImages.swift in Sources */,
 				CED926D026E058FD0005F5BA /* USRussianMissions.swift in Sources */,
+				CE064DF326F1746A00F3F52A /* SwiftUIGestureManager.swift in Sources */,
 				CE47277B254254B100C27C3D /* GalleryItemRow.swift in Sources */,
 				CE3328F526E182F600D12F3D /* SwiftUISheetsAndAlerts.swift in Sources */,
 				CE521686268A9DD800C52279 /* SwiftUIInlinePicker.swift in Sources */,
 				CE521690268AA17200C52279 /* SwiftUIDatePicker.swift in Sources */,
+				CE064DFB26F175D600F3F52A /* SwiftUIDragGesture.swift in Sources */,
 				CE6C3F0C26BCB29A002C5778 /* SwiftUILinks.swift in Sources */,
 				CE8E0CAE26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift in Sources */,
+				CE064DEE26F11DCC00F3F52A /* SwiftUITabs.swift in Sources */,
 				CE44F04026C46C8200DC7264 /* SwiftUISteppers.swift in Sources */,
 				CE44F04426C7586D00DC7264 /* SwiftUITextEditor.swift in Sources */,
 				CE31F73A26B0C44C00C30C68 /* SwiftUIMenu.swift in Sources */,
+				CE2A85D026EAA498001D4C69 /* BadgeSymbol.swift in Sources */,
 				CEB3016A269E2915007C4479 /* SwiftUILists.swift in Sources */,
+				CE064DFD26F175EB00F3F52A /* SwiftUICompoundGestures.swift in Sources */,
 				CE37F9352543B26D0068AF33 /* SwiftUISliders.swift in Sources */,
 				CEFD014C2695471B004AB134 /* SwiftUIColorPicker.swift in Sources */,
 				CEA223A326E2EFC1007604E1 /* SwiftUIRadioButtons.swift in Sources */,
@@ -622,7 +706,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dangerouskittens.SwiftUIGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -644,7 +728,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dangerouskittens.SwiftUIGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

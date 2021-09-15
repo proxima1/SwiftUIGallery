@@ -41,10 +41,15 @@ struct groupBox: View{
         GroupBox(label:Text(mission.name)){
             HStack{
                 Image(mission.patch).resizable().frame(width:64,height:64,alignment:.center).shadow(color:.black,radius:10,x: 5,y:5)
+                Spacer()
+                Divider()
                 VStack(){
-                    Text(mission.date).foregroundColor(.black).modifier(missionStyle())
                     Text(mission.missionDescription).foregroundColor(.black).modifier(missionStyle())
+
+                    Divider()
+
                     Text(mission.crew).foregroundColor(.black).modifier(missionStyle())
+                    Text(mission.date).foregroundColor(.black).modifier(missionStyle())
                 }
             }
         }.navigationBarTitle("GroupBox", displayMode: .inline)

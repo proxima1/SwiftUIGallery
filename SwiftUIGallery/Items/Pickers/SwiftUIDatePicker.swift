@@ -18,23 +18,25 @@ struct SwiftUIDatePicker: View {
     }()
     
     @State var date: Date = Date()
-     
-     var body: some View {
-         VStack {
-            Spacer()
-             DatePicker("Date", selection: $date)
-                 .datePickerStyle(CompactDatePickerStyle())
-                .frame(height: 40)
-            DatePicker("", selection: $date)
-                 .datePickerStyle(WheelDatePickerStyle())
-             DatePicker("Date Picker", selection: $date)
-                 .datePickerStyle(GraphicalDatePickerStyle()).accentColor(.green)
-             Spacer()
-            Spacer()
-         }.padding()
-//         .navigationBarTitle("Date Picker", displayMode: .inline)
-         .navigationTitle("Date Picker")
-     }
+    
+    var body: some View {
+        ScrollView{
+            VStack {
+                Spacer()
+                DatePicker("Date", selection: $date)
+                    .datePickerStyle(CompactDatePickerStyle())
+                    .frame(height: 40)
+                DatePicker("", selection: $date)
+                    .datePickerStyle(WheelDatePickerStyle())
+                DatePicker("Date Picker", selection: $date)
+                    .datePickerStyle(GraphicalDatePickerStyle()).accentColor(.green)
+                Spacer()
+                Spacer()
+            }.padding()
+            //         .navigationBarTitle("Date Picker", displayMode: .inline)
+            .navigationTitle("Date Picker")
+        }
+    }
 }
    
 struct SwiftUIDatePicker_Previews: PreviewProvider {

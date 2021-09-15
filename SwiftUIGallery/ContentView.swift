@@ -43,15 +43,17 @@ var _pickerItems: [menuItem] = [menuItem(title: "Wheel",  imageName: "paperclip"
 ]
 
 var _menuItems: [menuItem] = [menuItem(title: "Buttons", imageName: "arrow.up", color: .red,  navTarget: AnyView(SwiftUIButtons())),
-                              menuItem(title: "GroupBox",   imageName: "waveform.path",     color:  Color("DarkGreen"),navTarget: AnyView(SwiftUIGroupBox())),
+                              menuItem(title: "GeometryReader",   imageName: "waveform.path",     color:  Color("DarkGreen"),navTarget: AnyView(SwiftUIGeometryReader())),
+                              menuItem(title: "Gestures",   imageName: "waveform.path",     color:  .orange,navTarget: AnyView(SwiftUIGestureManager())),
+                              menuItem(title: "GroupBox",   imageName: "waveform.path",     color:  Color("DustyBlue"),navTarget: AnyView(SwiftUIGroupBox())),
                               menuItem(title: "Groups Disclosure and Otherwise",   imageName: "waveform.path",     color:  Color("DarkGreen"),navTarget: AnyView(SwiftUIGroups())),
-                              menuItem(title: "Editable Lists",     imageName: "paperplane", color: Color("Greenish"),  navTarget: AnyView(SwiftUIDynamicViewContentView())),
-                              menuItem(title: "Forms",   imageName: "waveform.path",     color:  Color("DarkGreen"),  navTarget: AnyView(SwiftUIForms())),
+                              menuItem(title: "Editable Lists",     imageName: "paperplane", color: Color("Magenta"),  navTarget: AnyView(SwiftUIDynamicViewContentView())),
+                              menuItem(title: "Forms",   imageName: "waveform.path",     color:  Color("PaleGreen"),  navTarget: AnyView(SwiftUIForms())),
                               menuItem(title: "Images",  imageName: "calendar",     color: .gray,  navTarget: AnyView(SwiftUIImages())),
                               menuItem(title: "Labels",     imageName: "moon.circle", color: Color("AccentColor"),  navTarget: AnyView(SwiftUILabels())),
-                              menuItem(title: "Links",   imageName: "link",     color: .gray,  navTarget: AnyView(SwiftUILinks())),
+                              menuItem(title: "Links",   imageName: "link",     color: Color("PaleGreen"),  navTarget: AnyView(SwiftUILinks())),
                               menuItem(title: "Lists",     imageName: "paperplane", color: .primary,  navTarget: AnyView(SwiftUILists())),
-                              menuItem(title: "LazyGrids",     imageName: "clock", color: .primary,  navTarget: AnyView(SwiftUILazyGrids())),
+                              menuItem(title: "LazyGrids",     imageName: "clock", color: Color("DarkBlue"),  navTarget: AnyView(SwiftUILazyGrids())),
                               menuItem(title: "Menus",     imageName: "paperplane", color: Color("DarkGreen"),  navTarget: AnyView(SwiftUIMenu())),
                               menuItem(title: "Pickers", imageName: "arrow.down", color: .blue,  navTarget: AnyView(SwiftUIWheelPicker()), children:_pickerItems),
                               menuItem(title: "ProgressView", imageName: "infinity", color: .orange,  navTarget: AnyView(SwiftUIProgressView())),
@@ -61,14 +63,21 @@ var _menuItems: [menuItem] = [menuItem(title: "Buttons", imageName: "arrow.up", 
                               menuItem(title: "Sliders", imageName: "cloud", 			color: Color("DarkRed"),  navTarget: AnyView(SwiftUISliders())),
                               menuItem(title: "Stacks",     imageName: "doc.circle.fill", color: Color("AccentColor"),  navTarget: AnyView(SwiftUIStacks())),
                               menuItem(title: "Steppers",     imageName: "person.fill.and.arrow.left.and.arrow.right", color: .orange,  navTarget: AnyView(SwiftUISteppers())),
+                              menuItem(title: "Tabs", imageName: "calendar.circle",     color: Color("DarkRed"),  navTarget: AnyView(SwiftUITabs())),
                               menuItem(title: "Text",     imageName: "paperplane", color: .purple,  navTarget: AnyView(SwiftUIText())),
                               menuItem(title: "Text Editor",     imageName: "paperplane", color: Color("DarkBlue"),  navTarget: AnyView(SwiftUITextEditor())),
                               menuItem(title: "Toggles", imageName: "message", 	color: .gray,  navTarget: AnyView(SwiftUIToggles())),
                               menuItem(title: "Toolbars", imageName: "message",     color: Color("DarkPurple"),  navTarget: AnyView(SwiftUIToolbars())),
+                              menuItem(title: "ViewBuilder", imageName: "message",     color: Color("DustyBlue"),  navTarget: AnyView(SwiftUIViewBuilder())),
+                              menuItem(title: "UIKitBridge", imageName: "calendar.circle",     color: Color("AccentColor"),  navTarget: AnyView(SwiftUIBridgeUIKit())),
+
+
 ]
 
 struct ContentView: View
 {
+    var uiHostingView = SwiftUIHostingViewController()
+    
 	var body: some View
 	{
 		NavigationView(){
@@ -83,9 +92,8 @@ struct ContentView: View
 						print("Show details for user")
 					}
 				}
-            }
-        }.navigationTitle(Text("SwiftUI HouseParty!"))
-        
+            }.navigationTitle("SwiftUI HouseParty!")
+        }
     }
 }
 
@@ -116,6 +124,8 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 		Group {
 			ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone X"))
+                .previewDisplayName("iPhone X")
 		}
     }
 }

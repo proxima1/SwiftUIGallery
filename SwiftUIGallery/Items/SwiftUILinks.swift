@@ -21,7 +21,7 @@ struct SwiftUILinks: View {
                 }
                 
             let destination = SwiftUISliders()
-                Divider().opacity(0.0)
+                Divider()
                 Text("Navigation Link")
                 NavigationLink(
                     destination: destination

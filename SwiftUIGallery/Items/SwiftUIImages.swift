@@ -11,7 +11,7 @@ struct ImageOverlay: View {
     var body: some View {
         ZStack {
             Text("Mr. Higgs")
-//                .font(.callout)
+                .font(.callout)
                 .font(.system(size: 20, weight: .bold, design: .serif))
                 .padding(6)
                 .foregroundColor(.white)
@@ -78,7 +78,6 @@ struct SwiftUIImages: View {
         }
     }
     
-//    @State private var shape: ShapeType = .circle
     @State private var shape: ShapeType = .circle
     @State private var color: Color = .white        //normal
     @State private var image: HiggsImage = HiggsImage()
@@ -95,9 +94,7 @@ struct SwiftUIImages: View {
         // https://developer.apple.com/documentation/swiftui/shape#relationships
        
         VStack{
-
             ZStack{
-
                 withAnimation {
                    
                 image.colorMultiply(color)
@@ -108,10 +105,11 @@ struct SwiftUIImages: View {
                     .saturation(saturation)
                     .scaleEffect(scale)
                     .offset(x: CGFloat(xOffset))
-                    .if(inverse) { view in
+                    .if(inverse) {
+                        view in
                                     // We only apply this background color if shouldApplyBackground is true
-                                    view.colorInvert()
-                                }
+                        view.colorInvert()
+                    }
                 }
             }
             
