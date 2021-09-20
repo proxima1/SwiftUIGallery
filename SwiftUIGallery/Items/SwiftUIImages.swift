@@ -1,8 +1,31 @@
-//
-//  SwiftUIImages.swift
-//  SwiftUIGallery
-//
-//  Created by mike on 10/23/20.
+/*
+ MIT License
+ 
+ Copyright (c) 2021 Mike Smithwick
+ 
+ Permission is hereby granted, free of charge,
+ to any person obtaining a copy of this software
+ and associated documentation files (the "Software"),
+ to deal in the Software without restriction,
+ including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit
+ persons to whom the Software is furnished to do so,
+ subject to the following conditions:
+ 
+ The above copyright notice and this permission notice
+ shall be included in all copies or substantial portions
+ of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+ USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
 
 // Inspiration from: https://serialcoder.dev/text-tutorials/swiftui/swiftui-clip-shape-modifier-on-images/
 //
@@ -57,7 +80,7 @@ struct rotationStyle: ViewModifier
 import SwiftUI
 
 struct SwiftUIImages: View {
-      
+    
     enum ShapeType: String, Shape, CaseIterable {
         case rectangle = "Rectangle"
         case rounded = "Rounded Rectangle"
@@ -65,16 +88,16 @@ struct SwiftUIImages: View {
         case ellipse = "Ellipse"
         case capsule = "Capsule"
         case diamond = "Diamond"
-
+        
         func path(in rect: CGRect) -> Path {
             
             switch self {
-                case .circle: return Circle().path(in: rect)
-                case .ellipse: return Ellipse().path(in: rect)
-                case .capsule: return Capsule().path(in: rect)
-                case .rounded: return RoundedRectangle(cornerRadius: 25.0).path(in: rect)
-                case .rectangle: return Rectangle().path(in: rect)
-                case .diamond: return Diamond().path(in: rect)
+            case .circle: return Circle().path(in: rect)
+            case .ellipse: return Ellipse().path(in: rect)
+            case .capsule: return Capsule().path(in: rect)
+            case .rounded: return RoundedRectangle(cornerRadius: 25.0).path(in: rect)
+            case .rectangle: return Rectangle().path(in: rect)
+            case .diamond: return Diamond().path(in: rect)
             }
         }
     }
@@ -93,32 +116,32 @@ struct SwiftUIImages: View {
     var body: some View {
         //shape choices here:
         // https://developer.apple.com/documentation/swiftui/shape#relationships
-       
+        
         VStack{
             Spacer()
             
             ZStack{
                 withAnimation {
-                   
-                image.colorMultiply(color)
-                    .overlay(ImageOverlay(), alignment: .center)
-                    .clipShape(shape)
-                    .contrast(imgContrast)
-                    .modifier(rotationStyle(angle: angle))
-                    .saturation(saturation)
-                    .scaleEffect(scale)
-                    .offset(x: CGFloat(xOffset))
                     
-                    .if(inverse) {
-                        view in
-                                    // We only apply this background color if shouldApplyBackground is true
-                        view.colorInvert()
-                    }
+                    image.colorMultiply(color)
+                        .overlay(ImageOverlay(), alignment: .center)
+                        .clipShape(shape)
+                        .contrast(imgContrast)
+                        .modifier(rotationStyle(angle: angle))
+                        .saturation(saturation)
+                        .scaleEffect(scale)
+                        .offset(x: CGFloat(xOffset))
+                        
+                        .if(inverse) {
+                            view in
+                            // We only apply this background color if shouldApplyBackground is true
+                            view.colorInvert()
+                        }
                 }
             }
             
             Picker("Shape Type: ",selection: $shape){
-        
+                
                 ForEach(ShapeType.allCases, id: \.self){shapeType in
                     Text(shapeType.rawValue)
                 }
@@ -127,9 +150,9 @@ struct SwiftUIImages: View {
             Spacer()
             
             Menu("Actions"){
-        
+                
                 Section{
-
+                    
                     Button(){
                         
                         //"response" actually means "duration" here,
@@ -149,7 +172,7 @@ struct SwiftUIImages: View {
                         Text("Reset")
                     }
                 }
-                 
+                
                 Section{
                     Button(){
                         withAnimation {
@@ -262,7 +285,7 @@ struct SwiftUIImages: View {
                 
             }
             .font(.custom("Helvetica", size: 20))
-
+            
             Spacer()
             
         }.navigationBarTitle("Images", displayMode: .inline)
@@ -289,7 +312,7 @@ struct Diamond: Shape{
         let pointTop = CGPoint(x: size, y: 0.0)
         let pointRight = CGPoint(x: size*2.0, y: size)
         let pointBottom = CGPoint(x: size, y: size*2.0)
-    
+        
         path.move(to: pointLeft)
         path.addLine(to: pointTop)
         path.addLine(to: pointRight)

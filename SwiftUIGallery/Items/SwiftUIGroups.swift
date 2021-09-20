@@ -1,9 +1,31 @@
-//
-//  SwiftUIGroups.swift
-//  SwiftUIGallery
-//
-//  Created by mike on 9/1/21.
-//
+/*
+ MIT License
+ 
+ Copyright (c) 2021 Mike Smithwick
+ 
+ Permission is hereby granted, free of charge,
+ to any person obtaining a copy of this software
+ and associated documentation files (the "Software"),
+ to deal in the Software without restriction,
+ including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit
+ persons to whom the Software is furnished to do so,
+ subject to the following conditions:
+ 
+ The above copyright notice and this permission notice
+ shall be included in all copies or substantial portions
+ of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+ USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
 
 import SwiftUI
 
@@ -11,9 +33,9 @@ struct SwiftUIGroups: View {
     @State var isProfileExpanded = false
     @State var rotation: Double = 0.0
     @State var stepperValue: Int = 0
-
+    
     let flights: [Flight] = Flight.flights
-
+    
     var body: some View {
         Form {
             Section(header: Text("Plain Group")){
@@ -42,7 +64,7 @@ struct SwiftUIGroups: View {
                     Text("Mercury")
                         .font(.headline)
                 }
-            
+                
                 DisclosureGroup {
                     Text("GT-3")
                     Text("GT-4")
@@ -83,7 +105,7 @@ struct SwiftUIGroups: View {
                         .font(.headline)
                 }
             }
-                
+            
             Section(header: Text("Disclosure Group with Controls")){
                 DisclosureGroup{
                     Toggle("Toggle", isOn: .constant(true))
@@ -108,7 +130,7 @@ struct SwiftUIGroups: View {
                     
                     Link("🔗  Distant Suns trailer",
                          destination: URL(string: "https://www.youtube.com/watch?v=2zeN63hZaFQ")!).font(.system(size: 20.0,weight:.light))
-
+                    
                     Stepper("Stepper: \(stepperValue)", value: $stepperValue)
                     
                     Form{
@@ -145,14 +167,13 @@ struct SwiftUIGroups: View {
 
 struct flightsList: View{
     let flights: [Flight] = Flight.flights
-
+    
     var body: some View{
         OutlineGroup(flights, children: \.children) {
             Text($0.title)
         }
     }
 }
-
 
 struct SwiftUIGroups_Previews: PreviewProvider {
     static var previews: some View {
