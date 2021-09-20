@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct SwiftUIDragGesture: View {
+    @State private var location: CGPoint = CGPoint(x: 50, y: 50)
+    
+    var simpleDrag: some Gesture {
+        DragGesture()
+            .onChanged { value in
+                self.location = value.location
+            }
+    }
+    
     var body: some View {
-        Text("Hello, SwiftUIDragGesture!")
+        ZStack{
+            Text("Drag")
+            Image("Ragdoll")
+                .frame(width: 300, height: 300)
+                .shadow(color: Color.black.opacity(0.8),radius: 9, x: 4, y: 4)
+                .position(location)
+                .gesture(
+                    simpleDrag
+                )
+        }
+        
     }
 }
 

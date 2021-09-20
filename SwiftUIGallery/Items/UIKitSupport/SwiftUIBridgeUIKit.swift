@@ -11,7 +11,7 @@ struct testUIView: UIViewControllerRepresentable {
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<testUIView>) -> SwiftUIHostingViewController {
         let uivc = SwiftUIHostingViewController()
-        uivc.view.backgroundColor=UIColor(red: 0.8, green: 0.8, blue: 1.0, alpha: 1.0)
+        uivc.view.backgroundColor=UIColor(red: 0.2, green: 0.8, blue: 0.4, alpha: 1.0)
         return uivc
     }
 
@@ -58,26 +58,7 @@ struct bridgeButton: View {
         }
     }
 }
-//struct toggles: View
-//{
-//    @Binding var isToggledOn: Bool
-//    var title: String = ""
-//
-//    init(isOn: Binding<Bool>){
-//        _isToggledOn=isOn
-//    }
-//
-//    var body: some  View
-//    {
-//        HStack{
-//            Toggle("Toggle Me First!", isOn: $isToggledOn)
-//        }
-//
-//        HStack{
-//            Toggle("Toggle Me Second!", isOn: $isToggledOn)
-//        }
-//    }
-//}
+
 struct SwiftUIBridgeUIKit_Previews: PreviewProvider {
     static var previews: some View {
         SwiftUIBridgeUIKit()

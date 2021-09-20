@@ -19,6 +19,22 @@ struct SwiftUIGestureManager: View {
                     .tabItem {
                         Label("Rotation", systemImage: "rotate.left")
                     }
+                
+                SwiftUILongPressGesture()
+                    .tabItem {
+                        Label("Long Press", systemImage: "arrow.down")
+                    }
+                
+                SwiftUIDragGesture()
+                    .tabItem {
+                        Label("Drag", systemImage: "arrow.swap")
+                    }
+                
+                SwiftUICompoundGestures()
+                    .tabItem {
+                        Label("Drag/Press", systemImage: "plus.square")
+                    }
+                
             }.navigationBarTitle("Tabs", displayMode: .inline)
         }
 }

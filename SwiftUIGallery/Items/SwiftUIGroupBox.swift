@@ -12,7 +12,7 @@ struct missionStyle: ViewModifier
     func body(content: Content)->some View
     {
         return content
-            .foregroundColor(.black)
+//            .foregroundColor(.gray)
             .frame(width: 250, alignment:.leading)
     }
 }
@@ -20,7 +20,7 @@ struct missionStyle: ViewModifier
 struct SwiftUIGroupBox: View {
     
     let allMissions = AllMissions().missions
-
+    
     var body: some View {
 
         ScrollView{
@@ -40,16 +40,16 @@ struct groupBox: View{
     var body: some View{
         GroupBox(label:Text(mission.name)){
             HStack{
-                Image(mission.patch).resizable().frame(width:64,height:64,alignment:.center).shadow(color:.black,radius:10,x: 5,y:5)
+                Image(mission.patch).resizable().frame(width:64,height:64,alignment:.center).shadow(color:.gray,radius:10,x: 5,y:5)
                 Spacer()
                 Divider()
                 VStack(){
-                    Text(mission.missionDescription).foregroundColor(.black).modifier(missionStyle())
+                    Text(mission.missionDescription).foregroundColor(.gray).modifier(missionStyle())
 
                     Divider()
 
-                    Text(mission.crew).foregroundColor(.black).modifier(missionStyle())
-                    Text(mission.date).foregroundColor(.black).modifier(missionStyle())
+                    Text(mission.crew).modifier(missionStyle())
+                    Text(mission.date).modifier(missionStyle())
                 }
             }
         }.navigationBarTitle("GroupBox", displayMode: .inline)

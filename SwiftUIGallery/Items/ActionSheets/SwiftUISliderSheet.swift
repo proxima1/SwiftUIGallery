@@ -2,7 +2,7 @@
 //  SwiftUISliderSheet.swift
 //  SwiftUIGallery
 //
-//  Created by mike on 9/3/21.
+//  Created by mike smithwick, on 9/3/21.
 //
 
 import SwiftUI

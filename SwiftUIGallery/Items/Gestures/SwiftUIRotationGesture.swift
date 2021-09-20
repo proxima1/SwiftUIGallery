@@ -18,10 +18,18 @@ struct SwiftUIRotationGesture: View {
     }
     
     var body: some View {
-        Image("Ragdoll")
-            .frame(width: 1000, height: 1000, alignment: .center)
-            .rotationEffect(self.angle)
-            .gesture(rotation)
+        VStack{
+            Spacer()
+            Text("Rotation (pinch/rotate)")
+                .rotationEffect(self.angle)
+                .gesture(rotation)
+            Spacer()
+            Image("Ragdoll")
+                .frame(width: 300, height: 300, alignment: .center)
+                .rotationEffect(self.angle)
+                .gesture(rotation)
+            Spacer()
+        }
     }
 }
 

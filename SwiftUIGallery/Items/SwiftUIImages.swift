@@ -67,6 +67,7 @@ struct SwiftUIImages: View {
         case diamond = "Diamond"
 
         func path(in rect: CGRect) -> Path {
+            
             switch self {
                 case .circle: return Circle().path(in: rect)
                 case .ellipse: return Ellipse().path(in: rect)
@@ -94,6 +95,8 @@ struct SwiftUIImages: View {
         // https://developer.apple.com/documentation/swiftui/shape#relationships
        
         VStack{
+            Spacer()
+            
             ZStack{
                 withAnimation {
                    
@@ -105,6 +108,7 @@ struct SwiftUIImages: View {
                     .saturation(saturation)
                     .scaleEffect(scale)
                     .offset(x: CGFloat(xOffset))
+                    
                     .if(inverse) {
                         view in
                                     // We only apply this background color if shouldApplyBackground is true
@@ -114,10 +118,13 @@ struct SwiftUIImages: View {
             }
             
             Picker("Shape Type: ",selection: $shape){
+        
                 ForEach(ShapeType.allCases, id: \.self){shapeType in
                     Text(shapeType.rawValue)
                 }
             }.pickerStyle(WheelPickerStyle())
+            
+            Spacer()
             
             Menu("Actions"){
         
@@ -255,10 +262,9 @@ struct SwiftUIImages: View {
                 
             }
             .font(.custom("Helvetica", size: 20))
-            
 
             Spacer()
-            Spacer()
+            
         }.navigationBarTitle("Images", displayMode: .inline)
     }
 }
@@ -268,8 +274,6 @@ struct HiggsImage: View{
     {
         Image("Ragdoll")
             .resizable()
-//            .scaledToFit()
-//            .clipShape(Circle())        //circle(), rectangle()
             .aspectRatio(contentMode: .fill)
             .saturation(0.3)
             .frame(width: 250.0, height: 300.0, alignment: .center)

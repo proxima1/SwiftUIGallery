@@ -15,8 +15,6 @@ class SwiftUIHostingViewController: UIViewController {
         super.viewDidLoad()
         
         apolloButton!.frame=CGRect(x:40,y:40,width:80,height:80)
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func buttonAction(_ sender: Any) {

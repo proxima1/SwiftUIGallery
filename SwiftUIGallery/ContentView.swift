@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-////////////////////////////////////////////////////
-
 struct menuItem : View
 {
 	var title : String
@@ -61,7 +59,6 @@ var _menuItems: [menuItem] = [menuItem(title: "Buttons", imageName: "arrow.up", 
                               menuItem(title: "Shapes", 	imageName: "clock", 		color: .green,  navTarget: AnyView(SwiftUIShapes())),
                               menuItem(title: "Sheets and Alerts",     imageName: "paperplane", color: Color("AccentColor"),  navTarget: AnyView(SwiftUISheetsAndAlerts())),
                               menuItem(title: "Sliders", imageName: "cloud", 			color: Color("DarkRed"),  navTarget: AnyView(SwiftUISliders())),
-                              menuItem(title: "Stacks",     imageName: "doc.circle.fill", color: Color("AccentColor"),  navTarget: AnyView(SwiftUIStacks())),
                               menuItem(title: "Steppers",     imageName: "person.fill.and.arrow.left.and.arrow.right", color: .orange,  navTarget: AnyView(SwiftUISteppers())),
                               menuItem(title: "Tabs", imageName: "calendar.circle",     color: Color("DarkRed"),  navTarget: AnyView(SwiftUITabs())),
                               menuItem(title: "Text",     imageName: "paperplane", color: .purple,  navTarget: AnyView(SwiftUIText())),
@@ -70,34 +67,30 @@ var _menuItems: [menuItem] = [menuItem(title: "Buttons", imageName: "arrow.up", 
                               menuItem(title: "Toolbars", imageName: "message",     color: Color("DarkPurple"),  navTarget: AnyView(SwiftUIToolbars())),
                               menuItem(title: "ViewBuilder", imageName: "message",     color: Color("DustyBlue"),  navTarget: AnyView(SwiftUIViewBuilder())),
                               menuItem(title: "UIKitBridge", imageName: "calendar.circle",     color: Color("AccentColor"),  navTarget: AnyView(SwiftUIBridgeUIKit())),
-
-
 ]
 
 struct ContentView: View
 {
     var uiHostingView = SwiftUIHostingViewController()
     
-	var body: some View
-	{
-		NavigationView(){
-
-			List(_menuItems, children: \.children) { item in
-				
-				if item.children == nil {
-					navMenuItemView(menuItem:item)
-				}
-				else{
-					item.onTapGesture {
-						print("Show details for user")
-					}
-				}
+    var body: some View
+    {
+        NavigationView(){
+            
+            List(_menuItems, children: \.children) { item in
+                
+                if item.children == nil {
+                    navMenuItemView(menuItem:item)
+                }
+                else{
+                    item.onTapGesture {
+                        print("Show details for user")
+                    }
+                }
             }.navigationTitle("SwiftUI HouseParty!")
         }
     }
 }
-
-//public struct NavigationLink<Label, Destination> : View where Label : View, Destination : View {
 
 struct navMenuItemView : View
 {

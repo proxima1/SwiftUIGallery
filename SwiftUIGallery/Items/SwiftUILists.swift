@@ -43,19 +43,16 @@ import SwiftUI
 
 struct customMenuItem : View
 {
-//    var id: ObjectIdentifier
-    
     static func == (lhs: customMenuItem, rhs: customMenuItem) -> Bool {
         false           //just to keep the compiler happy
     }
     
     var title : String
     var imageName: String
-    var color: Color
+    var color = Color.gray
     var description : String = "Put long winded description here"
     var navTarget: AnyView
     var children: [customMenuItem]?=nil
-    
     
     var body: some View
     {
@@ -64,11 +61,11 @@ struct customMenuItem : View
             HStack
             {
                 Image(imageName).resizable().frame(width:30,height:30,alignment:.leading)
-                Text(title).foregroundColor(color).font(.title)
+                Text(title).foregroundColor(Color.green).font(.title)
             }.frame(maxWidth: .infinity, alignment: .leading)
             .contentShape(Rectangle())
             
-            Text(description).foregroundColor(.black).font(.subheadline).frame(maxWidth: .infinity, alignment: .leading)
+            Text(description).foregroundColor(.gray).font(.subheadline).frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 }
@@ -91,7 +88,7 @@ struct _customMenu
         {
             var menuItem = customMenuItem( title: mission.name,  imageName: mission.patch,color: Color.green,  navTarget: AnyView(MissionCard(mission: mission)))
             menuItem.description=mission.missionDescription
-            
+
             customMenuList.append(menuItem)
         }
     }
@@ -99,9 +96,6 @@ struct _customMenu
 
 struct SwiftUILists: View
 {
-//    let apolloPatches = ApolloPatches().apolloPatches
-
-//    let apolloPatches = _customMenu().apolloPatches
     let customMenuList = _customMenu().customMenuList
     
     var body: some View

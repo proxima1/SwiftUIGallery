@@ -10,19 +10,25 @@ import SwiftUI
 struct SwiftUIMagnifyGesture: View {
     
     @State private var currentAmount: CGFloat = 0
-//    @State private var finalAmount: CGFloat = 1
-//    @State private var isPressed = false
-
-//    @GestureState private var longPressTap = false
-
     @GestureState var scale: CGFloat = 1.0
-//    @State private var isUnlocked = false
     
     var body: some View {
         VStack {
+            Spacer()
+            Text("Magnification (pinch)")
+                .scaleEffect(scale)
+                .gesture(MagnificationGesture()
+                        .updating($scale, body: { (value, scale, trans) in
+                            scale = value.magnitude
+                        })
+                        .onChanged { amount in
+                            self.currentAmount = amount - 1
+                            print("Text: onChange")
+                        })
+            Spacer()
             Image("Ragdoll")
                 .resizable()
-                .scaledToFill()
+                .scaledToFit()
                 .frame(width: UIScreen.main.bounds.width, height: 200, alignment: .center)
                 .scaleEffect(scale)
                 .gesture(MagnificationGesture()
@@ -34,6 +40,7 @@ struct SwiftUIMagnifyGesture: View {
                                 print("onChange")
                             }
                 )
+            Spacer()
         }
     }
 }
