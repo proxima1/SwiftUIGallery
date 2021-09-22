@@ -14,6 +14,7 @@
 		CE064DFB26F175D600F3F52A /* SwiftUIDragGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFA26F175D500F3F52A /* SwiftUIDragGesture.swift */; };
 		CE064DFD26F175EB00F3F52A /* SwiftUICompoundGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFC26F175EB00F3F52A /* SwiftUICompoundGestures.swift */; };
 		CE064DFF26F5679D00F3F52A /* SwiftUITabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFE26F5679D00F3F52A /* SwiftUITabs.swift */; };
+		CE1765C126F94CE000DC1C10 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE1765C026F94CE000DC1C10 /* readme.txt */; };
 		CE2A6C7E26D0716C003CDA36 /* SwiftUILabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */; };
 		CE2A85CE26EAA498001D4C69 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85CA26EAA498001D4C69 /* Badge.swift */; };
 		CE2A85CF26EAA498001D4C69 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85CB26EAA498001D4C69 /* BadgeBackground.swift */; };
@@ -27,7 +28,6 @@
 		CE2A85DD26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85DC26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift */; };
 		CE31F73A26B0C44C00C30C68 /* SwiftUIMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */; };
 		CE3328F526E182F600D12F3D /* SwiftUISheetsAndAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3328F426E182F600D12F3D /* SwiftUISheetsAndAlerts.swift */; };
-		CE3328F726E1869D00D12F3D /* SwiftUIActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3328F626E1869D00D12F3D /* SwiftUIActionSheet.swift */; };
 		CE37F9352543B26D0068AF33 /* SwiftUISliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */; };
 		CE37F9442543B3730068AF33 /* SwiftUIToggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F9432543B3730068AF33 /* SwiftUIToggles.swift */; };
 		CE37F9492543B4160068AF33 /* SwiftUIImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F9482543B4160068AF33 /* SwiftUIImages.swift */; };
@@ -94,6 +94,7 @@
 		CE064DFA26F175D500F3F52A /* SwiftUIDragGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDragGesture.swift; sourceTree = "<group>"; };
 		CE064DFC26F175EB00F3F52A /* SwiftUICompoundGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICompoundGestures.swift; sourceTree = "<group>"; };
 		CE064DFE26F5679D00F3F52A /* SwiftUITabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUITabs.swift; sourceTree = "<group>"; };
+		CE1765C026F94CE000DC1C10 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILabels.swift; sourceTree = "<group>"; };
 		CE2A85CA26EAA498001D4C69 /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		CE2A85CB26EAA498001D4C69 /* BadgeBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
@@ -107,7 +108,6 @@
 		CE2A85DC26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBridgeUIKit.swift; sourceTree = "<group>"; };
 		CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMenu.swift; sourceTree = "<group>"; };
 		CE3328F426E182F600D12F3D /* SwiftUISheetsAndAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISheetsAndAlerts.swift; sourceTree = "<group>"; };
-		CE3328F626E1869D00D12F3D /* SwiftUIActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIActionSheet.swift; sourceTree = "<group>"; };
 		CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISliders.swift; sourceTree = "<group>"; };
 		CE37F9432543B3730068AF33 /* SwiftUIToggles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIToggles.swift; sourceTree = "<group>"; };
 		CE37F9482543B4160068AF33 /* SwiftUIImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImages.swift; sourceTree = "<group>"; };
@@ -219,7 +219,6 @@
 		CE3328F826E186BD00D12F3D /* ActionSheets */ = {
 			isa = PBXGroup;
 			children = (
-				CE3328F626E1869D00D12F3D /* SwiftUIActionSheet.swift */,
 				CE3328F426E182F600D12F3D /* SwiftUISheetsAndAlerts.swift */,
 			);
 			path = ActionSheets;
@@ -228,6 +227,7 @@
 		CE47272425421F6F00C27C3D = {
 			isa = PBXGroup;
 			children = (
+				CE1765C026F94CE000DC1C10 /* readme.txt */,
 				CE47272F25421F6F00C27C3D /* SwiftUIGallery */,
 				CE47274125421F7100C27C3D /* SwiftUIGalleryTests */,
 				CE47274C25421F7100C27C3D /* SwiftUIGalleryUITests */,
@@ -451,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1765C126F94CE000DC1C10 /* readme.txt in Resources */,
 				CE2A85DB26EAF09D001D4C69 /* SwiftUIHostingViewController.xib in Resources */,
 				CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */,
 				CE47273825421F7000C27C3D /* Preview Assets.xcassets in Resources */,
@@ -483,7 +484,6 @@
 				CED926CC26E00F2C0005F5BA /* SwiftUIGroups.swift in Sources */,
 				CE2A85CE26EAA498001D4C69 /* Badge.swift in Sources */,
 				CE2A6C7E26D0716C003CDA36 /* SwiftUILabels.swift in Sources */,
-				CE3328F726E1869D00D12F3D /* SwiftUIActionSheet.swift in Sources */,
 				CE2A85D326EAA71C001D4C69 /* HexagonParameters.swift in Sources */,
 				CE2A85D526EABC76001D4C69 /* SwiftUIViewBuilder.swift in Sources */,
 				CE2A85CF26EAA498001D4C69 /* BadgeBackground.swift in Sources */,
@@ -619,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -674,7 +674,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -694,7 +694,7 @@
 				DEVELOPMENT_TEAM = TPJ4QB3N7U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIGallery/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -716,7 +716,7 @@
 				DEVELOPMENT_TEAM = TPJ4QB3N7U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIGallery/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

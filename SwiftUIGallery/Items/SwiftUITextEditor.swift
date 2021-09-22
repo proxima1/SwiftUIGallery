@@ -1,5 +1,5 @@
-//
-//  SwiftUITextEditor.swift
+
+//  SwiftUITextEditor
 
 /*
  MIT License

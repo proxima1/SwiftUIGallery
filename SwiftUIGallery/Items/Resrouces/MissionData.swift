@@ -1,3 +1,5 @@
+//MissionoData: Reads in the Spacemissions.json
+
 /*
  MIT License
  
@@ -180,17 +182,14 @@ struct AllMissions
 {
     var missions : Missions?
     
-    init()
-    {
-        
+    init(){
         do {
             let path = Bundle.main.path(forResource: "Spacemissions.json", ofType:nil)
             
-            if  (path != nil)
-            {
+            if  (path != nil){
                 print("Got file: \(String(describing: path))")
             }
-                        
+            
             let result = try String(contentsOfFile: path!, encoding: .utf8)
             
             missions=try Missions(result)
@@ -198,19 +197,6 @@ struct AllMissions
         }catch let error {
             Swift.print ("Other cases: Error: \(error.localizedDescription)") // I like all other colors
         }
-  
-//        catch {
-//            print("error fetching json file")
-//        }
     }
 }
 
-//extension Bundle {
-//    func decode(_ file: String) -> [Mission] {
-//
-//
-//        guard let url = self.url(forResource: file, withExtension: nil) else {
-//            fatalError("Failed to locate \(file) in bundle.")
-//        }
-//    }
-//}

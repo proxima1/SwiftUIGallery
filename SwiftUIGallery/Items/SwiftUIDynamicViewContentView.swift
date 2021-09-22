@@ -1,3 +1,7 @@
+// SwiftUIDynamicViewContentView: the modifiable
+// list. Sweep an item left, and  "delete" item
+// shows
+
 /*
  MIT License
  
@@ -64,7 +68,8 @@ struct SwiftUIDynamicViewContentView: View {
         .navigationBarTitle("Moonwalkers", displayMode: .inline)
         .navigationBarItems(trailing: EditButton())
         
-        //        Go here to understand  this line:
+        // Go here to understand  this line used turn on the editing
+        // buttons on the left side of the list items
         //            https://medium.com/geekculture/swiftui-and-the-intermittent-editmode-b714c923f536
         .environment(\.editMode, $editMode) //#2
     }

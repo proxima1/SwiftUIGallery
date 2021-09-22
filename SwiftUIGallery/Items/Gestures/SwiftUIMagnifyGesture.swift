@@ -1,3 +1,7 @@
+// SwiftUIMagnifyGestures:
+//
+// handles the "magnify gesture", or Pinch to Zoom
+
 /*
  MIT License
  

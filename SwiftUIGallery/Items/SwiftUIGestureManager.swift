@@ -1,3 +1,5 @@
+// SwiftUIGestureManager: manages mulitple gestures. Duh.
+
 /*
  MIT License
  

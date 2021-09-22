@@ -1,5 +1,5 @@
-//
-//  SwiftUIToolbars.swift
+
+//  SwiftUIToolbars
 
 /*
  MIT License

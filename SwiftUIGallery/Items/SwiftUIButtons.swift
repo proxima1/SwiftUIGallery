@@ -1,3 +1,5 @@
+// SwiftUIButtons:
+
 /*
  MIT License
  
@@ -71,6 +73,14 @@ struct SwiftUIButtons: View {
                 
                 Spacer()
                 
+//                //just upgraded to iOS15/XC13 but this cannot find the
+//                //promised location button with this snippet
+//                //straight from Apples doc.
+//                LocationButton(.currentLocation) {
+//                  // Fetch location with Core Location.
+//                }
+//                .symbolVariant(.fill)
+//                .labelStyle(.titleAndIcon)
             }
         }.navigationTitle("Buttons")
     }

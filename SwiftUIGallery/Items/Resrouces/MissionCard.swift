@@ -1,3 +1,5 @@
+//MissionCard: displays the mission summary info
+
 /*
  MIT License
  

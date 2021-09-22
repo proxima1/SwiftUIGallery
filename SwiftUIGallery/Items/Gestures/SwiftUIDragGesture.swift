@@ -1,3 +1,5 @@
+//  SwiftUIDragGesture: touch and drag
+
 /*
  MIT License
  

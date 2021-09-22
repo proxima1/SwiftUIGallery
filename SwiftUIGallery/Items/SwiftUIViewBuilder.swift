@@ -1,5 +1,5 @@
-//
-//  SwiftUIViewBuilder.swift
+
+//  SwiftUIViewBuilder
 
 /*
  MIT License

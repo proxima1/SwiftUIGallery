@@ -1,3 +1,7 @@
+// SwiftUIRotationGesture:
+//
+// handles the "rotation gesture", or twisting two-fingers
+
 /*
  MIT License
  

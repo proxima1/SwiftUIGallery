@@ -1,3 +1,5 @@
+// SwiftUIMenu
+
 //
 //  SwiftUIMenu.swift
 //  SwiftUIGallery
@@ -47,11 +49,12 @@ struct SwiftUIMenu: View {
     let apolloPatches = ApolloPatches().apolloPatches
     
     var body: some View {
+        VStack{
+            
         Menu("Missions") {
             
             ForEach(apolloPatches.reversed(), id: \.self)
             {
-                
                 let patchName = $0
                 
                 Button(action:{
@@ -65,28 +68,23 @@ struct SwiftUIMenu: View {
         
         Text("Context Menu")
             .padding()
+            .padding()
             .contextMenu {
-                Button("♥️ - Hearts", action: selectHearts)
-                Button("♣️ - Clubs", action: selectClubs)
-                Button("♠️ - Spades", action: selectSpades)
-                Button("♦️ - Diamonds", action: selectDiamonds)
+                Button("🌑 - new moon", action: selectMoonPhase)
+                Button("🌒 - waxing cresent", action: selectMoonPhase)
+                Button("🌓 - first quarter", action: selectMoonPhase)
+                Button("🌔 - waxing gibbous", action: selectMoonPhase)
+                Button("🌕 - full", action: selectMoonPhase)
+                Button("🌖 - waning gibbous", action: selectMoonPhase)
+                Button("🌗 - last quarter", action: selectMoonPhase)
+                Button("🌘 - waning crescent", action: selectMoonPhase)
+                Button("🌚 - new moon", action: selectMoonPhase)
             }
+        }
     }
     
-    func selectHearts() {
-        print("Selecteed Hearts")
-    }
-    
-    func selectClubs() {
-        print("Selected Clubs")
-    }
-    
-    func selectSpades() {
-        print("Selected Spades")
-    }
-    
-    func selectDiamonds() {
-        print("Selected Diamonds")
+    func selectMoonPhase() {
+        print("Selecteed moon phase")
     }
 }
 

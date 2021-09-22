@@ -1,6 +1,5 @@
-//
+
 //  GalleryItem.swift
-//  SwiftUIGallery
 
 /*
  MIT License

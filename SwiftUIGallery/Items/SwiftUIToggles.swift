@@ -1,5 +1,5 @@
-//
-//  SwiftUIToggles.swift
+
+//  SwiftUIToggles
 
 /*
  MIT License

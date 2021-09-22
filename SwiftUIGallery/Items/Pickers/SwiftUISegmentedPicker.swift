@@ -1,3 +1,5 @@
+// SwiftUISegmentedPicker: like a tab control
+
 /*
  MIT License
  

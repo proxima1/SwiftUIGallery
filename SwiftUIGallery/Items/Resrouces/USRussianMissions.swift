@@ -1,3 +1,7 @@
+// USRussianMissions: static data for all US and Soviet
+// space missions. Simply a demo of using static vs json
+// or .plists
+
 /*
  MIT License
  

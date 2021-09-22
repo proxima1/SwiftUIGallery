@@ -1,3 +1,5 @@
+// SwiftUIColorPicker: creats the standartd color dialog
+
 /*
  MIT License
  

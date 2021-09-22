@@ -1,3 +1,5 @@
+// SwiftUIRadioButtons: Mac only. Stupid Mac.
+
 /*
  MIT License
  

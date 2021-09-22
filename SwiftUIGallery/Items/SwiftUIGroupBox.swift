@@ -1,3 +1,6 @@
+// SwiftUIGroupBox: Makes small "cards", similar
+// to custom list items
+
 /*
  MIT License
  

@@ -1,3 +1,8 @@
+
+// SwiftUIGeometryReader: demonstrates the use of
+// the GeometryReader for getting absolute values
+// of the drawing surface
+
 /*
  MIT License
  
