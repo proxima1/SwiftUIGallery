@@ -98,7 +98,7 @@ struct SwiftUIGroups: View {
                     Group{  //note that we have to break this up in two
                         //groups, as only 10 views at a time can
                         //be hosted together. A ViewBuilder constraint
-                        //but this doesn't visually show anything
+                        //but but is invisible
                         Text("Apollo 16")
                         Text("Apollo 17")
                     }

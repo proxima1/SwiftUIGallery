@@ -365,8 +365,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "127"
             endingLineNumber = "127"
-            landmarkName = "body"
-            landmarkType = "24">
+            landmarkName = "SwiftUILists"
+            landmarkType = "14">
             <Locations>
                <Location
                   uuid = "30B23212-27F9-4657-9D6F-E5D59062ECA1 - 3b50d3b45bb498fe"
@@ -413,8 +413,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "89"
             endingLineNumber = "89"
-            landmarkName = "body"
-            landmarkType = "24">
+            landmarkName = "customMenuItem"
+            landmarkType = "14">
             <Locations>
                <Location
                   uuid = "A42E7971-38ED-4B98-94ED-4F4C1893A70F - 3c7920f3724425a2"
@@ -898,10 +898,10 @@
             filePath = "SwiftUIGallery/Items/SwiftUIImages.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "302"
-            endingLineNumber = "302"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "310"
+            endingLineNumber = "310"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1170,8 +1170,8 @@
             filePath = "SwiftUIGallery/Items/SwiftUIImages.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -1222,6 +1222,38 @@
             endingLineNumber = "104"
             landmarkName = "ContentView"
             landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC2D02BA-C221-4584-87C2-81A15189C89E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIGallery/Items/Gestures/SwiftUICompoundGestures.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1977CB5D-F353-4575-80A2-DF619B1EA3EB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIGallery/Items/SwiftUIImages.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "init(angle:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

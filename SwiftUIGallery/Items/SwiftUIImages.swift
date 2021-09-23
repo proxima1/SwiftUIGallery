@@ -104,6 +104,10 @@ struct SwiftUIImages: View {
         }
     }
     
+    //register all of the attributs of Image, as $State vars.
+    //that way whenever one of those change from a menu or tumbler
+    //selection the image will be updated.
+    
     @State private var shape: ShapeType = .circle
     @State private var color: Color = .white        //normal
     @State private var image: HiggsImage = HiggsImage()
@@ -123,6 +127,9 @@ struct SwiftUIImages: View {
             Spacer()
             
             ZStack{
+                
+                //allows the updated attribute to animate.
+                
                 withAnimation {
                     
                     image.colorMultiply(color)
@@ -134,8 +141,9 @@ struct SwiftUIImages: View {
                         .scaleEffect(scale)
                         .offset(x: CGFloat(xOffset))
                         
-                        .if(inverse) {
-                            view in
+                        //uses a custom <if> (see above)
+                    
+                        .if(inverse) {                            view in
                             // We only apply this background color if shouldApplyBackground is true
                             view.colorInvert()
                         }

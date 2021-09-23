@@ -154,6 +154,8 @@ struct buttonWithCustomImage: View {
     var body: some View {
         Button(action:{
             print("Hit Button")
+            testIf()
+            
         })	{
             Image(imageName)
                 .resizable()
@@ -163,6 +165,10 @@ struct buttonWithCustomImage: View {
                 .frame(width:60, height:60,alignment:.center)
                 .shadow(color: Color.black.opacity(0.7),radius: 7, x: 5, y: 6)
         }
+    }
+    
+    func testIf(){
+        print("GotIf")
     }
 }
 
