@@ -269,7 +269,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "61"
                   endingLineNumber = "61"
-                  offsetFromSymbolStart = "1367">
+                  offsetFromSymbolStart = "992">
                </Location>
                <Location
                   uuid = "E2C674E7-B569-4290-9EA1-B2BECA3B2C58 - 96cfcc52f06c0bb6"
@@ -284,7 +284,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "61"
                   endingLineNumber = "61"
-                  offsetFromSymbolStart = "162">
+                  offsetFromSymbolStart = "172">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -900,8 +900,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "310"
             endingLineNumber = "310"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "HiggsImage"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1252,8 +1252,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
             endingLineNumber = "66"
-            landmarkName = "init(angle:)"
-            landmarkType = "7">
+            landmarkName = "rotationStyle"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

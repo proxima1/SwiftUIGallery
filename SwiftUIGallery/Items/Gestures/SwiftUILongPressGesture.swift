@@ -42,15 +42,17 @@ struct SwiftUILongPressGesture: View {
 
     @GestureState var scale: CGFloat = 1.0
     @State private var isUnlocked = false
-    
+    @State private var newScale: CGFloat = 1.0
+
     var body: some View {
         VStack{
                 Text("Long press")
                 Spacer()
+            
                 Image("Ragdoll")
                             .font(.system(size: 200))
                             .scaleEffect(isPressed ? 1.0 : 2.0)
-                            .animation(.easeInOut)
+                            .animation(.easeInOut,value:isPressed)
                             .opacity(longPressTap ? 0.4 : 1.0)
                             .foregroundColor(.green)
                             .gesture(
@@ -62,9 +64,10 @@ struct SwiftUILongPressGesture: View {
                                              self.isPressed.toggle()
                                          })
                             )
+            }
             Spacer()
         }
-    }
+//    }
 }
 
 struct SwiftUILongPressGesture_Previews: PreviewProvider {
