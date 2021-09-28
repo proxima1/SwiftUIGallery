@@ -97,7 +97,7 @@ struct simpleButton: View {
         }
     }
 }
-
+ 
 struct filledSimpleButton: View {
     var labelText: String
     
