@@ -72,6 +72,7 @@ struct SwiftUIButtons: View {
                 roundButtonWithCustomImage(imageName: "Compass.DistantSuns")
                 
                 Spacer()
+            
                 
 //                //just upgraded to iOS15/XC13 but this cannot find the
 //                //promised location button with this snippet
