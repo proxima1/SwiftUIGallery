@@ -26,7 +26,7 @@ Numerous sites helped me on this project
 
 This project contains short concise examples of most if not all of SwiftUI controls.
 
-![home screen](IMG_4216.jpeg) 
+![home screen](IMG_4219.jpeg) 
 
 What follows are various notes for each of the examples.
 
