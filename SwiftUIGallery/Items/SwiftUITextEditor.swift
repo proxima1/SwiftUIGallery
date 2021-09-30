@@ -41,13 +41,15 @@ struct SwiftUITextEditor: View {
     }
     
     var body: some View {
-        ZStack{
-            TextEditor(text: $someText)
-                .multilineTextAlignment(.center)
-                .background(Color(.sRGB,red:0.0,green:0.0,blue:0.6,opacity:1.0).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
-                .foregroundColor(Color(.sRGB,red:0.4,green:0.4,blue:1.0,opacity:1.0))
-                .font(.headline)
-        }.navigationBarTitle("Text Editor", displayMode: .inline)
+            VStack{
+                Spacer()
+                TextEditor(text: $someText)
+                    .multilineTextAlignment(.center)
+                    .background(Color(.sRGB,red:0.0,green:0.0,blue:0.6,opacity:1.0).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
+                    .foregroundColor(Color(.sRGB,red:0.4,green:0.4,blue:1.0,opacity:1.0))
+                    .font(.headline)
+            }.navigationBarTitle("Text Editor", displayMode: .inline)
+            .foregroundColor(.red)
     }
 }
 

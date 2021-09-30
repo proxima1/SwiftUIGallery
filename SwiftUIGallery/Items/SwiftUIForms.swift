@@ -106,24 +106,24 @@ struct menuPicker: View
         _apolloPatch=patch
     }
     
-    var body: some  View
-    {
+    var body: some  View{
+        
         Picker("Select Patch: ",selection: $apolloPatch){
             ForEach(apolloPatches, id: \.self){
-                
+
                 let tempText = Text($0)
                 let tempImage = Image($0).resizable().frame(width:20,height:20,alignment:.leading)
-                
+
                 HStack{
-                    tempImage
-                    tempText
+                    tempImage.frame(width: 30, height: 30, alignment: .center)
+                    tempText.padding(EdgeInsets(top:0, leading:20.0, bottom:0.0, trailing:10.0))
                 }
             }
         }.pickerStyle(MenuPickerStyle())
         
         HStack{
             Text("My favorite Apollo patch is \(apolloPatch)").foregroundColor(Color.red).fontWeight(.regular).font(.system(size: 15.0))
-            Image(apolloPatch).resizable().frame(width:20,height:20,alignment:.center)
+            Image(apolloPatch).resizable().frame(width:30,height:30,alignment:.center)
         }
     }
 }

@@ -35,6 +35,8 @@ import AVKit
 struct SwiftUIButtons: View {
     @State var newText:String = "(empty)"
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         VStack{
             
@@ -42,6 +44,8 @@ struct SwiftUIButtons: View {
             //it breaks seemingly at random.
             
             Group{
+                Text(colorScheme == .dark ? "In dark mode" : "In light mode")
+                
                 Spacer()
                 
                 simpleButton(labelText: "SimpleButton")
@@ -61,9 +65,6 @@ struct SwiftUIButtons: View {
             
             Group{
                 
-                buttonWithSystemImage(labelText: "Button with system image and text", imageName:"moon.stars.fill")
-                
-                Spacer()
                 
                 buttonWithCustomImage(imageName: "Compass.DistantSuns")
                 
@@ -73,7 +74,16 @@ struct SwiftUIButtons: View {
                 
                 Spacer()
             
+                buttonWithSystemImage(labelText: "Button with system image and text", imageName:"moon.stars.fill")
+
+                buttonWithCustomImageNoShadow(imageName: (colorScheme == .dark ? "ButtonWithAccessability.darkMode" : "ButtonWithAccessability.lightMode"))
                 
+                
+//                Spacer()
+                
+                Text("With \"Button Shapes\" in Accessibility active").fontWeight(.regular).font(.system(size: 15.0))
+                
+                Spacer()
 //                //just upgraded to iOS15/XC13 but this cannot find the
 //                //promised location button with this snippet
 //                //straight from Apples doc.
@@ -165,6 +175,32 @@ struct buttonWithCustomImage: View {
                 .scaledToFill()
                 .frame(width:60, height:60,alignment:.center)
                 .shadow(color: Color.black.opacity(0.7),radius: 7, x: 5, y: 6)
+        }
+    }
+    
+    func testIf(){
+        print("GotIf")
+    }
+}
+
+struct buttonWithCustomImageNoShadow: View {
+    
+    //image is in assets
+    
+    var imageName: String
+    
+    var body: some View {
+        Button(action:{
+            print("Hit Button")
+            testIf()
+            
+        })    {
+            Image(imageName)
+                .resizable()
+                .foregroundColor(.blue)
+                .opacity(1.0)
+                .scaledToFill()
+                .frame(width:60, height:60,alignment:.center)
         }
     }
     

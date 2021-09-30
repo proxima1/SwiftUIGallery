@@ -56,7 +56,7 @@ struct SwiftUIInlinePicker: View {
 							
 							let patchName = apolloPatches[$0]
 							let tempText = Text(patchName)
-							let tempImage = Image(patchName).resizable().frame(width:20,height:20,alignment:.leading)
+							let tempImage = Image(patchName).resizable().frame(width:30,height:30,alignment:.leading)
 
 							HStack{
 								tempImage

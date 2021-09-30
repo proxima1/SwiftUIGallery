@@ -14,6 +14,7 @@
 		CE064DFB26F175D600F3F52A /* SwiftUIDragGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFA26F175D500F3F52A /* SwiftUIDragGesture.swift */; };
 		CE064DFD26F175EB00F3F52A /* SwiftUICompoundGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFC26F175EB00F3F52A /* SwiftUICompoundGestures.swift */; };
 		CE064DFF26F5679D00F3F52A /* SwiftUITabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFE26F5679D00F3F52A /* SwiftUITabs.swift */; };
+		CE1734A7270408F20099F2AA /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = CE1734A6270408F20099F2AA /* Readme.md */; };
 		CE2A6C7E26D0716C003CDA36 /* SwiftUILabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */; };
 		CE2A85CE26EAA498001D4C69 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85CA26EAA498001D4C69 /* Badge.swift */; };
 		CE2A85CF26EAA498001D4C69 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85CB26EAA498001D4C69 /* BadgeBackground.swift */; };
@@ -50,6 +51,10 @@
 		CE6C3F0C26BCB29A002C5778 /* SwiftUILinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */; };
 		CE74F3AA268FD6FE0058A8FC /* MissionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F3A9268FD6FE0058A8FC /* MissionData.swift */; };
 		CE85B2A026E8920D00DDDA76 /* SwiftUILazyGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85B29F26E8920C00DDDA76 /* SwiftUILazyGrids.swift */; };
+		CE8C1A972705474C003C1092 /* IMG_4222.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8C1A932705474C003C1092 /* IMG_4222.jpeg */; };
+		CE8C1A982705474C003C1092 /* IMG_4219.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8C1A942705474C003C1092 /* IMG_4219.jpeg */; };
+		CE8C1A992705474C003C1092 /* IMG_4220.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8C1A952705474C003C1092 /* IMG_4220.jpeg */; };
+		CE8C1A9A2705474C003C1092 /* IMG_4223.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8C1A962705474C003C1092 /* IMG_4223.jpeg */; };
 		CE8E0CAB26CC953700D2142C /* SwiftUIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */; };
 		CE8E0CAE26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */; };
 		CEA1A9EE26CF22AF0083D21D /* SwiftUIToolbars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */; };
@@ -93,6 +98,7 @@
 		CE064DFA26F175D500F3F52A /* SwiftUIDragGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDragGesture.swift; sourceTree = "<group>"; };
 		CE064DFC26F175EB00F3F52A /* SwiftUICompoundGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICompoundGestures.swift; sourceTree = "<group>"; };
 		CE064DFE26F5679D00F3F52A /* SwiftUITabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUITabs.swift; sourceTree = "<group>"; };
+		CE1734A6270408F20099F2AA /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILabels.swift; sourceTree = "<group>"; };
 		CE2A85CA26EAA498001D4C69 /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		CE2A85CB26EAA498001D4C69 /* BadgeBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
@@ -135,6 +141,10 @@
 		CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUILinks.swift; sourceTree = "<group>"; };
 		CE74F3A9268FD6FE0058A8FC /* MissionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MissionData.swift; path = SwiftUIGallery/Items/Resrouces/MissionData.swift; sourceTree = SOURCE_ROOT; };
 		CE85B29F26E8920C00DDDA76 /* SwiftUILazyGrids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILazyGrids.swift; sourceTree = "<group>"; };
+		CE8C1A932705474C003C1092 /* IMG_4222.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4222.jpeg; sourceTree = "<group>"; };
+		CE8C1A942705474C003C1092 /* IMG_4219.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4219.jpeg; sourceTree = "<group>"; };
+		CE8C1A952705474C003C1092 /* IMG_4220.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4220.jpeg; sourceTree = "<group>"; };
+		CE8C1A962705474C003C1092 /* IMG_4223.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4223.jpeg; sourceTree = "<group>"; };
 		CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIText.swift; sourceTree = "<group>"; };
 		CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDynamicViewContentView.swift; sourceTree = "<group>"; };
 		CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIToolbars.swift; sourceTree = "<group>"; };
@@ -245,6 +255,11 @@
 		CE47272F25421F6F00C27C3D /* SwiftUIGallery */ = {
 			isa = PBXGroup;
 			children = (
+				CE8C1A942705474C003C1092 /* IMG_4219.jpeg */,
+				CE8C1A952705474C003C1092 /* IMG_4220.jpeg */,
+				CE8C1A932705474C003C1092 /* IMG_4222.jpeg */,
+				CE8C1A962705474C003C1092 /* IMG_4223.jpeg */,
+				CE1734A6270408F20099F2AA /* Readme.md */,
 				CE47273225421F6F00C27C3D /* ContentView.swift */,
 				CE47278225426ACD00C27C3D /* Items */,
 				CE47275F2542354600C27C3D /* GalleryItemList.swift */,
@@ -448,10 +463,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8C1A972705474C003C1092 /* IMG_4222.jpeg in Resources */,
 				CE2A85DB26EAF09D001D4C69 /* SwiftUIHostingViewController.xib in Resources */,
 				CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */,
+				CE1734A7270408F20099F2AA /* Readme.md in Resources */,
 				CE47273825421F7000C27C3D /* Preview Assets.xcassets in Resources */,
+				CE8C1A982705474C003C1092 /* IMG_4219.jpeg in Resources */,
+				CE8C1A9A2705474C003C1092 /* IMG_4223.jpeg in Resources */,
 				CE47273525421F7000C27C3D /* Assets.xcassets in Resources */,
+				CE8C1A992705474C003C1092 /* IMG_4220.jpeg in Resources */,
 				CEB3016C269E51EE007C4479 /* Spacemissions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
