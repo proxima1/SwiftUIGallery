@@ -14,7 +14,6 @@
 		CE064DFB26F175D600F3F52A /* SwiftUIDragGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFA26F175D500F3F52A /* SwiftUIDragGesture.swift */; };
 		CE064DFD26F175EB00F3F52A /* SwiftUICompoundGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFC26F175EB00F3F52A /* SwiftUICompoundGestures.swift */; };
 		CE064DFF26F5679D00F3F52A /* SwiftUITabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFE26F5679D00F3F52A /* SwiftUITabs.swift */; };
-		CE1734A7270408F20099F2AA /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = CE1734A6270408F20099F2AA /* Readme.md */; };
 		CE2A6C7E26D0716C003CDA36 /* SwiftUILabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */; };
 		CE2A85CE26EAA498001D4C69 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85CA26EAA498001D4C69 /* Badge.swift */; };
 		CE2A85CF26EAA498001D4C69 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85CB26EAA498001D4C69 /* BadgeBackground.swift */; };
@@ -98,7 +97,6 @@
 		CE064DFA26F175D500F3F52A /* SwiftUIDragGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDragGesture.swift; sourceTree = "<group>"; };
 		CE064DFC26F175EB00F3F52A /* SwiftUICompoundGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICompoundGestures.swift; sourceTree = "<group>"; };
 		CE064DFE26F5679D00F3F52A /* SwiftUITabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUITabs.swift; sourceTree = "<group>"; };
-		CE1734A6270408F20099F2AA /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Readme.md; path = SwiftUIGallery/Readme.md; sourceTree = "<group>"; };
 		CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILabels.swift; sourceTree = "<group>"; };
 		CE2A85CA26EAA498001D4C69 /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		CE2A85CB26EAA498001D4C69 /* BadgeBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 		CE47272425421F6F00C27C3D = {
 			isa = PBXGroup;
 			children = (
-				CE1734A6270408F20099F2AA /* Readme.md */,
 				CE47272F25421F6F00C27C3D /* SwiftUIGallery */,
 				CE47274125421F7100C27C3D /* SwiftUIGalleryTests */,
 				CE47274C25421F7100C27C3D /* SwiftUIGalleryUITests */,
@@ -468,7 +465,6 @@
 				CE8C1A9F27056BD5003C1092 /* IMG_4220.jpeg in Resources */,
 				CE2A85DB26EAF09D001D4C69 /* SwiftUIHostingViewController.xib in Resources */,
 				CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */,
-				CE1734A7270408F20099F2AA /* Readme.md in Resources */,
 				CE47273825421F7000C27C3D /* Preview Assets.xcassets in Resources */,
 				CE8C1A982705474C003C1092 /* IMG_4219.jpeg in Resources */,
 				CE47273525421F7000C27C3D /* Assets.xcassets in Resources */,
