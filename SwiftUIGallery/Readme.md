@@ -26,7 +26,7 @@ Numerous sites helped me on this project
 
 This project contains short concise examples of most if not all of SwiftUI controls.
 
-![home screen](IMG_4216.jpeg) 
+![home screen](IMG_4219.jpeg) 
 
 What follows are various notes for each of the examples.
 
@@ -72,6 +72,8 @@ What follows are various notes for each of the examples.
 	1. Another complicated item that has become a pleasure to use.
 	2. Pickers are more abstracted then in UIKit as they merely offer another means to a list of possible mutually exclusive choices. Then you can select what type of picker to use, virtually seamlessly.
 	3. The menu-picker style seems to be a menu in most if not all ways. Not quite sure what the difference really is.
+ ![Tumbler Picker](IMG_4220.jpeg) 
+   
 5. ProgressView
 	1. Nice example here of basic Combine interaction and use of the timer   
 	2. Thanks to: https://serialcoder.dev/text-tutorials/swiftui/progressview-in-swiftui/
@@ -82,14 +84,18 @@ What follows are various notes for each of the examples.
 7.	Slider
 	1. Yet another good Combine example and the type of thing it was designed for: Allowing n arbitrary number of objects needing to work/set the same data elements.
 	2. Saves so much work by not having to do notifications management. Especially the problem on keeping multiple controls synced with possible conflicting notification messages
-8.  	Tabview
+8.  Steppers
+    ![home screen](IMG_4222.jpeg) 
+9.  Tabview
 	1. Note that there is no support for tabviews along the top of the screen. 
-9.	@Viewbuilders
+10. Text
+    ![home screen](IMG_4223.jpeg) 
+10.	@Viewbuilders
 	1. Custom container used to create views out of many arbitrary subviews.
 	2. Has a standard init method which can have access to standard Swift code, making various decisions at that level ahead of the body definition
 	3. H/X/VStacks are Viewbuilders for example.
 	4. They take up to 10 subviews of any type and organize them vertically for a VStack, horizontally for an HStack, and Diagonally for a DStack.
-10. UIKit Integration
+11. UIKit Integration
 	1. Once of the many nice things about SwiftUI is that it can coexist with UIKit.
 		1. I've added two SwiftUI panes in Distant Suns, which is an unholy amalgam of C++/ObjC/Swift/UIKit/SwiftUI
 		2. However, going backwards with UIKit embedded in a SwiftUI View is a little more involved, but this example was kept simple
