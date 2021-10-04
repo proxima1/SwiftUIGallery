@@ -141,6 +141,7 @@
 		CE8C1A942705474C003C1092 /* IMG_4219.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4219.jpeg; sourceTree = "<group>"; };
 		CE8C1AA3270B9D24003C1092 /* IMG_4220.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4220.jpeg; sourceTree = "<group>"; };
 		CE8C1AA4270B9D24003C1092 /* IMG_4223.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4223.jpeg; sourceTree = "<group>"; };
+		CE8C1AA7270BA04E003C1092 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIText.swift; sourceTree = "<group>"; };
 		CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDynamicViewContentView.swift; sourceTree = "<group>"; };
 		CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIToolbars.swift; sourceTree = "<group>"; };
@@ -231,6 +232,7 @@
 		CE47272425421F6F00C27C3D = {
 			isa = PBXGroup;
 			children = (
+				CE8C1AA7270BA04E003C1092 /* Readme.md */,
 				CE8C1A942705474C003C1092 /* IMG_4219.jpeg */,
 				CE8C1A932705474C003C1092 /* IMG_4222.jpeg */,
 				CE8C1AA3270B9D24003C1092 /* IMG_4220.jpeg */,
