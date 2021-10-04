@@ -98,7 +98,7 @@
 		CE064DFA26F175D500F3F52A /* SwiftUIDragGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDragGesture.swift; sourceTree = "<group>"; };
 		CE064DFC26F175EB00F3F52A /* SwiftUICompoundGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICompoundGestures.swift; sourceTree = "<group>"; };
 		CE064DFE26F5679D00F3F52A /* SwiftUITabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUITabs.swift; sourceTree = "<group>"; };
-		CE1734A6270408F20099F2AA /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		CE1734A6270408F20099F2AA /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Readme.md; path = SwiftUIGallery/Readme.md; sourceTree = "<group>"; };
 		CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILabels.swift; sourceTree = "<group>"; };
 		CE2A85CA26EAA498001D4C69 /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		CE2A85CB26EAA498001D4C69 /* BadgeBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
@@ -235,6 +235,7 @@
 		CE47272425421F6F00C27C3D = {
 			isa = PBXGroup;
 			children = (
+				CE1734A6270408F20099F2AA /* Readme.md */,
 				CE47272F25421F6F00C27C3D /* SwiftUIGallery */,
 				CE47274125421F7100C27C3D /* SwiftUIGalleryTests */,
 				CE47274C25421F7100C27C3D /* SwiftUIGalleryUITests */,
@@ -259,7 +260,6 @@
 				CE8C1A932705474C003C1092 /* IMG_4222.jpeg */,
 				CE8C1A9B27056BD5003C1092 /* IMG_4220.jpeg */,
 				CE8C1A9D27056BD5003C1092 /* IMG_4223.jpeg */,
-				CE1734A6270408F20099F2AA /* Readme.md */,
 				CE47273225421F6F00C27C3D /* ContentView.swift */,
 				CE47278225426ACD00C27C3D /* Items */,
 				CE47275F2542354600C27C3D /* GalleryItemList.swift */,
