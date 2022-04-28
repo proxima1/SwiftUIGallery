@@ -257,8 +257,8 @@
 		CE47272F25421F6F00C27C3D /* SwiftUIGallery */ = {
 			isa = PBXGroup;
 			children = (
-				CE47273225421F6F00C27C3D /* ContentView.swift */,
 				CE47278225426ACD00C27C3D /* Items */,
+				CE47273225421F6F00C27C3D /* ContentView.swift */,
 				CE47275F2542354600C27C3D /* GalleryItemList.swift */,
 				CE47273025421F6F00C27C3D /* SwiftUIGalleryApp.swift */,
 				CE472767254237D800C27C3D /* GalleryItem.swift */,
