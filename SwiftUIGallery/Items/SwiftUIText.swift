@@ -28,9 +28,21 @@
  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
  USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
+ */
 
 import SwiftUI
+
+struct SectionTitle: ViewModifier
+{
+    func body(content: Content)->some View
+    {
+        return content
+            .shadow(color: Color.black.opacity(0.2), radius: 0.75, x: -1.5, y:-0.5)
+            .foregroundColor(Color(.red))
+            .fontWeight(.light)
+            .font(Font.custom("Futura", size: 15.0))
+    }
+}
 
 struct SwiftUIText: View {
     @State private var username = ""
@@ -40,7 +52,7 @@ struct SwiftUIText: View {
     var body: some View {
         VStack{
             Form{
-                Section(header: Text("Text"))
+                Section(header: Text("Text").modifier(SectionTitle()))
                 {
                     Text("Plain Text")
                     HStack{
@@ -54,6 +66,8 @@ struct SwiftUIText: View {
                         //                Text(verbatim: mission.name).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).font(.system(size: fontSize))
                     }
                     
+                    Text(verbatim:"Multiline (TBA): (ios16)").fontWeight(.medium).font(.system(size: 15.0))
+                    
                     HStack{
                         Text(verbatim:"semibold").fontWeight(.semibold).font(.system(size: 15.0))
                         Text(verbatim:"bold").fontWeight(.bold).font(.system(size: 15.0))
@@ -66,7 +80,6 @@ struct SwiftUIText: View {
                         Text(verbatim:"15").fontWeight(.regular).font(.system(size: 25.0))
                         Text(verbatim:"20").fontWeight(.regular).font(.system(size: 30.0))
                         Text(verbatim:"25").fontWeight(.regular).font(.system(size: 35.0))
-                        
                     }
                     
                     HStack{
@@ -92,7 +105,7 @@ struct SwiftUIText: View {
                     }
                 }
                 
-                Section(header: Text("Typefaces")){
+                Section(header: Text("Typefaces").modifier(SectionTitle())){
                     
                     Text(verbatim:"Helvetica Neue").font(.title3).foregroundColor(Color.black).multilineTextAlignment(.leading).opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/).blur(radius: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
                     Text(verbatim:"Ariel").fontWeight(.regular).font(.custom("Courier",size:20))
@@ -107,7 +120,7 @@ struct SwiftUIText: View {
                     Text(verbatim:"Papyrus").fontWeight(.regular).font(.custom("Papyrus",size:20)).foregroundColor(.blue)
                 }
                 
-                Section(header: Text("Styles")){
+                Section(header: Text("Styles").modifier(SectionTitle())){
                     Group{
                         Text(verbatim:"Large Title").fontWeight(.regular).font(.largeTitle)
                         Text(verbatim:"Title").fontWeight(.regular).font(.title)
@@ -129,7 +142,7 @@ struct SwiftUIText: View {
                     
                 }
                 
-                Section(header: Text("TextField")){
+                Section(header: Text("TextField").modifier(SectionTitle())){
                     TextField(
                         "User name (email address)",
                         text: $username
@@ -146,16 +159,59 @@ struct SwiftUIText: View {
                         .foregroundColor(isEditing ? .red : .blue)
                 }
                 
-                Section(header: Text("SecureField")){
-                    SecureField(
-                        "Password",
-                        text: $password
-                    )
+                Section(header: Text("SecureField").modifier(SectionTitle())){
+                    secureField()
+                }.border(Color(UIColor.separator))
+
+                Section(header: Text("Multiline").modifier(SectionTitle())){
+                    multiLineText()
                 }
-                
-                .border(Color(UIColor.separator))
             }
         }.padding(2.0).navigationBarTitle("Text", displayMode: .inline)
+    }
+}
+
+struct secureField: View {
+    @State private var password = ""
+
+    var body: some View {
+        SecureField(
+            "Password",
+            text: $password
+        )
+    }
+}
+
+struct secureFieldtest: View {
+    var title: String = ""
+
+    var body: some  View
+    {
+        VStack{
+                                Text("Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old")
+//                                Text("Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage")
+                                    .font(.callout)
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 300)
+                              
+        }
+    }
+}
+
+struct multiLineText: View
+{
+    var title: String = ""
+
+    var body: some  View
+    {
+        VStack{
+                                Text("Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old")
+//                                Text("Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage")
+                                    .font(.callout)
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 300)
+                              
+        }
     }
 }
 

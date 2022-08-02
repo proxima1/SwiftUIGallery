@@ -37,12 +37,17 @@ struct SwiftUIToggles: View {
     
     var body: some View {
         VStack {
-            Text("AA: Toggle Me First!")
+            Text("A: Toggle Me First!")
                 .foregroundColor(isToggled ? .green : .gray)
             Toggle("Toggle", isOn: $isToggled)
                 .labelsHidden()
             
-            Text("BB: Toggle Me Second!")
+            Text("B: Toggle Me Second!")
+                .foregroundColor(isToggled ? .blue : .red)
+            Toggle("Toggle", isOn: $isToggled)
+                .labelsHidden()
+            
+            Text("C: Mutli-level toggle. ios16!")
                 .foregroundColor(isToggled ? .blue : .red)
             Toggle("Toggle", isOn: $isToggled)
                 .labelsHidden()

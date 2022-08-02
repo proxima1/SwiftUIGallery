@@ -107,33 +107,209 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2DE43E6B-F01E-48C3-80E2-4DC57B620B90"
+            uuid = "42AD01CB-3012-44E2-958E-FAB9B6D1B619"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftUIGallery/ContentView.swift"
+            filePath = "SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "navMenuItemView"
-            landmarkType = "14">
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "019D8519-4FB1-4141-AC5E-A7A3B42576AD"
+            uuid = "6CB867FA-1DCF-47FE-8811-55DF9391C215"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftUIGallery/ContentView.swift"
+            filePath = "SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "navMenuItemView"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44458089-0FE3-420C-9034-8855CA00EAAC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0765FECF-587A-4F32-BF6A-381ECDD36809"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIGallery/Items/SwiftUIText.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "SwiftUIText"
             landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "0765FECF-587A-4F32-BF6A-381ECDD36809 - f97b250fc5d299d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIGallery.SwiftUIText.init() -&gt; SwiftUIGallery.SwiftUIText"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/SwiftUIText.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  uuid = "0765FECF-587A-4F32-BF6A-381ECDD36809 - bf81cc490bc00f77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIGallery.SwiftUIText.init(isEditing: Swift.Bool) -&gt; SwiftUIGallery.SwiftUIText"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/SwiftUIText.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "18">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57A785B7-AC2C-4BF3-B6FD-C38BB0EA85EE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIGallery/Items/SwiftUIText.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "57A785B7-AC2C-4BF3-B6FD-C38BB0EA85EE - 91754f6d75f251a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIGallery.SwiftUIText.body.getter : some"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/SwiftUIText.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "57A785B7-AC2C-4BF3-B6FD-C38BB0EA85EE - b2c6cab7122e4e32"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.Form&lt;SwiftUI.TupleView&lt;(SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;)&gt;, SwiftUI.EmptyView&gt;, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.blur(radius: CoreGraphics.CGFloat, opaque: Swift.Bool) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;, SwiftUI.EmptyView&gt;, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(SwiftUI.Group&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.Group&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;)&gt;, SwiftUI.EmptyView&gt;, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Text)&gt;, SwiftUI.EmptyView&gt;, &lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUIGallery.multiLineText, SwiftUI.EmptyView&gt;)&gt;&gt; in SwiftUIGallery.SwiftUIText.body.getter : some"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/SwiftUIText.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "366">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A39E2530-23A7-475F-AE8D-2E2FB8E7B97A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIGallery/Items/SwiftUIText.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A39E2530-23A7-475F-AE8D-2E2FB8E7B97A - b2c6cab7122e4e13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.Form&lt;SwiftUI.TupleView&lt;(SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;)&gt;, SwiftUI.EmptyView&gt;, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.blur(radius: CoreGraphics.CGFloat, opaque: Swift.Bool) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;, SwiftUI.EmptyView&gt;, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(SwiftUI.Group&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.Group&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;)&gt;, SwiftUI.EmptyView&gt;, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Text)&gt;, SwiftUI.EmptyView&gt;, &lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUIGallery.multiLineText, SwiftUI.EmptyView&gt;)&gt;&gt; in SwiftUIGallery.SwiftUIText.body.getter : some"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/SwiftUIText.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  uuid = "A39E2530-23A7-475F-AE8D-2E2FB8E7B97A - cbd6bae37b1a74b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;)&gt;, SwiftUI.EmptyView&gt;, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.blur(radius: CoreGraphics.CGFloat, opaque: Swift.Bool) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;, SwiftUI.EmptyView&gt;, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(SwiftUI.Group&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.Group&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;)&gt;, SwiftUI.EmptyView&gt;, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Text)&gt;, SwiftUI.EmptyView&gt;, &lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUIGallery.multiLineText, SwiftUI.EmptyView&gt;)&gt; in closure #1 () -&gt; SwiftUI.Form&lt;SwiftUI.TupleView&lt;(SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;)&gt;, SwiftUI.EmptyView&gt;, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.blur(radius: CoreGraphics.CGFloat, opaque: Swift.Bool) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;, SwiftUI.EmptyView&gt;, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(SwiftUI.Group&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.Group&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;)&gt;, SwiftUI.EmptyView&gt;, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Text)&gt;, SwiftUI.EmptyView&gt;, &lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.Section&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Text, SwiftUIGallery.SectionTitle&gt;, SwiftUIGallery.multiLineText, SwiftUI.EmptyView&gt;)&gt;&gt; in SwiftUIGallery.SwiftUIText.body.getter : some"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/SwiftUIText.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "916">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52CF5A55-3140-4A6E-80B0-3A59E098C9CD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIGallery/Items/ActionSheets/SwiftUISheetsAndAlerts.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

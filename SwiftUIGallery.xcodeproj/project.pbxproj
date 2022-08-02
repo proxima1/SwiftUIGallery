@@ -54,6 +54,9 @@
 		CE8C1A982705474C003C1092 /* IMG_4219.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8C1A942705474C003C1092 /* IMG_4219.jpeg */; };
 		CE8E0CAB26CC953700D2142C /* SwiftUIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */; };
 		CE8E0CAE26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */; };
+		CE9F94032898BE130019CC79 /* FirstLightSales.json in Resources */ = {isa = PBXBuildFile; fileRef = CE9F94022898BE130019CC79 /* FirstLightSales.json */; };
+		CE9F94052899AE710019CC79 /* FirstLightSales.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F94042899AE710019CC79 /* FirstLightSales.swift */; };
+		CE9F94072899B4F90019CC79 /* SwiftUIGraphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F94062899B4F90019CC79 /* SwiftUIGraphs.swift */; };
 		CEA1A9EE26CF22AF0083D21D /* SwiftUIToolbars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */; };
 		CEA223A326E2EFC1007604E1 /* SwiftUIRadioButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA223A226E2EFC1007604E1 /* SwiftUIRadioButtons.swift */; };
 		CEA223A526E2F6CF007604E1 /* SwiftUIGroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */; };
@@ -66,6 +69,8 @@
 		CECECF40267C2A850069849B /* SwiftUIWheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECECF3F267C2A850069849B /* SwiftUIWheelPicker.swift */; };
 		CED926CC26E00F2C0005F5BA /* SwiftUIGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED926CB26E00F2C0005F5BA /* SwiftUIGroups.swift */; };
 		CED926D026E058FD0005F5BA /* USRussianMissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED926CF26E058FD0005F5BA /* USRussianMissions.swift */; };
+		CEDFB2CA2894603100F3850A /* SwiftUIPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFB2C92894603100F3850A /* SwiftUIPhotoPicker.swift */; };
+		CEDFB2CC28946C2200F3850A /* SwiftUILayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFB2CB28946C2200F3850A /* SwiftUILayout.swift */; };
 		CEFD014C2695471B004AB134 /* SwiftUIColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD014B2695471B004AB134 /* SwiftUIColorPicker.swift */; };
 		CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEFD014D2696918D004AB134 /* MissionPatches.plist */; };
 /* End PBXBuildFile section */
@@ -144,6 +149,9 @@
 		CE8C1AA7270BA04E003C1092 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIText.swift; sourceTree = "<group>"; };
 		CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDynamicViewContentView.swift; sourceTree = "<group>"; };
+		CE9F94022898BE130019CC79 /* FirstLightSales.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FirstLightSales.json; sourceTree = "<group>"; };
+		CE9F94042899AE710019CC79 /* FirstLightSales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLightSales.swift; sourceTree = "<group>"; };
+		CE9F94062899B4F90019CC79 /* SwiftUIGraphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIGraphs.swift; path = SwiftUIGallery/Items/SwiftUIGraphs.swift; sourceTree = SOURCE_ROOT; };
 		CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIToolbars.swift; sourceTree = "<group>"; };
 		CEA223A226E2EFC1007604E1 /* SwiftUIRadioButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRadioButtons.swift; sourceTree = "<group>"; };
 		CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGroupBox.swift; sourceTree = "<group>"; };
@@ -156,6 +164,8 @@
 		CECECF3F267C2A850069849B /* SwiftUIWheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWheelPicker.swift; sourceTree = "<group>"; };
 		CED926CB26E00F2C0005F5BA /* SwiftUIGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGroups.swift; sourceTree = "<group>"; };
 		CED926CF26E058FD0005F5BA /* USRussianMissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USRussianMissions.swift; sourceTree = "<group>"; };
+		CEDFB2C92894603100F3850A /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
+		CEDFB2CB28946C2200F3850A /* SwiftUILayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILayout.swift; sourceTree = "<group>"; };
 		CEFD014B2695471B004AB134 /* SwiftUIColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIColorPicker.swift; sourceTree = "<group>"; };
 		CEFD014D2696918D004AB134 /* MissionPatches.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MissionPatches.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -299,6 +309,7 @@
 		CE47278225426ACD00C27C3D /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				CE9F94012898B9590019CC79 /* Charts */,
 				CE1765BF26F9192700DC1C10 /* UIKitSupport */,
 				CE064DF126F1742100F3F52A /* Gestures */,
 				CE2A85C926EAA3EF001D4C69 /* Shapes */,
@@ -309,10 +320,12 @@
 				CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */,
 				CEBE271A26D4420D00621C42 /* SwiftUIForms.swift */,
 				CE2A85D626EAD55E001D4C69 /* SwiftUIGeometryReader.swift */,
+				CE9F94062899B4F90019CC79 /* SwiftUIGraphs.swift */,
 				CED926CB26E00F2C0005F5BA /* SwiftUIGroups.swift */,
 				CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */,
 				CE37F9482543B4160068AF33 /* SwiftUIImages.swift */,
 				CE85B29F26E8920C00DDDA76 /* SwiftUILazyGrids.swift */,
+				CEDFB2CB28946C2200F3850A /* SwiftUILayout.swift */,
 				CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */,
 				CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */,
 				CEB30169269E2915007C4479 /* SwiftUILists.swift */,
@@ -338,11 +351,19 @@
 				CE52168F268AA17100C52279 /* SwiftUIDatePicker.swift */,
 				CE521685268A9DD800C52279 /* SwiftUIInlinePicker.swift */,
 				CE521687268A9DF800C52279 /* SwiftUIMenuPicker.swift */,
+				CEDFB2C92894603100F3850A /* SwiftUIPhotoPicker.swift */,
 				CEA223A226E2EFC1007604E1 /* SwiftUIRadioButtons.swift */,
 				CE52168D268A9EA400C52279 /* SwiftUISegmentedPicker.swift */,
 				CECECF3F267C2A850069849B /* SwiftUIWheelPicker.swift */,
 			);
 			path = Pickers;
+			sourceTree = "<group>";
+		};
+		CE9F94012898B9590019CC79 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Charts;
 			sourceTree = "<group>";
 		};
 		CEB30170269FB278007C4479 /* Resrouces */ = {
@@ -353,6 +374,8 @@
 				CEFD014D2696918D004AB134 /* MissionPatches.plist */,
 				CEB3016B269E51ED007C4479 /* Spacemissions.json */,
 				CED926CF26E058FD0005F5BA /* USRussianMissions.swift */,
+				CE9F94022898BE130019CC79 /* FirstLightSales.json */,
+				CE9F94042899AE710019CC79 /* FirstLightSales.swift */,
 			);
 			path = Resrouces;
 			sourceTree = "<group>";
@@ -464,6 +487,7 @@
 				CE2A85DB26EAF09D001D4C69 /* SwiftUIHostingViewController.xib in Resources */,
 				CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */,
 				CE47273825421F7000C27C3D /* Preview Assets.xcassets in Resources */,
+				CE9F94032898BE130019CC79 /* FirstLightSales.json in Resources */,
 				CE8C1A982705474C003C1092 /* IMG_4219.jpeg in Resources */,
 				CE47273525421F7000C27C3D /* Assets.xcassets in Resources */,
 				CEB3016C269E51EE007C4479 /* Spacemissions.json in Resources */,
@@ -530,14 +554,18 @@
 				CE521690268AA17200C52279 /* SwiftUIDatePicker.swift in Sources */,
 				CE064DFB26F175D600F3F52A /* SwiftUIDragGesture.swift in Sources */,
 				CE6C3F0C26BCB29A002C5778 /* SwiftUILinks.swift in Sources */,
+				CEDFB2CC28946C2200F3850A /* SwiftUILayout.swift in Sources */,
 				CE8E0CAE26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift in Sources */,
 				CE44F04026C46C8200DC7264 /* SwiftUISteppers.swift in Sources */,
 				CE44F04426C7586D00DC7264 /* SwiftUITextEditor.swift in Sources */,
 				CE31F73A26B0C44C00C30C68 /* SwiftUIMenu.swift in Sources */,
 				CE2A85D026EAA498001D4C69 /* BadgeSymbol.swift in Sources */,
 				CEB3016A269E2915007C4479 /* SwiftUILists.swift in Sources */,
+				CE9F94072899B4F90019CC79 /* SwiftUIGraphs.swift in Sources */,
+				CE9F94052899AE710019CC79 /* FirstLightSales.swift in Sources */,
 				CE064DFD26F175EB00F3F52A /* SwiftUICompoundGestures.swift in Sources */,
 				CE37F9352543B26D0068AF33 /* SwiftUISliders.swift in Sources */,
+				CEDFB2CA2894603100F3850A /* SwiftUIPhotoPicker.swift in Sources */,
 				CE064DFF26F5679D00F3F52A /* SwiftUITabs.swift in Sources */,
 				CEFD014C2695471B004AB134 /* SwiftUIColorPicker.swift in Sources */,
 				CEA223A326E2EFC1007604E1 /* SwiftUIRadioButtons.swift in Sources */,
@@ -702,10 +730,10 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIGallery/Preview Content\"";
-				DEVELOPMENT_TEAM = TPJ4QB3N7U;
+				DEVELOPMENT_TEAM = JQ3A6QY4D2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIGallery/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -726,10 +754,10 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIGallery/Preview Content\"";
-				DEVELOPMENT_TEAM = TPJ4QB3N7U;
+				DEVELOPMENT_TEAM = JQ3A6QY4D2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIGallery/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

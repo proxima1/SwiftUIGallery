@@ -43,19 +43,24 @@ struct SwiftUIDatePicker: View {
     }()
     
     @State var date: Date = Date()
-    
+    @State private var dates: Set<DateComponents> = []
+
     var body: some View {
         ScrollView{
             VStack {
                 Spacer()
+                Text("Compact DatePicker")
                 DatePicker("Date", selection: $date)
                     .datePickerStyle(CompactDatePickerStyle())
                     .frame(height: 40)
+                Spacer()
+                Spacer()
+                Text("Wheel DatePicker")
                 DatePicker("", selection: $date)
                     .datePickerStyle(WheelDatePickerStyle())
-                DatePicker("Date Picker", selection: $date)
-                    .datePickerStyle(GraphicalDatePickerStyle()).accentColor(.green)
-                Spacer()
+                
+                GraphicDatePickers(date: $date)
+
                 Spacer()
             }.padding()
             .navigationTitle("Date Picker")
@@ -63,6 +68,24 @@ struct SwiftUIDatePicker: View {
     }
 }
    
+ struct GraphicDatePickers: View
+{
+    @State private var dates: Set<DateComponents> = []
+    @Binding var date: Date
+
+    var body: some View
+    {
+        VStack{
+            Text("Standard DatePicker")
+            DatePicker("Date Picker", selection: $date)
+                .datePickerStyle(GraphicalDatePickerStyle()).accentColor(.red)
+            Text("Multi-DatePicker (iOS16)")
+            MultiDatePicker("Multi date-Picker", selection: $dates)
+                .accentColor(.green)
+        }
+    }
+}
+
 struct SwiftUIDatePicker_Previews: PreviewProvider {
     static var previews: some View {
         SwiftUIDatePicker()

@@ -28,7 +28,7 @@
  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
  USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
+ */
 
 import SwiftUI
 
@@ -37,11 +37,26 @@ struct ShadowStyle: ViewModifier
     func body(content: Content)->some View
     {
         return content
-            .frame(width:220,height:40)
+            .frame(width:240,height:40)
             .foregroundColor(.black)
             .background(Color.white)
             .cornerRadius(40)
-            .shadow(color: Color.black.opacity(0.4),radius: 8, x: 4, y: 4)
+            .padding()
+            .shadow(color: Color.black.opacity(0.2),radius: 6, x: 4, y: 4)
+    }
+}
+
+struct SheetView: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        Button("Press to dismiss") {
+            dismiss()
+        }
+        .font(.title)
+        .padding()
+        .background(.white)
+
     }
 }
 
@@ -53,11 +68,23 @@ struct SwiftUISheetsAndAlerts: View {
     @State var showAlert = false
     @State var hideStatusBar = true
     
+    @State private var showingSheet = false
+    
     var paddingInset: CGFloat = 10
     
     var body: some View {
         
-    VStack{
+        VStack{
+            Button(action:{
+                showingSheet=true
+            }){
+                Text("Sheet with Detents (iOS 16)")
+            }
+            .sheet(isPresented: $showingSheet) {
+                SheetView().presentationDetents([.height(350),.medium, .large])
+                Text("Detented Sheet (ios16)").bold()
+            }.modifier(ShadowStyle())
+
             Button(action:{
                 print("hit Popover")
                 showPopover=true
@@ -65,9 +92,11 @@ struct SwiftUISheetsAndAlerts: View {
                 Text("Popover").bold().modifier(ShadowStyle())
             }
             .popover(
+
                 isPresented: self.$showPopover,
                 arrowEdge: .bottom
             ) {
+
                 Button(action:{
                     print("hit 1")
                 }){
@@ -83,8 +112,8 @@ struct SwiftUISheetsAndAlerts: View {
                 Button(action:{
                     print("hit 3")
                 }){
-                    Text("Item 3").bold().foregroundColor(.red)
-                }.padding(1)
+                    Text("Item 3").bold()
+                }.padding(1).foregroundColor(.red)
             }
             
             Button(action:{
@@ -92,47 +121,53 @@ struct SwiftUISheetsAndAlerts: View {
                 showActionSheet=true
             }){
                 Text("Action!!!!").bold().modifier(ShadowStyle())
-            }.padding(paddingInset)
-            .actionSheet(isPresented: $showActionSheet) {
-                ActionSheet(title: Text("Do you like Pie?"),
-                            message: Text("Choose a Favorite Pie"),
-                            buttons: [
-                                .cancel(),
-                                .destructive(
-                                    Text("Add to favorites")
-                                ),
-                                .default(
-                                    Text("Create new pie group")
-                                )
-                            ]
-                )
             }
+                .actionSheet(isPresented: $showActionSheet) {
+                    ActionSheet(title: Text("Do you like Pie?"),
+                                message: Text("Choose a Favorite Pie"),
+                                buttons: [
+                                    .cancel(),
+                                    .destructive(
+                                        Text("Add to favorites")
+                                    ),
+                                    .default(
+                                        Text("Create new pie group")
+                                    )
+                                ]
+                    )
+                }
             
             Button(action:{
                 print("hit Slideover")
                 showSheet=true
             }){
                 Text("Slideover Sheet").bold().modifier(ShadowStyle())
-            }.padding(paddingInset)
-            .sheet(isPresented: $showSheet){
-                SwiftUIForms()
             }
+                .sheet(isPresented: $showSheet){
+                    SwiftUIForms()
+                }
             
             Button(action:{
                 print("hit Alert")
                 showAlert=true
             }){
                 Text("Alert").bold().modifier(ShadowStyle())
-            }.padding(paddingInset)
-            .alert(isPresented: $showAlert) {
-                Alert(
-                    title: Text("Look Behind You1"),
-                    message: Text(
-                        "Made you look, didn't I?"
-                    )
-                )
             }
+                .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text("Look Behind You1"),
+                        message: Text(
+                            "Made you look, didn't I?"
+                        )
+                    )
+                }
         }.navigationBarTitle("Sheets and Alerts", displayMode: .inline)
+    }
+}
+
+struct Detents: View {
+    var body: some View {
+        Text("Detents of 200, middle, large")
     }
 }
 

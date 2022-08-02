@@ -36,7 +36,7 @@ struct SwiftUILinks: View {
         
         //iOS 15/XC 13 way, using markdown in the next field
         //Text("[Stackoverflow](https://stackoverflow.com)")
-        
+       
         NavigationView(){
             VStack{
                 Spacer()
@@ -55,7 +55,14 @@ struct SwiftUILinks: View {
                 {
                     Text("show slider page").font(.system(size: 35.0,weight: .light))
                 }
-                Spacer()
+                
+                Divider()
+                
+                Text("Share Links (ios16)")
+                HStack{
+                    Link("🔗  Share",
+                         destination: URL(string: "https://www.youtube.com/watch?v=2zeN63hZaFQ")!).font(.system(size: 35.0,weight:.light))
+                }
                 Spacer()
             }
         }.navigationBarTitle("Links", displayMode: .inline)
