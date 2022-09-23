@@ -1,19 +1,22 @@
 
+
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
 //   let AppSales = try AppSales(json)
 
 import Foundation
+import Charts
 
 // MARK: - AppSales
 struct AppSales: Codable {
-    let product: [Product]
-    let month: [Month]
+    var id = UUID()             //needed to make this work in a ForEach.
+    let products: [AppSalesProduct]
+    let months: [Month]
 
     enum CodingKeys: String, CodingKey {
-        case product = "product"
-        case month = "month"
+        case products = "products"
+        case months = "months"
     }
 }
 
@@ -21,7 +24,7 @@ struct AppSales: Codable {
 
 extension AppSales {
     init(data: Data) throws {
-        self = try newJSONDecoder().decode(AppSales.self, from: data)
+        self = try salesJSONDecoder().decode(AppSales.self, from: data)
     }
 
     init(_ json: String, using encoding: String.Encoding = .utf8) throws {
@@ -36,17 +39,17 @@ extension AppSales {
     }
 
     func with(
-        product: [Product]? = nil,
-        month: [Month]? = nil
+        products: [AppSalesProduct]? = nil,
+        months: [Month]? = nil
     ) -> AppSales {
         return AppSales(
-            product: product ?? self.product,
-            month: month ?? self.month
+            products: products ?? self.products,
+            months: months ?? self.months
         )
     }
 
     func jsonData() throws -> Data {
-        return try newJSONEncoder().encode(self)
+        return try salesJSONEncoder().encode(self)
     }
 
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
@@ -55,17 +58,18 @@ extension AppSales {
 }
 
 // MARK: - Month
-struct Month: Codable {
+struct Month: Codable,Identifiable {
     let month: String
+    let monthAbbr: String
     let monthNum: String
-    let distantsuns: Apollo360
-    let apollo360: Apollo360
+    let product: [MonthProduct]
+    var id = UUID()             //needed to make this work in a ForEach.
 
     enum CodingKeys: String, CodingKey {
         case month = "month"
+        case monthAbbr = "monthAbbr"
         case monthNum = "monthNum"
-        case distantsuns = "distantsuns"
-        case apollo360 = "Apollo360"
+        case product = "product"
     }
 }
 
@@ -73,7 +77,7 @@ struct Month: Codable {
 
 extension Month {
     init(data: Data) throws {
-        self = try newJSONDecoder().decode(Month.self, from: data)
+        self = try salesJSONDecoder().decode(Month.self, from: data)
     }
 
     init(_ json: String, using encoding: String.Encoding = .utf8) throws {
@@ -89,20 +93,20 @@ extension Month {
 
     func with(
         month: String? = nil,
+        monthAbbr: String? = nil,
         monthNum: String? = nil,
-        distantsuns: Apollo360? = nil,
-        apollo360: Apollo360? = nil
+        product: [MonthProduct]? = nil
     ) -> Month {
         return Month(
             month: month ?? self.month,
+            monthAbbr: monthAbbr ?? self.monthAbbr,
             monthNum: monthNum ?? self.monthNum,
-            distantsuns: distantsuns ?? self.distantsuns,
-            apollo360: apollo360 ?? self.apollo360
+            product: product ?? self.product
         )
     }
 
     func jsonData() throws -> Data {
-        return try newJSONEncoder().encode(self)
+        return try salesJSONEncoder().encode(self)
     }
 
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
@@ -110,8 +114,9 @@ extension Month {
     }
 }
 
-// MARK: - Apollo360
-struct Apollo360: Codable {
+// MARK: - MonthProduct
+struct MonthProduct: Codable {
+    let title: Title
     let total: String
     let totalNA: String
     let totalGross: String
@@ -119,6 +124,7 @@ struct Apollo360: Codable {
     let updates: String
 
     enum CodingKeys: String, CodingKey {
+        case title = "title"
         case total = "total"
         case totalNA = "totalNA"
         case totalGross = "totalGross"
@@ -127,11 +133,11 @@ struct Apollo360: Codable {
     }
 }
 
-// MARK: Apollo360 convenience initializers and mutators
+// MARK: MonthProduct convenience initializers and mutators
 
-extension Apollo360 {
+extension MonthProduct {
     init(data: Data) throws {
-        self = try newJSONDecoder().decode(Apollo360.self, from: data)
+        self = try salesJSONDecoder().decode(MonthProduct.self, from: data)
     }
 
     init(_ json: String, using encoding: String.Encoding = .utf8) throws {
@@ -146,13 +152,15 @@ extension Apollo360 {
     }
 
     func with(
+        title: Title? = nil,
         total: String? = nil,
         totalNA: String? = nil,
         totalGross: String? = nil,
         totalNet: String? = nil,
         updates: String? = nil
-    ) -> Apollo360 {
-        return Apollo360(
+    ) -> MonthProduct {
+        return MonthProduct(
+            title: title ?? self.title,
             total: total ?? self.total,
             totalNA: totalNA ?? self.totalNA,
             totalGross: totalGross ?? self.totalGross,
@@ -162,7 +170,7 @@ extension Apollo360 {
     }
 
     func jsonData() throws -> Data {
-        return try newJSONEncoder().encode(self)
+        return try salesJSONEncoder().encode(self)
     }
 
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
@@ -170,8 +178,13 @@ extension Apollo360 {
     }
 }
 
-// MARK: - Product
-struct Product: Codable {
+enum Title: String, Codable, Plottable{
+    case apollo360 = "Apollo360"
+    case distantSuns = "DistantSuns"
+}
+
+// MARK: - AppSalesProduct
+struct AppSalesProduct: Codable {
     let name: String
     let price: String
     let sku: String
@@ -183,11 +196,11 @@ struct Product: Codable {
     }
 }
 
-// MARK: Product convenience initializers and mutators
+// MARK: AppSalesProduct convenience initializers and mutators
 
-extension Product {
+extension AppSalesProduct {
     init(data: Data) throws {
-        self = try newJSONDecoder().decode(Product.self, from: data)
+        self = try salesJSONDecoder().decode(AppSalesProduct.self, from: data)
     }
 
     init(_ json: String, using encoding: String.Encoding = .utf8) throws {
@@ -205,8 +218,8 @@ extension Product {
         name: String? = nil,
         price: String? = nil,
         sku: String? = nil
-    ) -> Product {
-        return Product(
+    ) -> AppSalesProduct {
+        return AppSalesProduct(
             name: name ?? self.name,
             price: price ?? self.price,
             sku: sku ?? self.sku
@@ -214,7 +227,7 @@ extension Product {
     }
 
     func jsonData() throws -> Data {
-        return try newJSONEncoder().encode(self)
+        return try salesJSONEncoder().encode(self)
     }
 
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
@@ -238,4 +251,38 @@ func salesJSONEncoder() -> JSONEncoder {
         encoder.dateEncodingStrategy = .iso8601
     }
     return encoder
+}
+
+struct FirstLightSales
+{
+    var sales : AppSales?
+    
+    init(){
+        do {
+//            let path = Bundle.main.path(forResource: "FirstLightSales.json", ofType:nil)
+            let path = Bundle.main.path(forResource: "FirstLightSalesWinter.json", ofType:nil)
+
+            if  (path != nil){
+                print("Got file: \(String(describing: path))")
+            }
+            
+            let result = try String(contentsOfFile: path!, encoding: .utf8)
+            
+            sales=try AppSales(result)
+            
+        } catch let DecodingError.keyNotFound(key, context) {
+            print("Key '\(key)' not found:", context.debugDescription)
+            print("codingPath:", context.codingPath)
+        } catch let DecodingError.valueNotFound(value, context) {
+            print("Value '\(value)' not found:", context.debugDescription)
+            print("codingPath:", context.codingPath)
+        } catch let DecodingError.typeMismatch(type, context)  {
+            print("Type '\(type)' mismatch:", context.debugDescription)
+            print("codingPath:", context.codingPath)
+        } catch {
+            print("error: ", error)
+        }
+        //            Swift.print ("Other cases: Error: \(error.localizedDescription)") // I like all other colors
+        //        }
+    }
 }
