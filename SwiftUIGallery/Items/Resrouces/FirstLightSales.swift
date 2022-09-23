@@ -4,6 +4,7 @@
 // To parse the JSON, add this file to your project and do:
 //
 //   let AppSales = try AppSales(json)
+// xxxx
 
 import Foundation
 import Charts
