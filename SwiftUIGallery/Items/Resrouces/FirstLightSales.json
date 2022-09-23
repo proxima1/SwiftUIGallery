@@ -1,7 +1,7 @@
 {
-    "product":[
+    "products":[
         {
-            "name":"distantsuns",
+            "name":"DistantSuns",
             "price":"10.00",
             "sku":"54321"
         },{
@@ -10,225 +10,293 @@
             "sku":"123456789"
         }
     ],
-    "month":[
+    "months":[
         {
             "month":"January",
+            "monthAbbr":"J",
             "monthNum":"0",
-            "distantsuns":{
-                "total":"666",
-                "totalNA":"545",
-                "totalGross":"6660",
-                "totalNet":"5559",
-                "updates":"1112"
-            },
-            "Apollo360":{
-                "total":"170",
-                "totalNA":"160",
-                "totalGross":"850",
-                "totalNet":"765",
-                "updates":"88"
-            }
+            "product":[
+                {
+                    "title":"DistantSuns",
+                    "total":"666",
+                    "totalNA":"545",
+                    "totalGross":"6660",
+                    "totalNet":"5559",
+                    "updates":"1112"
+                },
+                {
+                    "title":"Apollo360",
+                    "total":"170",
+                    "totalNA":"160",
+                    "totalGross":"850",
+                    "totalNet":"765",
+                    "updates":"88"
+                }
+            ]
         },
         {
             "month":"February",
+            "monthAbbr":"F",
             "monthNum":"1",
-            "distantsuns":{
-                "total":"441",
-                "totalNA":"400",
-                "totalGross":"4410",
-                "totalNet":"3969",
-                "updates":"991"
-            },
-            "Apollo360":{
-                "total":"314",
-                "totalNA":"288",
-                "totalGross":"1570",
-                "totalNet":"1413",
-                "updates":"89"
-            }
+            "product":[
+                {
+                    "title":"DistantSuns",
+                    
+                    "total":"441",
+                    "totalNA":"400",
+                    "totalGross":"4410",
+                    "totalNet":"3969",
+                    "updates":"991"
+                },
+                {
+                    "title":"Apollo360",
+                    "total":"314",
+                    "totalNA":"288",
+                    "totalGross":"1570",
+                    "totalNet":"1413",
+                    "updates":"89"
+                }
+            ]
         },
         {
             "month":"March",
             "monthNum":"2",
-            "distantsuns":{
-                "total":"428",
-                "totalNA":"359",
-                "totalGross":"4280",
-                "totalNet":"3852",
-                "updates":"1110"
-            },
-            "Apollo360":{
-                "total":"123",
-                "totalNA":"100",
-                "totalGross":"615.0",
-                "totalNet":"553.5",
-                "updates":"12"
-            }
+            "monthAbbr":"M",
+            "product":[
+                {
+                    "title":"DistantSuns",
+                    
+                    "total":"428",
+                    "totalNA":"359",
+                    "totalGross":"4280",
+                    "totalNet":"3852",
+                    "updates":"1110"
+                },
+                {
+                    "title":"Apollo360",
+                    "total":"123",
+                    "totalNA":"100",
+                    "totalGross":"615.0",
+                    "totalNet":"553.5",
+                    "updates":"12"
+                }
+            ]
         },
         {
             "month":"April",
+            "monthAbbr":"A",
             "monthNum":"3",
-            "distantsuns":{
-                "total":"577",
-                "totalNA":"515",
-                "totalGross":"5770",
-                "totalNet":"5193",
-                "updates":"971"
-            },
-            "Apollo360":{
-                "total":"157",
-                "totalNA":"132",
-                "totalGross":"785",
-                "totalNet":"706.5",
-                "updates":"42"
-            }
+            "product":[
+                {
+                    "title":"DistantSuns",
+                    
+                    "total":"577",
+                    "totalNA":"515",
+                    "totalGross":"5770",
+                    "totalNet":"5193",
+                    "updates":"971"
+                },
+                {
+                    "title":"Apollo360",
+                    "total":"157",
+                    "totalNA":"132",
+                    "totalGross":"785",
+                    "totalNet":"706.5",
+                    "updates":"42"
+                }
+            ]
         },
         {
             "month":"May",
+            "monthAbbr":"M",
             "monthNum":"4",
-            "distantsuns":{
-                "total":"677",
-                "totalNA":"600",
-                "totalGross":"6770.00",
-                "totalNet":"6093",
-                "updates":"888"
-            },
-            "Apollo360":{
-                "total":"221",
-                "totalNA":"220",
-                "totalGross":"110.50",
-                "totalNet":"99.45",
-                "updates":"49"
-            }
+            "product":[
+                {
+                    "title":"DistantSuns",
+                    
+                    "total":"677",
+                    "totalNA":"600",
+                    "totalGross":"6770.00",
+                    "totalNet":"6093",
+                    "updates":"888"
+                },
+                {
+                    "title":"Apollo360",
+                    "total":"221",
+                    "totalNA":"220",
+                    "totalGross":"110.50",
+                    "totalNet":"99.45",
+                    "updates":"49"
+                }
+            ]
         },
         {
             "month":"June",
             "monthNum":"5",
-            "distantsuns":{
-                "total":"705",
-                "totalNA":"655",
-                "totalGross":"7050",
-                "totalNet":"6345",
-                "updates":"742"
-            },
-            "Apollo360":{
-                "total":"200",
-                "totalNA":"175",
-                "totalGross":"1000",
-                "totalNet":"900",
-                "updates":"76"
-            }
+            "monthAbbr":"J",
+            "product":[
+                {
+                    "title":"DistantSuns",
+                    
+                    "total":"705",
+                    "totalNA":"655",
+                    "totalGross":"7050",
+                    "totalNet":"6345",
+                    "updates":"742"
+                },
+                {
+                    "title":"Apollo360",
+                    "total":"200",
+                    "totalNA":"175",
+                    "totalGross":"1000",
+                    "totalNet":"900",
+                    "updates":"76"
+                }
+            ]
         },
         {
             "month":"July",
+            "monthAbbr":"J",
             "monthNum":"6",
-            "distantsuns":{
-                "total":"861",
-                "totalNA":"807",
-                "totalGross":"8610",
-                "totalNet":"7749",
-                "updates":"798"
-            },
-            "Apollo360":{
-                "total":"333",
-                "totalNA":"301",
-                "totalGross":"1665",
-                "totalNet":"1498",
-                "updates":"76"
-            }
+            "product":[
+                {
+                    "title":"DistantSuns",
+                    
+                    "total":"861",
+                    "totalNA":"807",
+                    "totalGross":"8610",
+                    "totalNet":"7749",
+                    "updates":"798"
+                },
+                {
+                    "title":"Apollo360",
+                    "total":"333",
+                    "totalNA":"301",
+                    "totalGross":"1665",
+                    "totalNet":"1498",
+                    "updates":"76"
+                }
+            ]
         },
         {
             "month":"August",
             "monthNum":"7",
-            "distantsuns":{
-                "total":"901",
-                "totalNA":"844",
-                "totalGross":"9010",
-                "totalNet":"8109",
-                "updates":"701"
-            },
-            "Apollo360":{
-                "total":"312",
-                "totalNA":"299",
-                "totalGross":"1560",
-                "totalNet":"1404",
-                "updates":"70"
-            }
+            "monthAbbr":"A",
+            "product":[
+                {
+                    "title":"DistantSuns",
+                    
+                    "total":"901",
+                    "totalNA":"844",
+                    "totalGross":"9010",
+                    "totalNet":"8109",
+                    "updates":"701"
+                },
+                {
+                    "title":"Apollo360",
+                    "total":"312",
+                    "totalNA":"299",
+                    "totalGross":"1560",
+                    "totalNet":"1404",
+                    "updates":"70"
+                }
+            ]
         },
         {
             "month":"September",
+            "monthAbbr":"S",
             "monthNum":"8",
-            "distantsuns":{
-                "total":"773",
-                "totalNA":"711",
-                "totalGross":"7730",
-                "totalNet":"6957",
-                "updates":"672"
-            },
-            "Apollo360":{
-                "total":"288",
-                "totalNA":"219",
-                "totalGross":"1440",
-                "totalNet":"1296",
-                "updates":"72"
-            }
+            "product":[
+                {
+                    "title":"DistantSuns",
+                    
+                    "total":"773",
+                    "totalNA":"711",
+                    "totalGross":"7730",
+                    "totalNet":"6957",
+                    "updates":"672"
+                },
+                {
+                    "title":"Apollo360",
+                    "total":"288",
+                    "totalNA":"219",
+                    "totalGross":"1440",
+                    "totalNet":"1296",
+                    "updates":"72"
+                }
+            ]
         },
         {
             "month":"October",
+            "monthAbbr":"O",
             "monthNum":"9",
-            "distantsuns":{
-                "total":"454",
-                "totalNA":"412",
-                "totalGross":"4540",
-                "totalNet":"4086",
-                "updates":"599"
-            },
-            "Apollo360":{
-                "total":"254",
-                "totalNA":"207",
-                "totalGross":"1770",
-                "totalNet":"1593",
-                "updates":"69"
-            }
+            "product":[
+                {
+                    "title":"DistantSuns",
+                    
+                    "total":"454",
+                    "totalNA":"412",
+                    "totalGross":"4540",
+                    "totalNet":"4086",
+                    "updates":"599"
+                },
+                {
+                    "title":"Apollo360",
+                    "total":"254",
+                    "totalNA":"207",
+                    "totalGross":"1770",
+                    "totalNet":"1593",
+                    "updates":"69"
+                }
+            ]
         },
         {
             "month":"November",
+            "monthAbbr":"N",
             "monthNum":"10",
-            "distantsuns":{
-                "total":"299",
-                "totalNA":"289",
-                "totalGross":"2990",
-                "totalNet":"2691",
-                "updates":"3500"
-            },
-            "Apollo360":{
-                "total":"186",
-                "totalNA":"178",
-                "totalGross":"930",
-                "totalNet":"465",
-                "updates":"62"
-            }
+            "product":[
+                {
+                    "title":"DistantSuns",
+                    
+                    "total":"299",
+                    "totalNA":"289",
+                    "totalGross":"2990",
+                    "totalNet":"2691",
+                    "updates":"3500"
+                },
+                {
+                    "title":"Apollo360",
+                    "total":"186",
+                    "totalNA":"178",
+                    "totalGross":"930",
+                    "totalNet":"465",
+                    "updates":"62"
+                }
+            ]
         },
         {
             "month":"December",
+            "monthAbbr":"D",
             "monthNum":"11",
-            "distantsuns":{
-                "total":"394",
-                "totalNA":"354",
-                "totalGross":"3940",
-                "totalNet":"3546",
-                "updates":"3442"
-            },
-            "Apollo360":{
-                "total":"222",
-                "totalNA":"201",
-                "totalGross":"1110",
-                "totalNet":"999",
-                "updates":"1296"
-            }
+            "product":[
+                {
+                    "title":"DistantSuns",
+                    
+                    "total":"394",
+                    "totalNA":"354",
+                    "totalGross":"3940",
+                    "totalNet":"3546",
+                    "updates":"3442"
+                },
+                {
+                    "title":"Apollo360",
+                    "total":"222",
+                    "totalNA":"201",
+                    "totalGross":"1110",
+                    "totalNet":"999",
+                    "updates":"1296"
+                }
+            ]
         }
     ]
 }
-
-
-

@@ -14,6 +14,8 @@
 		CE064DFB26F175D600F3F52A /* SwiftUIDragGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFA26F175D500F3F52A /* SwiftUIDragGesture.swift */; };
 		CE064DFD26F175EB00F3F52A /* SwiftUICompoundGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFC26F175EB00F3F52A /* SwiftUICompoundGestures.swift */; };
 		CE064DFF26F5679D00F3F52A /* SwiftUITabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE064DFE26F5679D00F3F52A /* SwiftUITabs.swift */; };
+		CE070D16289E5D6D0071A361 /* testfinnder.m in Sources */ = {isa = PBXBuildFile; fileRef = CE070D15289E5D6D0071A361 /* testfinnder.m */; };
+		CE070D18289E5DC40071A361 /* StoryboardTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE070D17289E5DC40071A361 /* StoryboardTest.storyboard */; };
 		CE2A6C7E26D0716C003CDA36 /* SwiftUILabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */; };
 		CE2A85CE26EAA498001D4C69 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85CA26EAA498001D4C69 /* Badge.swift */; };
 		CE2A85CF26EAA498001D4C69 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85CB26EAA498001D4C69 /* BadgeBackground.swift */; };
@@ -25,6 +27,7 @@
 		CE2A85DA26EAF09D001D4C69 /* SwiftUIHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85D826EAF09D001D4C69 /* SwiftUIHostingViewController.swift */; };
 		CE2A85DB26EAF09D001D4C69 /* SwiftUIHostingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2A85D926EAF09D001D4C69 /* SwiftUIHostingViewController.xib */; };
 		CE2A85DD26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A85DC26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift */; };
+		CE2E9066289C66BE00141FCE /* SwiftUIGalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E9065289C66BE00141FCE /* SwiftUIGalleryApp.swift */; };
 		CE31F73A26B0C44C00C30C68 /* SwiftUIMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */; };
 		CE3328F526E182F600D12F3D /* SwiftUISheetsAndAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3328F426E182F600D12F3D /* SwiftUISheetsAndAlerts.swift */; };
 		CE37F9352543B26D0068AF33 /* SwiftUISliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */; };
@@ -32,7 +35,6 @@
 		CE37F9492543B4160068AF33 /* SwiftUIImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F9482543B4160068AF33 /* SwiftUIImages.swift */; };
 		CE44F04026C46C8200DC7264 /* SwiftUISteppers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44F03F26C46C8200DC7264 /* SwiftUISteppers.swift */; };
 		CE44F04426C7586D00DC7264 /* SwiftUITextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44F04326C7586D00DC7264 /* SwiftUITextEditor.swift */; };
-		CE47273125421F6F00C27C3D /* SwiftUIGalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47273025421F6F00C27C3D /* SwiftUIGalleryApp.swift */; };
 		CE47273325421F6F00C27C3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47273225421F6F00C27C3D /* ContentView.swift */; };
 		CE47273525421F7000C27C3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE47273425421F7000C27C3D /* Assets.xcassets */; };
 		CE47273825421F7000C27C3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE47273725421F7000C27C3D /* Preview Assets.xcassets */; };
@@ -47,6 +49,8 @@
 		CE521688268A9DF800C52279 /* SwiftUIMenuPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE521687268A9DF800C52279 /* SwiftUIMenuPicker.swift */; };
 		CE52168E268A9EA400C52279 /* SwiftUISegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52168D268A9EA400C52279 /* SwiftUISegmentedPicker.swift */; };
 		CE521690268AA17200C52279 /* SwiftUIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52168F268AA17100C52279 /* SwiftUIDatePicker.swift */; };
+		CE5C1D6028B45FEF0064E455 /* SwiftUICharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C1D5F28B45FEF0064E455 /* SwiftUICharts.swift */; };
+		CE5C1D6228B474080064E455 /* FirstLightSalesWinter.json in Resources */ = {isa = PBXBuildFile; fileRef = CE5C1D6128B474080064E455 /* FirstLightSalesWinter.json */; };
 		CE6C3F0C26BCB29A002C5778 /* SwiftUILinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */; };
 		CE74F3AA268FD6FE0058A8FC /* MissionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F3A9268FD6FE0058A8FC /* MissionData.swift */; };
 		CE85B2A026E8920D00DDDA76 /* SwiftUILazyGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85B29F26E8920C00DDDA76 /* SwiftUILazyGrids.swift */; };
@@ -55,8 +59,7 @@
 		CE8E0CAB26CC953700D2142C /* SwiftUIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */; };
 		CE8E0CAE26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */; };
 		CE9F94032898BE130019CC79 /* FirstLightSales.json in Resources */ = {isa = PBXBuildFile; fileRef = CE9F94022898BE130019CC79 /* FirstLightSales.json */; };
-		CE9F94052899AE710019CC79 /* FirstLightSales.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F94042899AE710019CC79 /* FirstLightSales.swift */; };
-		CE9F94072899B4F90019CC79 /* SwiftUIGraphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F94062899B4F90019CC79 /* SwiftUIGraphs.swift */; };
+		CE9F9409289A0B010019CC79 /* FirstLightSales.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F9408289A0B010019CC79 /* FirstLightSales.swift */; };
 		CEA1A9EE26CF22AF0083D21D /* SwiftUIToolbars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */; };
 		CEA223A326E2EFC1007604E1 /* SwiftUIRadioButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA223A226E2EFC1007604E1 /* SwiftUIRadioButtons.swift */; };
 		CEA223A526E2F6CF007604E1 /* SwiftUIGroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */; };
@@ -100,6 +103,9 @@
 		CE064DFA26F175D500F3F52A /* SwiftUIDragGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDragGesture.swift; sourceTree = "<group>"; };
 		CE064DFC26F175EB00F3F52A /* SwiftUICompoundGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICompoundGestures.swift; sourceTree = "<group>"; };
 		CE064DFE26F5679D00F3F52A /* SwiftUITabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUITabs.swift; sourceTree = "<group>"; };
+		CE070D14289E5D6D0071A361 /* testfinnder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = testfinnder.h; path = ../../../../AndroidStudioProjects/testfinnder.h; sourceTree = "<group>"; };
+		CE070D15289E5D6D0071A361 /* testfinnder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = testfinnder.m; path = ../../../../AndroidStudioProjects/testfinnder.m; sourceTree = "<group>"; };
+		CE070D17289E5DC40071A361 /* StoryboardTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardTest.storyboard; sourceTree = "<group>"; };
 		CE2A6C7D26D0716C003CDA36 /* SwiftUILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILabels.swift; sourceTree = "<group>"; };
 		CE2A85CA26EAA498001D4C69 /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		CE2A85CB26EAA498001D4C69 /* BadgeBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 		CE2A85D826EAF09D001D4C69 /* SwiftUIHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIHostingViewController.swift; sourceTree = "<group>"; };
 		CE2A85D926EAF09D001D4C69 /* SwiftUIHostingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftUIHostingViewController.xib; sourceTree = "<group>"; };
 		CE2A85DC26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBridgeUIKit.swift; sourceTree = "<group>"; };
+		CE2E9065289C66BE00141FCE /* SwiftUIGalleryApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftUIGalleryApp.swift; path = Items/SwiftUIGalleryApp.swift; sourceTree = "<group>"; };
 		CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMenu.swift; sourceTree = "<group>"; };
 		CE3328F426E182F600D12F3D /* SwiftUISheetsAndAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISheetsAndAlerts.swift; sourceTree = "<group>"; };
 		CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISliders.swift; sourceTree = "<group>"; };
@@ -119,7 +126,6 @@
 		CE44F03F26C46C8200DC7264 /* SwiftUISteppers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISteppers.swift; sourceTree = "<group>"; };
 		CE44F04326C7586D00DC7264 /* SwiftUITextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITextEditor.swift; sourceTree = "<group>"; };
 		CE47272D25421F6F00C27C3D /* SwiftUIGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE47273025421F6F00C27C3D /* SwiftUIGalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGalleryApp.swift; sourceTree = "<group>"; };
 		CE47273225421F6F00C27C3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE47273425421F7000C27C3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE47273725421F7000C27C3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -139,6 +145,8 @@
 		CE521687268A9DF800C52279 /* SwiftUIMenuPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMenuPicker.swift; sourceTree = "<group>"; };
 		CE52168D268A9EA400C52279 /* SwiftUISegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISegmentedPicker.swift; sourceTree = "<group>"; };
 		CE52168F268AA17100C52279 /* SwiftUIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDatePicker.swift; sourceTree = "<group>"; };
+		CE5C1D5F28B45FEF0064E455 /* SwiftUICharts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUICharts.swift; sourceTree = "<group>"; };
+		CE5C1D6128B474080064E455 /* FirstLightSalesWinter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FirstLightSalesWinter.json; sourceTree = "<group>"; };
 		CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUILinks.swift; sourceTree = "<group>"; };
 		CE74F3A9268FD6FE0058A8FC /* MissionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MissionData.swift; path = SwiftUIGallery/Items/Resrouces/MissionData.swift; sourceTree = SOURCE_ROOT; };
 		CE85B29F26E8920C00DDDA76 /* SwiftUILazyGrids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILazyGrids.swift; sourceTree = "<group>"; };
@@ -150,8 +158,7 @@
 		CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIText.swift; sourceTree = "<group>"; };
 		CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDynamicViewContentView.swift; sourceTree = "<group>"; };
 		CE9F94022898BE130019CC79 /* FirstLightSales.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FirstLightSales.json; sourceTree = "<group>"; };
-		CE9F94042899AE710019CC79 /* FirstLightSales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLightSales.swift; sourceTree = "<group>"; };
-		CE9F94062899B4F90019CC79 /* SwiftUIGraphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIGraphs.swift; path = SwiftUIGallery/Items/SwiftUIGraphs.swift; sourceTree = SOURCE_ROOT; };
+		CE9F9408289A0B010019CC79 /* FirstLightSales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLightSales.swift; sourceTree = "<group>"; };
 		CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIToolbars.swift; sourceTree = "<group>"; };
 		CEA223A226E2EFC1007604E1 /* SwiftUIRadioButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRadioButtons.swift; sourceTree = "<group>"; };
 		CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGroupBox.swift; sourceTree = "<group>"; };
@@ -270,7 +277,7 @@
 				CE47278225426ACD00C27C3D /* Items */,
 				CE47273225421F6F00C27C3D /* ContentView.swift */,
 				CE47275F2542354600C27C3D /* GalleryItemList.swift */,
-				CE47273025421F6F00C27C3D /* SwiftUIGalleryApp.swift */,
+				CE2E9065289C66BE00141FCE /* SwiftUIGalleryApp.swift */,
 				CE472767254237D800C27C3D /* GalleryItem.swift */,
 				CE47277A254254B100C27C3D /* GalleryItemRow.swift */,
 				CE47273425421F7000C27C3D /* Assets.xcassets */,
@@ -309,6 +316,9 @@
 		CE47278225426ACD00C27C3D /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				CE070D14289E5D6D0071A361 /* testfinnder.h */,
+				CE070D15289E5D6D0071A361 /* testfinnder.m */,
+				CE070D17289E5DC40071A361 /* StoryboardTest.storyboard */,
 				CE9F94012898B9590019CC79 /* Charts */,
 				CE1765BF26F9192700DC1C10 /* UIKitSupport */,
 				CE064DF126F1742100F3F52A /* Gestures */,
@@ -317,10 +327,10 @@
 				CEB30170269FB278007C4479 /* Resrouces */,
 				CE521684268A9CD200C52279 /* Pickers */,
 				CE47278325426B0900C27C3D /* SwiftUIButtons.swift */,
+				CE5C1D5F28B45FEF0064E455 /* SwiftUICharts.swift */,
 				CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */,
 				CEBE271A26D4420D00621C42 /* SwiftUIForms.swift */,
 				CE2A85D626EAD55E001D4C69 /* SwiftUIGeometryReader.swift */,
-				CE9F94062899B4F90019CC79 /* SwiftUIGraphs.swift */,
 				CED926CB26E00F2C0005F5BA /* SwiftUIGroups.swift */,
 				CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */,
 				CE37F9482543B4160068AF33 /* SwiftUIImages.swift */,
@@ -375,7 +385,8 @@
 				CEB3016B269E51ED007C4479 /* Spacemissions.json */,
 				CED926CF26E058FD0005F5BA /* USRussianMissions.swift */,
 				CE9F94022898BE130019CC79 /* FirstLightSales.json */,
-				CE9F94042899AE710019CC79 /* FirstLightSales.swift */,
+				CE5C1D6128B474080064E455 /* FirstLightSalesWinter.json */,
+				CE9F9408289A0B010019CC79 /* FirstLightSales.swift */,
 			);
 			path = Resrouces;
 			sourceTree = "<group>";
@@ -447,6 +458,7 @@
 				TargetAttributes = {
 					CE47272C25421F6F00C27C3D = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1400;
 					};
 					CE47273D25421F7100C27C3D = {
 						CreatedOnToolsVersion = 12.2;
@@ -484,12 +496,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8C1A972705474C003C1092 /* IMG_4222.jpeg in Resources */,
+				CE5C1D6228B474080064E455 /* FirstLightSalesWinter.json in Resources */,
 				CE2A85DB26EAF09D001D4C69 /* SwiftUIHostingViewController.xib in Resources */,
 				CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */,
 				CE47273825421F7000C27C3D /* Preview Assets.xcassets in Resources */,
 				CE9F94032898BE130019CC79 /* FirstLightSales.json in Resources */,
 				CE8C1A982705474C003C1092 /* IMG_4219.jpeg in Resources */,
 				CE47273525421F7000C27C3D /* Assets.xcassets in Resources */,
+				CE070D18289E5DC40071A361 /* StoryboardTest.storyboard in Resources */,
 				CEB3016C269E51EE007C4479 /* Spacemissions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +534,7 @@
 				CE2A6C7E26D0716C003CDA36 /* SwiftUILabels.swift in Sources */,
 				CE2A85D326EAA71C001D4C69 /* HexagonParameters.swift in Sources */,
 				CE2A85D526EABC76001D4C69 /* SwiftUIViewBuilder.swift in Sources */,
+				CE2E9066289C66BE00141FCE /* SwiftUIGalleryApp.swift in Sources */,
 				CE2A85CF26EAA498001D4C69 /* BadgeBackground.swift in Sources */,
 				CE85B2A026E8920D00DDDA76 /* SwiftUILazyGrids.swift in Sources */,
 				CE47273325421F6F00C27C3D /* ContentView.swift in Sources */,
@@ -533,19 +548,21 @@
 				CE2A85DD26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift in Sources */,
 				CE4F541D26CB4D4F0000ABCD /* SwiftUIScrollView.swift in Sources */,
 				CE2A85D126EAA498001D4C69 /* RotatedBadgeSymbol.swift in Sources */,
-				CE47273125421F6F00C27C3D /* SwiftUIGalleryApp.swift in Sources */,
 				CE47278425426B0900C27C3D /* SwiftUIButtons.swift in Sources */,
 				CEBE271B26D4420D00621C42 /* SwiftUIForms.swift in Sources */,
 				CE064DF726F1755A00F3F52A /* SwiftUIRotationGesture.swift in Sources */,
+				CE070D16289E5D6D0071A361 /* testfinnder.m in Sources */,
 				CE52168E268A9EA400C52279 /* SwiftUISegmentedPicker.swift in Sources */,
 				CE37F9442543B3730068AF33 /* SwiftUIToggles.swift in Sources */,
 				CE064DF926F1759100F3F52A /* SwiftUILongPressGesture.swift in Sources */,
 				CEB30172269FB506007C4479 /* MissionCard.swift in Sources */,
 				CEA223A526E2F6CF007604E1 /* SwiftUIGroupBox.swift in Sources */,
 				CE472768254237D800C27C3D /* GalleryItem.swift in Sources */,
+				CE5C1D6028B45FEF0064E455 /* SwiftUICharts.swift in Sources */,
 				CE8E0CAB26CC953700D2142C /* SwiftUIText.swift in Sources */,
 				CEA1A9EE26CF22AF0083D21D /* SwiftUIToolbars.swift in Sources */,
 				CE37F9492543B4160068AF33 /* SwiftUIImages.swift in Sources */,
+				CE9F9409289A0B010019CC79 /* FirstLightSales.swift in Sources */,
 				CED926D026E058FD0005F5BA /* USRussianMissions.swift in Sources */,
 				CE064DF326F1746A00F3F52A /* SwiftUIGestureManager.swift in Sources */,
 				CE47277B254254B100C27C3D /* GalleryItemRow.swift in Sources */,
@@ -561,8 +578,6 @@
 				CE31F73A26B0C44C00C30C68 /* SwiftUIMenu.swift in Sources */,
 				CE2A85D026EAA498001D4C69 /* BadgeSymbol.swift in Sources */,
 				CEB3016A269E2915007C4479 /* SwiftUILists.swift in Sources */,
-				CE9F94072899B4F90019CC79 /* SwiftUIGraphs.swift in Sources */,
-				CE9F94052899AE710019CC79 /* FirstLightSales.swift in Sources */,
 				CE064DFD26F175EB00F3F52A /* SwiftUICompoundGestures.swift in Sources */,
 				CE37F9352543B26D0068AF33 /* SwiftUISliders.swift in Sources */,
 				CEDFB2CA2894603100F3850A /* SwiftUIPhotoPicker.swift in Sources */,
@@ -728,9 +743,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIGallery/Preview Content\"";
-				DEVELOPMENT_TEAM = JQ3A6QY4D2;
+				DEVELOPMENT_TEAM = TPJ4QB3N7U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIGallery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -740,6 +756,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dangerouskittens.SwiftUIGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TVOS_DEPLOYMENT_TARGET = 14.7;
@@ -752,9 +769,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIGallery/Preview Content\"";
-				DEVELOPMENT_TEAM = JQ3A6QY4D2;
+				DEVELOPMENT_TEAM = TPJ4QB3N7U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIGallery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
