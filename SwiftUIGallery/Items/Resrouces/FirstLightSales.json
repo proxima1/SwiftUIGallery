@@ -13,12 +13,12 @@
     "months":[
         {
             "month":"January",
-            "monthAbbr":"J",
+            "monthAbbr":"Jan",
             "monthNum":"0",
             "product":[
                 {
                     "title":"DistantSuns",
-                    "total":"666",
+                    "total":"641",
                     "totalNA":"545",
                     "totalGross":"6660",
                     "totalNet":"5559",
@@ -36,13 +36,13 @@
         },
         {
             "month":"February",
-            "monthAbbr":"F",
+            "monthAbbr":"Feb",
             "monthNum":"1",
             "product":[
                 {
                     "title":"DistantSuns",
                     
-                    "total":"441",
+                    "total":"85",
                     "totalNA":"400",
                     "totalGross":"4410",
                     "totalNet":"3969",
@@ -61,12 +61,12 @@
         {
             "month":"March",
             "monthNum":"2",
-            "monthAbbr":"M",
+            "monthAbbr":"Mar",
             "product":[
                 {
                     "title":"DistantSuns",
                     
-                    "total":"428",
+                    "total":"852",
                     "totalNA":"359",
                     "totalGross":"4280",
                     "totalNet":"3852",
@@ -84,7 +84,7 @@
         },
         {
             "month":"April",
-            "monthAbbr":"A",
+            "monthAbbr":"Apr",
             "monthNum":"3",
             "product":[
                 {
@@ -108,7 +108,7 @@
         },
         {
             "month":"May",
-            "monthAbbr":"M",
+            "monthAbbr":"May",
             "monthNum":"4",
             "product":[
                 {
@@ -133,7 +133,7 @@
         {
             "month":"June",
             "monthNum":"5",
-            "monthAbbr":"J",
+            "monthAbbr":"Jun",
             "product":[
                 {
                     "title":"DistantSuns",
@@ -156,7 +156,7 @@
         },
         {
             "month":"July",
-            "monthAbbr":"J",
+            "monthAbbr":"Jul",
             "monthNum":"6",
             "product":[
                 {
@@ -181,7 +181,7 @@
         {
             "month":"August",
             "monthNum":"7",
-            "monthAbbr":"A",
+            "monthAbbr":"Aug",
             "product":[
                 {
                     "title":"DistantSuns",
@@ -204,7 +204,7 @@
         },
         {
             "month":"September",
-            "monthAbbr":"S",
+            "monthAbbr":"Sep",
             "monthNum":"8",
             "product":[
                 {
@@ -228,7 +228,7 @@
         },
         {
             "month":"October",
-            "monthAbbr":"O",
+            "monthAbbr":"Oct",
             "monthNum":"9",
             "product":[
                 {
@@ -252,7 +252,7 @@
         },
         {
             "month":"November",
-            "monthAbbr":"N",
+            "monthAbbr":"Nov",
             "monthNum":"10",
             "product":[
                 {
@@ -276,7 +276,7 @@
         },
         {
             "month":"December",
-            "monthAbbr":"D",
+            "monthAbbr":"Dec",
             "monthNum":"11",
             "product":[
                 {

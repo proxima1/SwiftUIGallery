@@ -1,25 +1,18 @@
 
-
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
 //   let AppSales = try AppSales(json)
-// xxxx
-// bbb
-//zzz
-//qqq
-//rrrr
+
 import Foundation
-import Charts
 
 // MARK: - AppSales
 struct AppSales: Codable {
-    var id = UUID()             //needed to make this work in a ForEach.
-    let products: [AppSalesProduct]
+    let product: [Product]
     let months: [Month]
 
     enum CodingKeys: String, CodingKey {
-        case products = "products"
+        case product = "product"
         case months = "months"
     }
 }
@@ -28,7 +21,7 @@ struct AppSales: Codable {
 
 extension AppSales {
     init(data: Data) throws {
-        self = try salesJSONDecoder().decode(AppSales.self, from: data)
+        self = try newJSONDecoder().decode(AppSales.self, from: data)
     }
 
     init(_ json: String, using encoding: String.Encoding = .utf8) throws {
@@ -43,17 +36,17 @@ extension AppSales {
     }
 
     func with(
-        products: [AppSalesProduct]? = nil,
+        product: [Product]? = nil,
         months: [Month]? = nil
     ) -> AppSales {
         return AppSales(
-            products: products ?? self.products,
+            product: product ?? self.product,
             months: months ?? self.months
         )
     }
 
     func jsonData() throws -> Data {
-        return try salesJSONEncoder().encode(self)
+        return try newJSONEncoder().encode(self)
     }
 
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
@@ -62,18 +55,17 @@ extension AppSales {
 }
 
 // MARK: - Month
-struct Month: Codable,Identifiable {
+struct Month: Codable {
     let month: String
-    let monthAbbr: String
     let monthNum: String
-    let product: [MonthProduct]
-    var id = UUID()             //needed to make this work in a ForEach.
+    let distantsuns: Apollo360
+    let apollo360: Apollo360
 
     enum CodingKeys: String, CodingKey {
         case month = "month"
-        case monthAbbr = "monthAbbr"
         case monthNum = "monthNum"
-        case product = "product"
+        case distantsuns = "distantsuns"
+        case apollo360 = "Apollo360"
     }
 }
 
@@ -81,7 +73,7 @@ struct Month: Codable,Identifiable {
 
 extension Month {
     init(data: Data) throws {
-        self = try salesJSONDecoder().decode(Month.self, from: data)
+        self = try newJSONDecoder().decode(Month.self, from: data)
     }
 
     init(_ json: String, using encoding: String.Encoding = .utf8) throws {
@@ -97,20 +89,20 @@ extension Month {
 
     func with(
         month: String? = nil,
-        monthAbbr: String? = nil,
         monthNum: String? = nil,
-        product: [MonthProduct]? = nil
+        distantsuns: Apollo360? = nil,
+        apollo360: Apollo360? = nil
     ) -> Month {
         return Month(
             month: month ?? self.month,
-            monthAbbr: monthAbbr ?? self.monthAbbr,
             monthNum: monthNum ?? self.monthNum,
-            product: product ?? self.product
+            distantsuns: distantsuns ?? self.distantsuns,
+            apollo360: apollo360 ?? self.apollo360
         )
     }
 
     func jsonData() throws -> Data {
-        return try salesJSONEncoder().encode(self)
+        return try newJSONEncoder().encode(self)
     }
 
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
@@ -118,9 +110,8 @@ extension Month {
     }
 }
 
-// MARK: - MonthProduct
-struct MonthProduct: Codable {
-    let title: Title
+// MARK: - Apollo360
+struct Apollo360: Codable {
     let total: String
     let totalNA: String
     let totalGross: String
@@ -128,7 +119,6 @@ struct MonthProduct: Codable {
     let updates: String
 
     enum CodingKeys: String, CodingKey {
-        case title = "title"
         case total = "total"
         case totalNA = "totalNA"
         case totalGross = "totalGross"
@@ -137,11 +127,11 @@ struct MonthProduct: Codable {
     }
 }
 
-// MARK: MonthProduct convenience initializers and mutators
+// MARK: Apollo360 convenience initializers and mutators
 
-extension MonthProduct {
+extension Apollo360 {
     init(data: Data) throws {
-        self = try salesJSONDecoder().decode(MonthProduct.self, from: data)
+        self = try newJSONDecoder().decode(Apollo360.self, from: data)
     }
 
     init(_ json: String, using encoding: String.Encoding = .utf8) throws {
@@ -156,15 +146,13 @@ extension MonthProduct {
     }
 
     func with(
-        title: Title? = nil,
         total: String? = nil,
         totalNA: String? = nil,
         totalGross: String? = nil,
         totalNet: String? = nil,
         updates: String? = nil
-    ) -> MonthProduct {
-        return MonthProduct(
-            title: title ?? self.title,
+    ) -> Apollo360 {
+        return Apollo360(
             total: total ?? self.total,
             totalNA: totalNA ?? self.totalNA,
             totalGross: totalGross ?? self.totalGross,
@@ -174,7 +162,7 @@ extension MonthProduct {
     }
 
     func jsonData() throws -> Data {
-        return try salesJSONEncoder().encode(self)
+        return try newJSONEncoder().encode(self)
     }
 
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
@@ -182,13 +170,8 @@ extension MonthProduct {
     }
 }
 
-enum Title: String, Codable, Plottable{
-    case apollo360 = "Apollo360"
-    case distantSuns = "DistantSuns"
-}
-
-// MARK: - AppSalesProduct
-struct AppSalesProduct: Codable {
+// MARK: - Product
+struct Product: Codable {
     let name: String
     let price: String
     let sku: String
@@ -200,11 +183,11 @@ struct AppSalesProduct: Codable {
     }
 }
 
-// MARK: AppSalesProduct convenience initializers and mutators
+// MARK: Product convenience initializers and mutators
 
-extension AppSalesProduct {
+extension Product {
     init(data: Data) throws {
-        self = try salesJSONDecoder().decode(AppSalesProduct.self, from: data)
+        self = try newJSONDecoder().decode(Product.self, from: data)
     }
 
     init(_ json: String, using encoding: String.Encoding = .utf8) throws {
@@ -222,8 +205,8 @@ extension AppSalesProduct {
         name: String? = nil,
         price: String? = nil,
         sku: String? = nil
-    ) -> AppSalesProduct {
-        return AppSalesProduct(
+    ) -> Product {
+        return Product(
             name: name ?? self.name,
             price: price ?? self.price,
             sku: sku ?? self.sku
@@ -231,7 +214,7 @@ extension AppSalesProduct {
     }
 
     func jsonData() throws -> Data {
-        return try salesJSONEncoder().encode(self)
+        return try newJSONEncoder().encode(self)
     }
 
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
@@ -264,8 +247,7 @@ struct FirstLightSales
     init(){
         do {
             let path = Bundle.main.path(forResource: "FirstLightSales.json", ofType:nil)
-//            let path = Bundle.main.path(forResource: "FirstLightSalesWinter.json", ofType:nil)
-
+            
             if  (path != nil){
                 print("Got file: \(String(describing: path))")
             }
@@ -274,19 +256,8 @@ struct FirstLightSales
             
             sales=try AppSales(result)
             
-        } catch let DecodingError.keyNotFound(key, context) {
-            print("Key '\(key)' not found:", context.debugDescription)
-            print("codingPath:", context.codingPath)
-        } catch let DecodingError.valueNotFound(value, context) {
-            print("Value '\(value)' not found:", context.debugDescription)
-            print("codingPath:", context.codingPath)
-        } catch let DecodingError.typeMismatch(type, context)  {
-            print("Type '\(type)' mismatch:", context.debugDescription)
-            print("codingPath:", context.codingPath)
-        } catch {
-            print("error: ", error)
+        }catch let error {
+            Swift.print ("Other cases: Error: \(error.localizedDescription)") // I like all other colors
         }
-        //            Swift.print ("Other cases: Error: \(error.localizedDescription)") // I like all other colors
-        //        }
     }
 }
