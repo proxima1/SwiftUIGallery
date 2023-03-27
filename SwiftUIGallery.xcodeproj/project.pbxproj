@@ -70,6 +70,7 @@
 		CEBE271D26D498E900621C42 /* SwiftUIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE271C26D498E900621C42 /* SwiftUIProgressView.swift */; };
 		CEC5D8712687007900AD8333 /* SwiftUIShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5D8702687007900AD8333 /* SwiftUIShapes.swift */; };
 		CECECF40267C2A850069849B /* SwiftUIWheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECECF3F267C2A850069849B /* SwiftUIWheelPicker.swift */; };
+		CED0058129CEA62E0004C89B /* SwiftUIToolbarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0058029CEA62E0004C89B /* SwiftUIToolbarMenu.swift */; };
 		CED926CC26E00F2C0005F5BA /* SwiftUIGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED926CB26E00F2C0005F5BA /* SwiftUIGroups.swift */; };
 		CED926D026E058FD0005F5BA /* USRussianMissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED926CF26E058FD0005F5BA /* USRussianMissions.swift */; };
 		CEDFB2CA2894603100F3850A /* SwiftUIPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFB2C92894603100F3850A /* SwiftUIPhotoPicker.swift */; };
@@ -169,6 +170,7 @@
 		CEBE271C26D498E900621C42 /* SwiftUIProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIProgressView.swift; path = SwiftUIGallery/Items/SwiftUIProgressView.swift; sourceTree = SOURCE_ROOT; };
 		CEC5D8702687007900AD8333 /* SwiftUIShapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIShapes.swift; sourceTree = "<group>"; };
 		CECECF3F267C2A850069849B /* SwiftUIWheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWheelPicker.swift; sourceTree = "<group>"; };
+		CED0058029CEA62E0004C89B /* SwiftUIToolbarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIToolbarMenu.swift; sourceTree = "<group>"; };
 		CED926CB26E00F2C0005F5BA /* SwiftUIGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGroups.swift; sourceTree = "<group>"; };
 		CED926CF26E058FD0005F5BA /* USRussianMissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USRussianMissions.swift; sourceTree = "<group>"; };
 		CEDFB2C92894603100F3850A /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 				CE44F04326C7586D00DC7264 /* SwiftUITextEditor.swift */,
 				CE37F9432543B3730068AF33 /* SwiftUIToggles.swift */,
 				CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */,
+				CED0058029CEA62E0004C89B /* SwiftUIToolbarMenu.swift */,
 				CE2A85D426EABC76001D4C69 /* SwiftUIViewBuilder.swift */,
 			);
 			path = Items;
@@ -531,6 +534,7 @@
 			files = (
 				CED926CC26E00F2C0005F5BA /* SwiftUIGroups.swift in Sources */,
 				CE2A85CE26EAA498001D4C69 /* Badge.swift in Sources */,
+				CED0058129CEA62E0004C89B /* SwiftUIToolbarMenu.swift in Sources */,
 				CE2A6C7E26D0716C003CDA36 /* SwiftUILabels.swift in Sources */,
 				CE2A85D326EAA71C001D4C69 /* HexagonParameters.swift in Sources */,
 				CE2A85D526EABC76001D4C69 /* SwiftUIViewBuilder.swift in Sources */,
@@ -672,7 +676,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -727,7 +731,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -43,7 +43,7 @@ struct SwiftUIToggles: View {
                 .labelsHidden()
             
             Text("B: Toggle Me Second!")
-                .foregroundColor(isToggled ? .blue : .red)
+                .foregroundColor(isToggled ? .red : .blue)
             Toggle("Toggle", isOn: $isToggled)
                 .labelsHidden()
             
