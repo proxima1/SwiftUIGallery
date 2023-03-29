@@ -36,13 +36,13 @@ struct ItemsToolbar: ToolbarContent {
     let add: () -> Void
     let sort: () -> Void
     let filter: () -> Void
-
+    
     var body: some ToolbarContent {
         ToolbarItem(placement: .primaryAction) {
             Button("Spiny Lumpsucker 👍🏻", action: add)
         }
 
-        ToolbarItemGroup(placement: .bottomBar) {
+        ToolbarItemGroup(placement: ToolbarItemPlacement.bottomBar) {
             Button("Wobbegong", action: sort)
             Button(action: filter)
             {
@@ -56,24 +56,140 @@ struct ItemsToolbar: ToolbarContent {
     }
 }
 
-//two buttons on the  bottom
+//Views have toolbar modifier, which doesn't so much create a toolbar
+//but adds items in the toolbar. So I can have two Text items, each with
+//their own .toolbars iwth an image each, and the top bar will
 
 struct SwiftUIToolbars: View {
     @State var color = Color.red
+    var placement : ToolbarItemPlacement
 
+    init(placement: ToolbarItemPlacement){
+        self.placement = placement
+    }
+    
     var body: some View{
 //        topToolBarWithImagesLink()
 //        TitleMenuExample()
 //        topSimpleToolbar2(text: "howdy")
-//        StructToolbarItemGroupView()
-        customizableToolBar()
+//        topMultipleToolbars()
+        StructToolbarItemGroupView(placement: placement)
+//        customizableToolBar()
+//        topToolBarTitleWithMenu()
 //        topToolBarWithLink()
 //       topToolBarColorScheme()
-
+//        bottomToolBarSimple2()
+        
 
     }
 }
+
+struct bottomToolBarSimple2: View {
+    var body: some View {
+        NavigationView {
+            Text("My app")
+                .toolbar {
+                    ToolbarItemGroup(placement: .bottomBar) {
+                        Image(systemName: "person")
+                        HStack {
+                            Image(systemName: "ellipsis")
+                            Divider()
+                            
+                            Button(action: {print("howdy")}){
+                                Text("Click here")
+                            }
+                            
+                            Button(action: {print("hit Marge")}){
+                                Image("Marge")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 32, height: 32)
+                                    .background(Color.white)
+                                    .mask(Circle())
+ 
+                            }
+                            
+                            Image(systemName: "trash")
+                                .frame(width: 32, height: 32)
+                                .background(Color.blue)
+                                .mask(Circle())
+                        }
+                    }
+                }
+        }
+    }
+}
+
+struct bottomToolBarSimple: View {
+    var body: some View {
+        NavigationView{ //NavigationStack
+            Text("Content")
+            
+                .toolbar {
+                    ToolbarItemGroup(placement: .bottomBar) {
+                        Button("Hello") {
+                            print("Hello world!")
+                        }
+                        
+                        Button(action: {print("hit Marge")}){
+                            Text("Marge")
+                            Image("Marge")
+                        }
+                        
+                        Button("World") {
+                            Image("Homer")
+                            print("Hello world!")
+                        }
+                    }
+                }
+        }
+    }
+}
+
+struct topToolBarTitleWithMenu: View{
     
+    var body: some View {
+        NavigationStack {
+            Text("Ellie").fontWeight(.light).font(.system(size: 40))
+                .toolbar {
+                    ToolbarTitleMenu{
+                        Button(action: {print("hit Homer")}){
+                            Text("Homer")
+                            Image("Homer")
+                        }
+                        Button(action: {print("hit Marge")}){
+                            Text("Marge")
+                            Image("Marge")
+                        }
+                        Button(action: {print("Lisa")}){
+                            Text("Lisa")
+                            Image("Lisa")
+                        }
+
+                        Button(action: {print("Bart")}){
+                            Text("Bart")
+                            Image("Bart")
+                        }
+                        Button(action: {print("Maggie")}){
+                            Text("Maggie")
+                            Image("Maggie")
+                        }
+                        Button(action: {print("SpiderPig")}){
+                            Text("Spider Pig")
+                            Image("SpiderPig")
+                        }
+                        Button(action: {print("Donut")}){
+                            Text("Donut")
+                            Image("Donut")
+                        }
+                    }
+                }
+                .navigationTitle("Simpsons")
+                .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+}
+
 struct topToolBarWithLink: View {
     var body: some View{
         NavigationStack {
@@ -103,7 +219,15 @@ struct topToolBarWithImagesLink: View {
                 NavigationLink {
                     Text("Detail").fontWeight(.medium).font(.system(size: 35.0))
                 } label: {
-                    Text("Click here").fontWeight(.medium).font(.system(size: 35.0))
+//                    Text("Click here").fontWeight(.medium).font(.system(size: 35.0)).toolbar {
+//                        Button(action: {print("hit button 1")}) {
+//                            Image(systemName: "mic.circle")
+//                        }.fontWeight(.medium).font(.system(size: 20))
+//
+//                        Button(action: {print("hit button 2")}) {
+//                            Image(systemName: "person.crop.circle")
+//                        }.fontWeight(.medium).font(.system(size: 20))
+//                    }
                 }
             }
             .toolbar {
@@ -158,45 +282,54 @@ struct TitleMenuExample: View {
     }
 }
 
-struct StructToolbarItemGroupView: View {
+struct StructToolbarItemGroupView: View{
     @State private var text = "Go Amiga!"
     @State private var bold = false
     @State private var italic = false
     @State private var fontSize = 25.0
-
+    var placement : ToolbarItemPlacement
+    
+    init(placement: ToolbarItemPlacement){
+        self.placement = placement
+    }
+    
     var displayFont: Font {
         let font = Font.system(size: CGFloat(fontSize),
                                weight: bold == true ? .bold : .regular)
         return italic == true ? font.italic() : font
     }
-
+    
     var body: some View {
-        
-        TextEditor(text: $text)
-            .font(displayFont)
-            .multilineTextAlignment(.center)
-            .toolbar {
-                ToolbarItemGroup {
-                    Slider(
-                        value: $fontSize,
-                        in: 8...120,
-                        minimumValueLabel:
-                            Text("A").font(.system(size: 8)),
-                        maximumValueLabel:
-                            Text("A").font(.system(size: 16))
-                    ) {
-                        Text("Howdy (\(Int(fontSize)))")
-                    }.frame(width: 150, height: 100)
-                    
-                    Toggle(isOn: $bold) {
-                        Image(systemName: "bold")
+        NavigationStack{
+                
+                TextEditor(text: $text)
+                    .font(displayFont)
+                    .navigationTitle("My Note").foregroundColor(.red).font(.title)
+                    .multilineTextAlignment(.center)
+                    .toolbar {
+                        ToolbarItemGroup(placement: placement)
+                        {
+
+                        Slider(
+                            value: $fontSize,
+                            in: 8...120,
+                            minimumValueLabel:
+                                Text("A").font(.system(size: 8)),
+                            maximumValueLabel:
+                                Text("A").font(.system(size: 16))
+                        ) {
+                            Text("Howdy (\(Int(fontSize)))")
+                        }.frame(width: 150, height: 100)
+                        
+                        Toggle(isOn: $bold) {
+                            Image(systemName: "bold")
+                        }
+                        Toggle(isOn: $italic) {
+                            Image(systemName: "italic")
+                        }
                     }
-                    Toggle(isOn: $italic) {
-                        Image(systemName: "italic")
-                    }
-                }
             }
-            .navigationTitle("My Note").foregroundColor(.red).font(.title)
+        }
     }
 }
 
@@ -249,16 +382,49 @@ struct topSimpleToolbar2: View {
     var text: String
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Text("Higgs").fontWeight(.light).font(.system(size: 40))
                 .toolbar {
                     ToolbarItem {
-                        Image(systemName: "person.crop.circle")
+                        Image(systemName: "sunrise.circle")
+                    }
+                }
+            Text("Ellie").fontWeight(.light).font(.system(size: 40))
+                .toolbar {
+                    ToolbarItem {
+                        Image(systemName: "airplane")
+                    }
+                    ToolbarItem{
+                        searchView(text: "Search Me")
                     }
                 }
         }
     }
 }
+
+struct topMultipleToolbars: View {
+    
+    var body: some View {
+        NavigationStack {
+            Text("Higgs").fontWeight(.light).font(.system(size: 40))
+                .toolbar {
+                    ToolbarItem {
+                        Image(systemName: "globe.americas.fill")
+                    }
+                }
+            Text("Ellie").fontWeight(.light).font(.system(size: 40))
+                .toolbar {
+                    ToolbarItem {
+                        Image(systemName: "airplane")
+                    }
+                    ToolbarItem{
+                        searchView(text: "Search Me")
+                    }
+                }
+        }
+    }
+}
+
 
 struct bottomSimpleToolbar1: View {
     var text: String
@@ -389,7 +555,9 @@ struct sortButton: View {
 //}
 
 struct SwiftUIToolbars_Previews: PreviewProvider {
+
     static var previews: some View {
-        SwiftUIToolbars()
+        
+        SwiftUIToolbars(placement: ToolbarItemPlacement.bottomBar)
     }
 }

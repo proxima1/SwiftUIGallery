@@ -152,14 +152,14 @@ struct ContentView_Previews: PreviewProvider {
 		Group {
 			ContentView()
                 .previewDevice(PreviewDevice(rawValue: "iPhone X"))
-                .previewDisplayName("iPhone X")
+                .previewDisplayName("iPhoshane X")
                 .previewLayout(.fixed(width: 375, height: 1000))
                 .environment(\.colorScheme, .dark)
              ContentView()
-                .previewDevice(PreviewDevice(rawValue: "iPhone X"))
-                .previewLayout(.fixed(width: 375, height: 1000))
+                .previewDevice(PreviewDevice(rawValue: "iPad Pro (11-inch) (4th generation) (16GB) "))
+                .previewLayout(.fixed(width: 1000, height: 2000))
                 .environment(\.colorScheme, .light)
-                .previewDisplayName("iPhone X")
+                .previewDisplayName("iPad Pro 11")
 		}
     }
 }

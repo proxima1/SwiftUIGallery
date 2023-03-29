@@ -7,23 +7,43 @@
 
 import SwiftUI
 
+var _TBmenuItems: [menuItemToolbarExample] = [
+    menuItemToolbarExample(title: "Basic Top Bar",imageName: "sun.max.circle", color: .red, placement: ToolbarItemPlacement.bottomBar),
+    menuItemToolbarExample(title: "Bottom bar",   imageName: "waveform.path",  color: Color("Magenta"), placement: ToolbarItemPlacement.navigationBarTrailing),
+    menuItemToolbarExample(title: "123 bar",      imageName: "paperplane",     color: Color("DarkBlue"), placement:ToolbarItemPlacement.navigationBarLeading)]
 
+struct menuItemToolbarExample : View
+{
+    var title : String
+    var imageName: String
+    var color: Color
+    var placement: ToolbarItemPlacement
+    var children: [menuItemToolbarExample]?=nil
+    
+    var body: some View
+    {
+        HStack
+        {
+            Image(systemName: imageName).foregroundColor(color)
+            Text(title).foregroundColor(color).font(.title)
+        }.frame(maxWidth: .infinity, alignment: .leading)
+        .contentShape(Rectangle())
+    }
+}
+          
+extension menuItemToolbarExample: Identifiable {
+     // assuming `name` is unique, it can be used as our identifier
+     var id: String { title }
+}
 
-var _TBmenuItems: [menuItem] = [menuItem(title: "Basic Top Bar",
-                               imageName: "sun.max.circle", color: .red,  navTarget: AnyView(SwiftUIToolbars())),
-                              menuItem(title: "Bottom bar",   imageName: "waveform.path",     color:  Color("Magenta"),navTarget: AnyView(SwiftUIToolbars())),
-                                menuItem(title: "123 bar",     imageName: "paperplane", color: Color("DarkBlue"),  navTarget: AnyView(SwiftUIToolbars())),
-                                ]
-                                
 struct SwiftUIToolbarMenu: View {
-
     var body: some View
     {
         NavigationStack(){
             List(_TBmenuItems, children: \.children) { item in
                 
                 if item.children == nil {
-                    navMenuItemView(menuItem:item)
+                    navToolBarMenuItemView(menuItem: item)
                 }
                 else{
                     item.onTapGesture {
@@ -32,6 +52,27 @@ struct SwiftUIToolbarMenu: View {
                 }
             }.navigationTitle("Toolbars")
         }
+    }
+}
+
+struct navToolBarMenuItemView : View
+{
+    var menuItem: menuItemToolbarExample
+    
+    var link: NavigationLink<AnyView,AnyView>
+    
+    init(menuItem: menuItemToolbarExample){
+        self.menuItem = menuItem
+        
+        link=NavigationLink(
+            destination: AnyView(SwiftUIToolbars(placement: menuItem.placement)),
+                                 label: {AnyView(menuItem)}
+        )
+    }
+    
+    var body: some View
+    {
+        link
     }
 }
 
