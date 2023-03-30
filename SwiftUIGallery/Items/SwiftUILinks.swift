@@ -37,7 +37,7 @@ struct SwiftUILinks: View {
         //iOS 15/XC 13 way, using markdown in the next field
         //Text("[Stackoverflow](https://stackoverflow.com)")
        
-        NavigationView(){
+        NavigationStack(){
             VStack{
                 Spacer()
                 Text("URL")

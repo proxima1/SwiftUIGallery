@@ -36,7 +36,7 @@ struct SwiftUIMenuPicker: View {
     @State var apolloPatch: String = "Apollo 13"
 
 	var body: some View {
-		NavigationView {
+        NavigationStack {
 			Form {
 				Section {
                     Picker("Select Patch: ",selection: $apolloPatch){

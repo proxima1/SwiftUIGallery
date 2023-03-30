@@ -12,7 +12,7 @@ import SwiftUI
 
 struct SwiftUIShapes: View {
     var body: some View {
-        NavigationView{
+        NavigationStack{
             VStack{
                 Text("Taken from Apple's Landmarks example")
                 Badge()

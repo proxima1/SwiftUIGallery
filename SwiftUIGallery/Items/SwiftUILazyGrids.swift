@@ -37,7 +37,7 @@ struct SwiftUILazyGrids: View {
     private let columns = [GridItem(.fixed(200)), GridItem(.flexible()), GridItem(.flexible())]
 
     var body: some View {
-        NavigationView() {
+        NavigationStack() {
             ScrollView {
                 LazyVGrid(columns: columns, spacing:vspace) {
                     ForEach((0...79), id: \.self) {
