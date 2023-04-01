@@ -32,30 +32,6 @@
 
 import SwiftUI
 
-struct ItemsToolbar: ToolbarContent {
-    let add: () -> Void
-    let sort: () -> Void
-    let filter: () -> Void
-    
-    var body: some ToolbarContent {
-        ToolbarItem(placement: .primaryAction) {
-            Button("Spiny Lumpsucker 👍🏻", action: add)
-        }
-
-        ToolbarItemGroup(placement: ToolbarItemPlacement.bottomBar) {
-            Button("Wobbegong", action: sort)
-            Button(action: filter)
-            {
-                Text("Streaked Tenrec")  //notice all of these attributes are ignored
-                    //even though we're using a button
-                    .foregroundColor(.black).italic().padding()
-                    .background(Color.white)
-                    .cornerRadius(40).shadow(color: Color.black.opacity(0.2),radius: 6, x: 4, y: 4)
-            }
-        }
-    }
-}
-
 //Views have toolbar modifier, which doesn't so much create a toolbar
 //but adds items in the toolbar. So I can have two Text items, each with
 //their own .toolbars iwth an image each, and the top bar will
@@ -71,7 +47,6 @@ struct SwiftUIToolbars: View {
     }
     
     var body: some View{
-        
         toolbarView(idString:idString, placement: placement)
     }
     
@@ -120,7 +95,7 @@ struct simpleTextBar: View{
                 ToolbarItem{
                     Button(action: {print("Hit Button")}) {
                         Text("Press Here")
-                    }
+                    }.buttonStyle(.bordered)
                 }
             }
         }
@@ -571,11 +546,11 @@ struct searchView: View {
     }
 }
 
-struct SwiftUIToolbars_Previews: PreviewProvider {
-
-    static var previews: some View {
-        
-        SwiftUIToolbars(idString: "toolbarwithlink", placement: ToolbarItemPlacement.bottomBar)
-    }
-}
+//struct SwiftUIToolbars_Previews: PreviewProvider {
+//
+//    static var previews: some View {
+//        
+//        SwiftUIToolbars(idString: "toolbarwithlink", placement: ToolbarItemPlacement.bottomBar)
+//    }
+//}
 

@@ -102,8 +102,8 @@ struct navToolBarMenuItemView : View
     }
 }
 
-struct SwiftUIToolbarMenu_Previews: PreviewProvider {
-    static var previews: some View {
-        SwiftUIToolbarMenu()
-    }
-}
+//struct SwiftUIToolbarMenu_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SwiftUIToolbarMenu()
+//    }
+//}
