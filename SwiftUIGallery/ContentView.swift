@@ -152,7 +152,7 @@ struct ContentView_Previews: PreviewProvider {
 		Group {
 			ContentView()
                 .previewDevice(PreviewDevice(rawValue: "iPhone X"))
-                .previewDisplayName("iPhoshane X")
+                .previewDisplayName("iPhone X")
                 .previewLayout(.fixed(width: 375, height: 1000))
                 .environment(\.colorScheme, .dark)
              ContentView()
