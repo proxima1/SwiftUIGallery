@@ -20,5 +20,161 @@
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1CF8724-0521-406C-A59E-D419F91D1A25"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "D1CF8724-0521-406C-A59E-D419F91D1A25 - f006f13a7d65b82e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 (Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) -&gt; () in SwiftUIGallery.SwiftUIPhotoPicker.body.getter : some"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "D1CF8724-0521-406C-A59E-D419F91D1A25 - 3811237c274f5c2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 (Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) -&gt; () in SwiftUIGallery.SwiftUIPhotoPicker.body.getter : some"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "D1CF8724-0521-406C-A59E-D419F91D1A25 - 9c17ca62c243ce2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 (Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) -&gt; () in SwiftUIGallery.SwiftUIPhotoPicker.body.getter : some"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C86AA0F0-5650-41FC-894A-69CA52F90C54"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C86AA0F0-5650-41FC-894A-69CA52F90C54 - 6cf1f235d6613e83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIGallery.SwiftUIPhotoPicker.body.getter : some"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "1804">
+               </Location>
+               <Location
+                  uuid = "C86AA0F0-5650-41FC-894A-69CA52F90C54 - 6cf1f235d6613e83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIGallery.SwiftUIPhotoPicker.body.getter : some"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "2068">
+               </Location>
+               <Location
+                  uuid = "C86AA0F0-5650-41FC-894A-69CA52F90C54 - 6cf1f235d6613e83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIGallery.SwiftUIPhotoPicker.body.getter : some"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "3096">
+               </Location>
+               <Location
+                  uuid = "C86AA0F0-5650-41FC-894A-69CA52F90C54 - 6cf1f235d6613e83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIGallery.SwiftUIPhotoPicker.body.getter : some"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "2112">
+               </Location>
+               <Location
+                  uuid = "C86AA0F0-5650-41FC-894A-69CA52F90C54 - 6cf1f235d6613e83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIGallery.SwiftUIPhotoPicker.body.getter : some"
+                  moduleName = "SwiftUIGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/iPhoneProjects1/SwiftUIGallery/SwiftUIGallery/Items/Pickers/SwiftUIPhotoPicker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "2184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

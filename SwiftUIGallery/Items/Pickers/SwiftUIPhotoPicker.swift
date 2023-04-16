@@ -28,7 +28,6 @@ struct SwiftUIPhotoPicker: View {
                 if let data = try? await newItem?.loadTransferable(type: Data.self) {
                     selectedImageData = data
                 }
-
             }
         }
 
