@@ -16,38 +16,16 @@ struct SwiftUIGauges: View {
             
             Form
             {
-//                Section("Progress vs. Gauge")
-//                {
-//                    simpleProgressView()
-//                }+
-//                Section("Adding Value")
-//                {
-//                    notAsSimpleGauge()
-//                }
-                          
-//                Text("Thx to sarunw.com for these examples").frame(maxWidth: .infinity, alignment: .center).foregroundColor(.gray)
-
                 Section("Style")
                 {
-                    
-//                    Text("Style.linearCapacity")
-
                     gaugeWithStyle(style: .linearCapacity, styleName: "Style.linearCapacity")
                     
-//                    Text("Style.accessoryLinear")
-                    
                     gaugeWithStyle(style: .accessoryLinear, styleName: "Style.accessoryLinear")
-
-//                    Text("Style.accessoryLinearCapacity")
                                         
                     gaugeWithStyle(style: .accessoryLinearCapacity, styleName: "Style.accessoryLinearCapacity")
-                    
-//                    Text("Style.accessoryCircular")
 
                     gaugeWithStyle(style: .accessoryCircular, styleName: "Style.accessoryCircular")
                     
-//                    Text("Style.accessoryCircularCapacity")
-
                     gaugeWithStyle(style: .accessoryCircularCapacity, styleName: "Style.accessoryCircularCapacity")
                 }
                 
