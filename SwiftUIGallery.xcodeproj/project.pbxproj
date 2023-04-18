@@ -57,8 +57,6 @@
 		CE6C3F0C26BCB29A002C5778 /* SwiftUILinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */; };
 		CE74F3AA268FD6FE0058A8FC /* MissionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F3A9268FD6FE0058A8FC /* MissionData.swift */; };
 		CE85B2A026E8920D00DDDA76 /* SwiftUILazyGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85B29F26E8920C00DDDA76 /* SwiftUILazyGrids.swift */; };
-		CE8C1A972705474C003C1092 /* IMG_4222.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8C1A932705474C003C1092 /* IMG_4222.jpeg */; };
-		CE8C1A982705474C003C1092 /* IMG_4219.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8C1A942705474C003C1092 /* IMG_4219.jpeg */; };
 		CE8E0CAB26CC953700D2142C /* SwiftUIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */; };
 		CE8E0CAE26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */; };
 		CE9F94032898BE130019CC79 /* FirstLightSales.json in Resources */ = {isa = PBXBuildFile; fileRef = CE9F94022898BE130019CC79 /* FirstLightSales.json */; };
@@ -155,10 +153,6 @@
 		CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUILinks.swift; sourceTree = "<group>"; };
 		CE74F3A9268FD6FE0058A8FC /* MissionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MissionData.swift; path = SwiftUIGallery/Items/Resrouces/MissionData.swift; sourceTree = SOURCE_ROOT; };
 		CE85B29F26E8920C00DDDA76 /* SwiftUILazyGrids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILazyGrids.swift; sourceTree = "<group>"; };
-		CE8C1A932705474C003C1092 /* IMG_4222.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4222.jpeg; sourceTree = "<group>"; };
-		CE8C1A942705474C003C1092 /* IMG_4219.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4219.jpeg; sourceTree = "<group>"; };
-		CE8C1AA3270B9D24003C1092 /* IMG_4220.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4220.jpeg; sourceTree = "<group>"; };
-		CE8C1AA4270B9D24003C1092 /* IMG_4223.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4223.jpeg; sourceTree = "<group>"; };
 		CE8C1AA7270BA04E003C1092 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIText.swift; sourceTree = "<group>"; };
 		CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDynamicViewContentView.swift; sourceTree = "<group>"; };
@@ -177,6 +171,11 @@
 		CED926CF26E058FD0005F5BA /* USRussianMissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USRussianMissions.swift; sourceTree = "<group>"; };
 		CEDFB2C92894603100F3850A /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
 		CEDFB2CB28946C2200F3850A /* SwiftUILayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILayout.swift; sourceTree = "<group>"; };
+		CEF5670C29EE484D005171AC /* SwiftGalleryMainScreen.2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGalleryMainScreen.2.jpg; sourceTree = "<group>"; };
+		CEF5670D29EE484D005171AC /* SwiftGallery.Text.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGallery.Text.jpg; sourceTree = "<group>"; };
+		CEF5670E29EE484D005171AC /* SwiftGalleryMainScreen.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGalleryMainScreen.1.jpg; sourceTree = "<group>"; };
+		CEF5670F29EE484D005171AC /* SwiftGalleryWheelPicker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGalleryWheelPicker.jpg; sourceTree = "<group>"; };
+		CEF5671129EE4A93005171AC /* SwiftGallerySteppers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGallerySteppers.jpg; sourceTree = "<group>"; };
 		CEFD014B2695471B004AB134 /* SwiftUIColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIColorPicker.swift; sourceTree = "<group>"; };
 		CEFD014D2696918D004AB134 /* MissionPatches.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MissionPatches.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -254,10 +253,11 @@
 			isa = PBXGroup;
 			children = (
 				CE8C1AA7270BA04E003C1092 /* Readme.md */,
-				CE8C1A942705474C003C1092 /* IMG_4219.jpeg */,
-				CE8C1A932705474C003C1092 /* IMG_4222.jpeg */,
-				CE8C1AA3270B9D24003C1092 /* IMG_4220.jpeg */,
-				CE8C1AA4270B9D24003C1092 /* IMG_4223.jpeg */,
+				CEF5670D29EE484D005171AC /* SwiftGallery.Text.jpg */,
+				CEF5670E29EE484D005171AC /* SwiftGalleryMainScreen.1.jpg */,
+				CEF5670C29EE484D005171AC /* SwiftGalleryMainScreen.2.jpg */,
+				CEF5670F29EE484D005171AC /* SwiftGalleryWheelPicker.jpg */,
+				CEF5671129EE4A93005171AC /* SwiftGallerySteppers.jpg */,
 				CE47272F25421F6F00C27C3D /* SwiftUIGallery */,
 				CE47274125421F7100C27C3D /* SwiftUIGalleryTests */,
 				CE47274C25421F7100C27C3D /* SwiftUIGalleryUITests */,
@@ -501,13 +501,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8C1A972705474C003C1092 /* IMG_4222.jpeg in Resources */,
 				CE5C1D6228B474080064E455 /* FirstLightSalesWinter.json in Resources */,
 				CE2A85DB26EAF09D001D4C69 /* SwiftUIHostingViewController.xib in Resources */,
 				CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */,
 				CE47273825421F7000C27C3D /* Preview Assets.xcassets in Resources */,
 				CE9F94032898BE130019CC79 /* FirstLightSales.json in Resources */,
-				CE8C1A982705474C003C1092 /* IMG_4219.jpeg in Resources */,
 				CE47273525421F7000C27C3D /* Assets.xcassets in Resources */,
 				CE070D18289E5DC40071A361 /* StoryboardTest.storyboard in Resources */,
 				CEB3016C269E51EE007C4479 /* Spacemissions.json in Resources */,

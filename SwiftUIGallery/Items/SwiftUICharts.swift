@@ -11,66 +11,6 @@ import Charts
 
 //real basic example
 
-//struct LineChartExample: View {
-//    var body: some View {
-//        //        List {
-//        Chart {
-//            LineMark(
-//                x: .value("Mount", "jan/22"),
-//                y: .value("Value", 5)
-//            )
-//            LineMark(
-//                x: .value("Mount", "fev/22"),
-//                y: .value("Value", 4)
-//            )
-//            LineMark(
-//                x: .value("Mount", "mar/22"),
-//                y: .value("Value", 7)
-//            )
-//        }
-//        .frame(height: 200)
-//        //        }
-//    }
-//}
-//
-//struct BarChartExample: View {
-//    var body: some View {
-//        List {
-//            Chart {
-//                BarMark(
-//                    x: .value("Month", "jan/22"),
-//                    y: .value("Value", 5)
-//                )
-//                BarMark(
-//                    x: .value("Month", "feb/22"),
-//                    y: .value("Value", 4)
-//                )
-//                BarMark(
-//                    x: .value("Month", "mar/22"),
-//                    y: .value("Value", 7)
-//                )
-//            }.chartYScale(range: 0...150).padding(20.0).frame(width:400, height:200)
-
-//            .frame(height: 400)
-//            Spacer ()
-//            Chart {
-//                LineMark(
-//                    x: .value("Month", "jan/22"),
-//                    y: .value("Value", 5)
-//                )
-//                LineMark(
-//                    x: .value("Month", "feb/22"),
-//                    y: .value("Value", 4)
-//                )
-//                LineMark(
-//                    x: .value("Month", "mar/22"),
-//                    y: .value("Value", 7)
-//                )
-//            }.frame(height: 200)
-//
-//        }
-//    }
-//}
 
 struct HorBarChartExample: View {
     
