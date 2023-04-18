@@ -54,7 +54,7 @@ struct simpleProgressView: View{
             }
             Gauge(value: speed) {
                 
-                Text("Gague")
+                Text("Gauge")
             }
         }.padding(EdgeInsets(top:0, leading:20.0, bottom:0.0, trailing:20.0))
         

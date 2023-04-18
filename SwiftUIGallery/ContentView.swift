@@ -70,7 +70,7 @@ var _menuItems: [menuItem] = [menuItem(title: "Buttons",
                               menuItem(title: "Charts (iOS16)",   imageName: "waveform.path",     color:  Color("Magenta"),navTarget: AnyView(SwiftUICharts())),
                               menuItem(title: "Editable Lists",     imageName: "paperplane", color: .teal,  navTarget: AnyView(SwiftUIDynamicViewContentView())),
                               menuItem(title: "Forms",   imageName: "waveform.path",     color:  Color("PaleGreen"),  navTarget: AnyView(SwiftUIForms())),
-                              menuItem(title: "Gagues (iOS16)",   imageName: "waveform.path",     color:  Color("Magenta"),  navTarget: AnyView(SwiftUIGauges())),
+                              menuItem(title: "Gauges (iOS16)",   imageName: "waveform.path",     color:  Color("Magenta"),  navTarget: AnyView(SwiftUIGauges())),
                               menuItem(title: "GeometryReader",   imageName: "waveform.path",     color:  Color("DarkGreen"),navTarget: AnyView(SwiftUIGeometryReader())),
                               menuItem(title: "Gestures",   imageName: "waveform.path",     color:  Color("Orange"),navTarget: AnyView(SwiftUIGestureManager())),
 //                              menuItem(title: "Gradients and Shadows (ios16)",   imageName: "waveform.path",     color:  Color("Magenta"),navTarget: AnyView(SwiftUIGestureManager())),
@@ -100,8 +100,6 @@ var _menuItems: [menuItem] = [menuItem(title: "Buttons",
                               menuItem(title: "ViewBuilder", imageName: "message",     color: Color("DustyBlue"),  navTarget: AnyView(SwiftUIViewBuilder())),
                               menuItem(title: "UIKitBridge", imageName: "calendar.circle",     color: .indigo,  navTarget: AnyView(SwiftUIBridgeUIKit())),
 ]
-
-//1234
 
 struct ContentView: View
 {
