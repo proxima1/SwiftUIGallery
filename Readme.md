@@ -21,6 +21,7 @@ Numerous sites helped me on this project
  - Paul Hudson's terrific [HackingWithSwift](https://www.hackingwithswift.com) site.
  - [SwiftWithMajid](https://swiftwithmajid.com), who also posts a weekly article on Medium
  - [Serial Coder](https://serialcoder.dev/text-tutorials/swiftui/progressview-in-swiftui/) for ProgressView
+ - https://sarunw.com/posts/swiftui-gauge/
  - And [this writeup](https://alfianlosari.medium.com/building-expandable-list-with-outlinegroup-disclosuregroup-in-swiftui-2-0-aa9dda14bbab) on Medium collapsable lists using DisclousureGroup
  - Apple.com with their superb example of SwiftUI using their [LandMarks project](https://developer.apple.com/tutorials/swiftui)
 
