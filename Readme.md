@@ -61,12 +61,12 @@ What follows are various notes for each of the examples.
      2.    The Shapes example from Apple's terrific Landmark app
      3.    She Shapes below
  7. Groupbox
-     9. This example uses a very basic Scrollview and group boxes as custom cells, in such an astonishingly easy way to get a custom list. Compared to UIKit...well...that is the stuff of nightmares.
-     10. Note the use of the Divider(), which draws faint lines to isolate different parts of the View.
-     11. The "spacing" settles on a fairly large gap between the cells by default, so -25 was used to close them together.
+     1. This example uses a very basic Scrollview and group boxes as custom cells, in such an astonishingly easy way to get a custom list. Compared to UIKit...well...that is the stuff of nightmares.
+     2. Note the use of the Divider(), which draws faint lines to isolate different parts of the View.
+     3. The "spacing" settles on a fairly large gap between the cells by default, so -25 was used to close them together.
  8. Groups
-        1. *DisclosureGroup* is a ViewBuilder, so it allows you to pack in dissimilar cells/controls
-        2. *OutlineGroup* requires a list of like-items, text, maybe some images with the text, but is fundementally like a nested List. It can have mulitple nested groups as well 
+    1. *DisclosureGroup* is a ViewBuilder, so it allows you to pack in dissimilar cells/controls
+    2. *OutlineGroup* requires a list of like-items, text, maybe some images with the text, but is fundementally like a nested List. It can have mulitple nested groups as well 
 3. Images
     1. Clipping via irregular objects
         1. Notice the clipping of an image into a circle or other shapes
