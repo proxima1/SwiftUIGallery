@@ -84,7 +84,7 @@ What follows are various notes for each of the examples.
     2. Pickers are more abstracted then in UIKit as they merely offer another means to a list of possible mutually exclusive choices. Then you can select what type of picker to use, virtually seamlessly.
     3. The menu-picker style seems to be a menu in most if not all ways. Not quite sure what the difference really is.
     
-    ![home screen](SwiftGalleryWheelPicker.2.jpg) 
+    ![home screen](SwiftGalleryWheelPicker.jpg) 
    
 5. ProgressView
     1. Nice example here of basic Combine interaction and use of the timer   

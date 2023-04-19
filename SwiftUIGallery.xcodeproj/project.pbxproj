@@ -77,6 +77,11 @@
 		CEFD014C2695471B004AB134 /* SwiftUIColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD014B2695471B004AB134 /* SwiftUIColorPicker.swift */; };
 		CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEFD014D2696918D004AB134 /* MissionPatches.plist */; };
 		CEFD457729EF5D8D00FE6C32 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = CEFD457629EF5D8D00FE6C32 /* Readme.md */; };
+		CEFD457829EF670D00FE6C32 /* SwiftGallery.Text.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF5670D29EE484D005171AC /* SwiftGallery.Text.jpg */; };
+		CEFD457929EF671300FE6C32 /* SwiftGalleryMainScreen.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF5670E29EE484D005171AC /* SwiftGalleryMainScreen.1.jpg */; };
+		CEFD457A29EF671700FE6C32 /* SwiftGalleryMainScreen.2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF5670C29EE484D005171AC /* SwiftGalleryMainScreen.2.jpg */; };
+		CEFD457B29EF671B00FE6C32 /* SwiftGalleryWheelPicker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF5670F29EE484D005171AC /* SwiftGalleryWheelPicker.jpg */; };
+		CEFD457C29EF671F00FE6C32 /* SwiftGallerySteppers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF5671129EE4A93005171AC /* SwiftGallerySteppers.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -502,14 +507,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFD457929EF671300FE6C32 /* SwiftGalleryMainScreen.1.jpg in Resources */,
 				CE5C1D6228B474080064E455 /* FirstLightSalesWinter.json in Resources */,
 				CE2A85DB26EAF09D001D4C69 /* SwiftUIHostingViewController.xib in Resources */,
+				CEFD457829EF670D00FE6C32 /* SwiftGallery.Text.jpg in Resources */,
 				CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */,
 				CE47273825421F7000C27C3D /* Preview Assets.xcassets in Resources */,
 				CE9F94032898BE130019CC79 /* FirstLightSales.json in Resources */,
+				CEFD457B29EF671B00FE6C32 /* SwiftGalleryWheelPicker.jpg in Resources */,
 				CE47273525421F7000C27C3D /* Assets.xcassets in Resources */,
 				CE070D18289E5DC40071A361 /* StoryboardTest.storyboard in Resources */,
+				CEFD457A29EF671700FE6C32 /* SwiftGalleryMainScreen.2.jpg in Resources */,
 				CEB3016C269E51EE007C4479 /* Spacemissions.json in Resources */,
+				CEFD457C29EF671F00FE6C32 /* SwiftGallerySteppers.jpg in Resources */,
 				CEFD457729EF5D8D00FE6C32 /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
