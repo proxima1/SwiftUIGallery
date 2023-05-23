@@ -105,6 +105,10 @@ struct ContentView: View
 {
     var uiHostingView = SwiftUIHostingViewController()
     
+    init(){
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "Futura", size: 26)!]
+    }
+    
     var body: some View
     {
         NavigationStack(){
@@ -119,7 +123,7 @@ struct ContentView: View
                         print("Show details for user")
                     }
                 }
-            }.navigationTitle("SwiftUI HouseParty!")
+            }.navigationTitle(Text("SwiftUI HouseParty! 2.0"))
         }
     }
 }
