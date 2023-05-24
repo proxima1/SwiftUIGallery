@@ -32,6 +32,7 @@ What's new or improved in 2.0
 - Charts
 - Much better toolbar support
 - Photopicker 
+- Colorpicker
 - Gauges
 - Attributed text
 - Multi-Date picker
@@ -56,6 +57,11 @@ What follows are various notes for each of the examples.
      2.    Certifiable "breeze" to use
      3.    Dark mode is handled automatically for text that is not specifically colored.
      4.     Reference to a $Binding var inside the init() function of another object, var must be proceded with an "_" but nowhere else
+ 6. Gauges
+    1.  Nice little things to show a moving value of some object
+    
+    ![home screen](SwiftGalleryGauge.jpg) 
+
  6. Geometry Reader
      1.    This is used to get some more concrete information about the devices display if precision sizing and positioning is needed.
      2.    The Shapes example from Apple's terrific Landmark app
@@ -84,7 +90,7 @@ What follows are various notes for each of the examples.
     2. Pickers are more abstracted then in UIKit as they merely offer another means to a list of possible mutually exclusive choices. Then you can select what type of picker to use, virtually seamlessly.
     3. The menu-picker style seems to be a menu in most if not all ways. Not quite sure what the difference really is.
     
-    ![home screen](SwiftGalleryWheelPicker.jpg) 
+    ![home screen](SwiftGalleryColorPicker.jpg) 
    
 5. ProgressView
     1. Nice example here of basic Combine interaction and use of the timer   
@@ -120,5 +126,7 @@ Advanced SwiftUI gallery
     1.    ResultBuilders
     2.    Complex Animations
     3.    Alignment Guides
+
+
 
 

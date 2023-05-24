@@ -74,6 +74,9 @@
 		CED926D026E058FD0005F5BA /* USRussianMissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED926CF26E058FD0005F5BA /* USRussianMissions.swift */; };
 		CEDFB2CA2894603100F3850A /* SwiftUIPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFB2C92894603100F3850A /* SwiftUIPhotoPicker.swift */; };
 		CEDFB2CC28946C2200F3850A /* SwiftUILayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFB2CB28946C2200F3850A /* SwiftUILayout.swift */; };
+		CEE990602A1D86190001A8CC /* SwiftUiGalleryCharts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEE9905F2A1D86190001A8CC /* SwiftUiGalleryCharts.jpg */; };
+		CEE990622A1D9A380001A8CC /* SwiftUIGalleryGauge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEE990612A1D9A380001A8CC /* SwiftUIGalleryGauge.jpg */; };
+		CEE990642A1D9AA50001A8CC /* SwiftUIGalleryColorPicker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEE990632A1D9AA50001A8CC /* SwiftUIGalleryColorPicker.jpg */; };
 		CEFD014C2695471B004AB134 /* SwiftUIColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD014B2695471B004AB134 /* SwiftUIColorPicker.swift */; };
 		CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEFD014D2696918D004AB134 /* MissionPatches.plist */; };
 		CEFD457729EF5D8D00FE6C32 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = CEFD457629EF5D8D00FE6C32 /* Readme.md */; };
@@ -176,6 +179,9 @@
 		CED926CF26E058FD0005F5BA /* USRussianMissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USRussianMissions.swift; sourceTree = "<group>"; };
 		CEDFB2C92894603100F3850A /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
 		CEDFB2CB28946C2200F3850A /* SwiftUILayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILayout.swift; sourceTree = "<group>"; };
+		CEE9905F2A1D86190001A8CC /* SwiftUiGalleryCharts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftUiGalleryCharts.jpg; sourceTree = "<group>"; };
+		CEE990612A1D9A380001A8CC /* SwiftUIGalleryGauge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftUIGalleryGauge.jpg; sourceTree = "<group>"; };
+		CEE990632A1D9AA50001A8CC /* SwiftUIGalleryColorPicker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftUIGalleryColorPicker.jpg; sourceTree = "<group>"; };
 		CEF5670C29EE484D005171AC /* SwiftGalleryMainScreen.2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGalleryMainScreen.2.jpg; sourceTree = "<group>"; };
 		CEF5670D29EE484D005171AC /* SwiftGallery.Text.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGallery.Text.jpg; sourceTree = "<group>"; };
 		CEF5670E29EE484D005171AC /* SwiftGalleryMainScreen.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGalleryMainScreen.1.jpg; sourceTree = "<group>"; };
@@ -259,10 +265,13 @@
 			isa = PBXGroup;
 			children = (
 				CEFD457629EF5D8D00FE6C32 /* Readme.md */,
+				CEE990612A1D9A380001A8CC /* SwiftUIGalleryGauge.jpg */,
 				CEF5670D29EE484D005171AC /* SwiftGallery.Text.jpg */,
 				CEF5670E29EE484D005171AC /* SwiftGalleryMainScreen.1.jpg */,
+				CEE9905F2A1D86190001A8CC /* SwiftUiGalleryCharts.jpg */,
 				CEF5670C29EE484D005171AC /* SwiftGalleryMainScreen.2.jpg */,
 				CEF5670F29EE484D005171AC /* SwiftGalleryWheelPicker.jpg */,
+				CEE990632A1D9AA50001A8CC /* SwiftUIGalleryColorPicker.jpg */,
 				CEF5671129EE4A93005171AC /* SwiftGallerySteppers.jpg */,
 				CE47272F25421F6F00C27C3D /* SwiftUIGallery */,
 				CE47274125421F7100C27C3D /* SwiftUIGalleryTests */,
@@ -513,13 +522,16 @@
 				CEFD457829EF670D00FE6C32 /* SwiftGallery.Text.jpg in Resources */,
 				CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */,
 				CE47273825421F7000C27C3D /* Preview Assets.xcassets in Resources */,
+				CEE990642A1D9AA50001A8CC /* SwiftUIGalleryColorPicker.jpg in Resources */,
 				CE9F94032898BE130019CC79 /* FirstLightSales.json in Resources */,
 				CEFD457B29EF671B00FE6C32 /* SwiftGalleryWheelPicker.jpg in Resources */,
 				CE47273525421F7000C27C3D /* Assets.xcassets in Resources */,
 				CE070D18289E5DC40071A361 /* StoryboardTest.storyboard in Resources */,
+				CEE990622A1D9A380001A8CC /* SwiftUIGalleryGauge.jpg in Resources */,
 				CEFD457A29EF671700FE6C32 /* SwiftGalleryMainScreen.2.jpg in Resources */,
 				CEB3016C269E51EE007C4479 /* Spacemissions.json in Resources */,
 				CEFD457C29EF671F00FE6C32 /* SwiftGallerySteppers.jpg in Resources */,
+				CEE990602A1D86190001A8CC /* SwiftUiGalleryCharts.jpg in Resources */,
 				CEFD457729EF5D8D00FE6C32 /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -767,6 +779,7 @@
 				DEVELOPMENT_TEAM = TPJ4QB3N7U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIGallery/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -796,6 +809,7 @@
 				DEVELOPMENT_TEAM = TPJ4QB3N7U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIGallery/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

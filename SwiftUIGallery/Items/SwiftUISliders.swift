@@ -59,7 +59,6 @@ struct SwiftUISliders: View {
             
         }.navigationBarTitle("Sliders", displayMode: .inline)
         .padding()
-        
     }
 }
 
