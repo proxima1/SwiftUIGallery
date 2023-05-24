@@ -32,6 +32,7 @@
 
 import SwiftUI
 
+
 @main
 struct SwiftUIGalleryApp: App {
     var body: some Scene {
