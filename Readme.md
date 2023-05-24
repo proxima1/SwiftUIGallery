@@ -60,7 +60,7 @@ What follows are various notes for each of the examples.
  6. Gauges
     1.  Nice little things to show a moving value of some object
     
-    ![home screen](SwiftGalleryGauge.jpg) 
+    ![home screen](SwiftUIGalleryGauge.jpg) 
 
  6. Geometry Reader
      1.    This is used to get some more concrete information about the devices display if precision sizing and positioning is needed.
@@ -90,7 +90,7 @@ What follows are various notes for each of the examples.
     2. Pickers are more abstracted then in UIKit as they merely offer another means to a list of possible mutually exclusive choices. Then you can select what type of picker to use, virtually seamlessly.
     3. The menu-picker style seems to be a menu in most if not all ways. Not quite sure what the difference really is.
     
-    ![home screen](SwiftGalleryColorPicker.jpg) 
+    ![home screen](SwiftUIGalleryColorPicker.jpg) 
    
 5. ProgressView
     1. Nice example here of basic Combine interaction and use of the timer   
