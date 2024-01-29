@@ -55,7 +55,7 @@ struct SwiftUIDynamicViewContentView: View {
     ]
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
             List {
                 ForEach(
                     moonWalkers,

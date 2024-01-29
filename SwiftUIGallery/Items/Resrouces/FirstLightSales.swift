@@ -4,7 +4,11 @@
 // To parse the JSON, add this file to your project and do:
 //
 //   let AppSales = try AppSales(json)
-
+// xxxx
+// bbb
+//zzz
+//qqq
+//rrrr
 import Foundation
 import Charts
 
@@ -259,8 +263,8 @@ struct FirstLightSales
     
     init(){
         do {
-//            let path = Bundle.main.path(forResource: "FirstLightSales.json", ofType:nil)
-            let path = Bundle.main.path(forResource: "FirstLightSalesWinter.json", ofType:nil)
+            let path = Bundle.main.path(forResource: "FirstLightSales.json", ofType:nil)
+//            let path = Bundle.main.path(forResource: "FirstLightSalesWinter.json", ofType:nil)
 
             if  (path != nil){
                 print("Got file: \(String(describing: path))")

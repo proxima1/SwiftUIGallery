@@ -48,6 +48,7 @@ struct SwiftUIText: View {
     @State private var username = ""
     @State var isEditing = false
     @State private var password = ""
+    @State var longString = "If in a line-limited TextField, this will overflow, but be scrollable. \r\rWhere does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
     
     var body: some View {
         VStack{
@@ -137,12 +138,9 @@ struct SwiftUIText: View {
                         Text(verbatim:"Caption").fontWeight(.regular).font(.caption)
                         Text(verbatim:"Caption2").fontWeight(.regular).font(.caption2)
                     }
-                    
-                    //                Text(verbatim:"Large").fontWeight(.regular).font(.largeTitle)
-                    
                 }
                 
-                Section(header: Text("TextField").modifier(SectionTitle())){
+                Section(header: Text("TextField: Simple").modifier(SectionTitle())){
                     TextField(
                         "User name (email address)",
                         text: $username
@@ -159,12 +157,26 @@ struct SwiftUIText: View {
                         .foregroundColor(isEditing ? .red : .blue)
                 }
                 
+                Section(header: Text("TextField: Limited Multiline").modifier(SectionTitle())){
+                    TextField(
+                        "Lorem",
+                        text: $longString,
+                        axis: .vertical
+                    ).lineLimit(...5)
+                        .multilineTextAlignment(.leading)
+                }
+
+                Section(header: Text("Text: Multiline").modifier(SectionTitle())){
+                    multiLineText().lineLimit(5)
+                }
+                
                 Section(header: Text("SecureField").modifier(SectionTitle())){
                     secureField()
                 }.border(Color(UIColor.separator))
 
-                Section(header: Text("Multiline").modifier(SectionTitle())){
-                    multiLineText()
+                
+                Section(header: Text("Attributed").modifier(SectionTitle())){
+                    attributedText()
                 }
             }
         }.padding(2.0).navigationBarTitle("Text", displayMode: .inline)
@@ -188,7 +200,8 @@ struct secureFieldtest: View {
     var body: some  View
     {
         VStack{
-                                Text("Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old")
+            Text("Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.")
+            
 //                                Text("Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage")
                                     .font(.callout)
                                     .multilineTextAlignment(.center)
@@ -201,17 +214,60 @@ struct secureFieldtest: View {
 struct multiLineText: View
 {
     var title: String = ""
+    let text = "This is a non-editiable Text object. For some reson it doesn't want to scroll if it has more than the line limit, which Textfield understands.\r\n\nLorem Ipsum? Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
 
     var body: some  View
     {
         VStack{
-                                Text("Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old")
-//                                Text("Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage")
-                                    .font(.callout)
-                                    .multilineTextAlignment(.center)
-                                    .frame(width: 300)
-                              
+            Text(text)
+                .font(.callout).lineLimit(7).italic()
+                .multilineTextAlignment(.leading)
+                .frame(width: 300)
+
         }
+    }
+}
+
+struct attributedText: View{
+    var title: String = ""
+    
+//    var attributedString = AttributedString("The first month of your subscription is free.")
+//    let range = attributedString.range(of: "subscription")!
+//    attributedString[range].foregroundColor = .green
+    
+    var body: some  View
+    {
+        VStack{
+            buildSimpleAttributedStrings()
+            buildMarkupAttributedString()
+        }
+    }
+    
+    func buildSimpleAttributedStrings()->some View{
+        
+        var attributedString = AttributedString("The first month of your subscription is free.")
+        var range = attributedString.range(of: "free")!
+        attributedString[range].foregroundColor = .green
+        range = attributedString.range(of: "subscription")!
+        attributedString[range].foregroundColor = .blue
+        attributedString[range].underlineStyle = Text.LineStyle(pattern: .solid, color: .blue)
+
+        var text1=Text(attributedString)
+        
+        return text1
+    }
+    
+    func buildMarkupAttributedString()->some View{
+        
+        var attributedString = try! AttributedString(markdown: "Using **Markdown:** The first **month** of your subscription is _free._")
+        var range = attributedString.range(of: "free")!
+        attributedString[range].foregroundColor = .green
+        range = attributedString.range(of: "subscription")!
+        attributedString[range].foregroundColor = .blue
+        attributedString[range].underlineStyle = Text.LineStyle(pattern: .solid, color: .red)
+        var text1=Text(attributedString)
+        
+        return text1
     }
 }
 

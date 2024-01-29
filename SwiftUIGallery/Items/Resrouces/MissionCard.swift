@@ -38,7 +38,7 @@ struct MissionCard: View {
     var mission: Mission
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             
             Form{
                 Image(mission.patch).resizable().frame(width:96,height:96,alignment:.center)

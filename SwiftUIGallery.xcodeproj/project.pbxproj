@@ -31,8 +31,8 @@
 		CE31F73A26B0C44C00C30C68 /* SwiftUIMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */; };
 		CE3328F526E182F600D12F3D /* SwiftUISheetsAndAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3328F426E182F600D12F3D /* SwiftUISheetsAndAlerts.swift */; };
 		CE37F9352543B26D0068AF33 /* SwiftUISliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */; };
-		CE37F9442543B3730068AF33 /* SwiftUIToggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F9432543B3730068AF33 /* SwiftUIToggles.swift */; };
 		CE37F9492543B4160068AF33 /* SwiftUIImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37F9482543B4160068AF33 /* SwiftUIImages.swift */; };
+		CE3F5B9C29E5FBA10083CC93 /* SwiftUIGauges.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F5B9B29E5FBA10083CC93 /* SwiftUIGauges.swift */; };
 		CE44F04026C46C8200DC7264 /* SwiftUISteppers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44F03F26C46C8200DC7264 /* SwiftUISteppers.swift */; };
 		CE44F04426C7586D00DC7264 /* SwiftUITextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44F04326C7586D00DC7264 /* SwiftUITextEditor.swift */; };
 		CE47273325421F6F00C27C3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47273225421F6F00C27C3D /* ContentView.swift */; };
@@ -49,18 +49,18 @@
 		CE521688268A9DF800C52279 /* SwiftUIMenuPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE521687268A9DF800C52279 /* SwiftUIMenuPicker.swift */; };
 		CE52168E268A9EA400C52279 /* SwiftUISegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52168D268A9EA400C52279 /* SwiftUISegmentedPicker.swift */; };
 		CE521690268AA17200C52279 /* SwiftUIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52168F268AA17100C52279 /* SwiftUIDatePicker.swift */; };
+		CE594C5029D6634F0028D6AA /* SwiftUIToggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE594C4F29D6634F0028D6AA /* SwiftUIToggles.swift */; };
+		CE594C5329D663660028D6AA /* SwiftUIToolbarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE594C5129D663660028D6AA /* SwiftUIToolbarMenu.swift */; };
+		CE594C5429D663660028D6AA /* SwiftUIToolbars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE594C5229D663660028D6AA /* SwiftUIToolbars.swift */; };
 		CE5C1D6028B45FEF0064E455 /* SwiftUICharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C1D5F28B45FEF0064E455 /* SwiftUICharts.swift */; };
 		CE5C1D6228B474080064E455 /* FirstLightSalesWinter.json in Resources */ = {isa = PBXBuildFile; fileRef = CE5C1D6128B474080064E455 /* FirstLightSalesWinter.json */; };
 		CE6C3F0C26BCB29A002C5778 /* SwiftUILinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */; };
 		CE74F3AA268FD6FE0058A8FC /* MissionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F3A9268FD6FE0058A8FC /* MissionData.swift */; };
 		CE85B2A026E8920D00DDDA76 /* SwiftUILazyGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85B29F26E8920C00DDDA76 /* SwiftUILazyGrids.swift */; };
-		CE8C1A972705474C003C1092 /* IMG_4222.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8C1A932705474C003C1092 /* IMG_4222.jpeg */; };
-		CE8C1A982705474C003C1092 /* IMG_4219.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8C1A942705474C003C1092 /* IMG_4219.jpeg */; };
 		CE8E0CAB26CC953700D2142C /* SwiftUIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */; };
 		CE8E0CAE26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */; };
 		CE9F94032898BE130019CC79 /* FirstLightSales.json in Resources */ = {isa = PBXBuildFile; fileRef = CE9F94022898BE130019CC79 /* FirstLightSales.json */; };
 		CE9F9409289A0B010019CC79 /* FirstLightSales.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F9408289A0B010019CC79 /* FirstLightSales.swift */; };
-		CEA1A9EE26CF22AF0083D21D /* SwiftUIToolbars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */; };
 		CEA223A326E2EFC1007604E1 /* SwiftUIRadioButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA223A226E2EFC1007604E1 /* SwiftUIRadioButtons.swift */; };
 		CEA223A526E2F6CF007604E1 /* SwiftUIGroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */; };
 		CEB3016A269E2915007C4479 /* SwiftUILists.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB30169269E2915007C4479 /* SwiftUILists.swift */; };
@@ -74,8 +74,17 @@
 		CED926D026E058FD0005F5BA /* USRussianMissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED926CF26E058FD0005F5BA /* USRussianMissions.swift */; };
 		CEDFB2CA2894603100F3850A /* SwiftUIPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFB2C92894603100F3850A /* SwiftUIPhotoPicker.swift */; };
 		CEDFB2CC28946C2200F3850A /* SwiftUILayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFB2CB28946C2200F3850A /* SwiftUILayout.swift */; };
+		CEE990602A1D86190001A8CC /* SwiftUiGalleryCharts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEE9905F2A1D86190001A8CC /* SwiftUiGalleryCharts.jpg */; };
+		CEE990622A1D9A380001A8CC /* SwiftUIGalleryGauge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEE990612A1D9A380001A8CC /* SwiftUIGalleryGauge.jpg */; };
+		CEE990642A1D9AA50001A8CC /* SwiftUIGalleryColorPicker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEE990632A1D9AA50001A8CC /* SwiftUIGalleryColorPicker.jpg */; };
 		CEFD014C2695471B004AB134 /* SwiftUIColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD014B2695471B004AB134 /* SwiftUIColorPicker.swift */; };
 		CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEFD014D2696918D004AB134 /* MissionPatches.plist */; };
+		CEFD457729EF5D8D00FE6C32 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = CEFD457629EF5D8D00FE6C32 /* Readme.md */; };
+		CEFD457829EF670D00FE6C32 /* SwiftGallery.Text.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF5670D29EE484D005171AC /* SwiftGallery.Text.jpg */; };
+		CEFD457929EF671300FE6C32 /* SwiftGalleryMainScreen.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF5670E29EE484D005171AC /* SwiftGalleryMainScreen.1.jpg */; };
+		CEFD457A29EF671700FE6C32 /* SwiftGalleryMainScreen.2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF5670C29EE484D005171AC /* SwiftGalleryMainScreen.2.jpg */; };
+		CEFD457B29EF671B00FE6C32 /* SwiftGalleryWheelPicker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF5670F29EE484D005171AC /* SwiftGalleryWheelPicker.jpg */; };
+		CEFD457C29EF671F00FE6C32 /* SwiftGallerySteppers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF5671129EE4A93005171AC /* SwiftGallerySteppers.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,8 +130,8 @@
 		CE31F73926B0C44C00C30C68 /* SwiftUIMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMenu.swift; sourceTree = "<group>"; };
 		CE3328F426E182F600D12F3D /* SwiftUISheetsAndAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISheetsAndAlerts.swift; sourceTree = "<group>"; };
 		CE37F9342543B26D0068AF33 /* SwiftUISliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISliders.swift; sourceTree = "<group>"; };
-		CE37F9432543B3730068AF33 /* SwiftUIToggles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIToggles.swift; sourceTree = "<group>"; };
 		CE37F9482543B4160068AF33 /* SwiftUIImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImages.swift; sourceTree = "<group>"; };
+		CE3F5B9B29E5FBA10083CC93 /* SwiftUIGauges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGauges.swift; sourceTree = "<group>"; };
 		CE44F03F26C46C8200DC7264 /* SwiftUISteppers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISteppers.swift; sourceTree = "<group>"; };
 		CE44F04326C7586D00DC7264 /* SwiftUITextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITextEditor.swift; sourceTree = "<group>"; };
 		CE47272D25421F6F00C27C3D /* SwiftUIGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,21 +154,18 @@
 		CE521687268A9DF800C52279 /* SwiftUIMenuPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMenuPicker.swift; sourceTree = "<group>"; };
 		CE52168D268A9EA400C52279 /* SwiftUISegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISegmentedPicker.swift; sourceTree = "<group>"; };
 		CE52168F268AA17100C52279 /* SwiftUIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDatePicker.swift; sourceTree = "<group>"; };
+		CE594C4F29D6634F0028D6AA /* SwiftUIToggles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIToggles.swift; sourceTree = "<group>"; };
+		CE594C5129D663660028D6AA /* SwiftUIToolbarMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIToolbarMenu.swift; sourceTree = "<group>"; };
+		CE594C5229D663660028D6AA /* SwiftUIToolbars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIToolbars.swift; sourceTree = "<group>"; };
 		CE5C1D5F28B45FEF0064E455 /* SwiftUICharts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUICharts.swift; sourceTree = "<group>"; };
 		CE5C1D6128B474080064E455 /* FirstLightSalesWinter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FirstLightSalesWinter.json; sourceTree = "<group>"; };
 		CE6C3F0B26BCB29A002C5778 /* SwiftUILinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUILinks.swift; sourceTree = "<group>"; };
 		CE74F3A9268FD6FE0058A8FC /* MissionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MissionData.swift; path = SwiftUIGallery/Items/Resrouces/MissionData.swift; sourceTree = SOURCE_ROOT; };
 		CE85B29F26E8920C00DDDA76 /* SwiftUILazyGrids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILazyGrids.swift; sourceTree = "<group>"; };
-		CE8C1A932705474C003C1092 /* IMG_4222.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4222.jpeg; sourceTree = "<group>"; };
-		CE8C1A942705474C003C1092 /* IMG_4219.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4219.jpeg; sourceTree = "<group>"; };
-		CE8C1AA3270B9D24003C1092 /* IMG_4220.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4220.jpeg; sourceTree = "<group>"; };
-		CE8C1AA4270B9D24003C1092 /* IMG_4223.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4223.jpeg; sourceTree = "<group>"; };
-		CE8C1AA7270BA04E003C1092 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIText.swift; sourceTree = "<group>"; };
 		CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDynamicViewContentView.swift; sourceTree = "<group>"; };
 		CE9F94022898BE130019CC79 /* FirstLightSales.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FirstLightSales.json; sourceTree = "<group>"; };
 		CE9F9408289A0B010019CC79 /* FirstLightSales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLightSales.swift; sourceTree = "<group>"; };
-		CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIToolbars.swift; sourceTree = "<group>"; };
 		CEA223A226E2EFC1007604E1 /* SwiftUIRadioButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRadioButtons.swift; sourceTree = "<group>"; };
 		CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGroupBox.swift; sourceTree = "<group>"; };
 		CEB30169269E2915007C4479 /* SwiftUILists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftUILists.swift; path = SwiftUIGallery/Items/SwiftUILists.swift; sourceTree = SOURCE_ROOT; };
@@ -173,8 +179,17 @@
 		CED926CF26E058FD0005F5BA /* USRussianMissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USRussianMissions.swift; sourceTree = "<group>"; };
 		CEDFB2C92894603100F3850A /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
 		CEDFB2CB28946C2200F3850A /* SwiftUILayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILayout.swift; sourceTree = "<group>"; };
+		CEE9905F2A1D86190001A8CC /* SwiftUiGalleryCharts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftUiGalleryCharts.jpg; sourceTree = "<group>"; };
+		CEE990612A1D9A380001A8CC /* SwiftUIGalleryGauge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftUIGalleryGauge.jpg; sourceTree = "<group>"; };
+		CEE990632A1D9AA50001A8CC /* SwiftUIGalleryColorPicker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftUIGalleryColorPicker.jpg; sourceTree = "<group>"; };
+		CEF5670C29EE484D005171AC /* SwiftGalleryMainScreen.2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGalleryMainScreen.2.jpg; sourceTree = "<group>"; };
+		CEF5670D29EE484D005171AC /* SwiftGallery.Text.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGallery.Text.jpg; sourceTree = "<group>"; };
+		CEF5670E29EE484D005171AC /* SwiftGalleryMainScreen.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGalleryMainScreen.1.jpg; sourceTree = "<group>"; };
+		CEF5670F29EE484D005171AC /* SwiftGalleryWheelPicker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGalleryWheelPicker.jpg; sourceTree = "<group>"; };
+		CEF5671129EE4A93005171AC /* SwiftGallerySteppers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwiftGallerySteppers.jpg; sourceTree = "<group>"; };
 		CEFD014B2695471B004AB134 /* SwiftUIColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIColorPicker.swift; sourceTree = "<group>"; };
 		CEFD014D2696918D004AB134 /* MissionPatches.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MissionPatches.plist; sourceTree = "<group>"; };
+		CEFD457629EF5D8D00FE6C32 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,11 +264,15 @@
 		CE47272425421F6F00C27C3D = {
 			isa = PBXGroup;
 			children = (
-				CE8C1AA7270BA04E003C1092 /* Readme.md */,
-				CE8C1A942705474C003C1092 /* IMG_4219.jpeg */,
-				CE8C1A932705474C003C1092 /* IMG_4222.jpeg */,
-				CE8C1AA3270B9D24003C1092 /* IMG_4220.jpeg */,
-				CE8C1AA4270B9D24003C1092 /* IMG_4223.jpeg */,
+				CEFD457629EF5D8D00FE6C32 /* Readme.md */,
+				CEE990612A1D9A380001A8CC /* SwiftUIGalleryGauge.jpg */,
+				CEF5670D29EE484D005171AC /* SwiftGallery.Text.jpg */,
+				CEF5670E29EE484D005171AC /* SwiftGalleryMainScreen.1.jpg */,
+				CEE9905F2A1D86190001A8CC /* SwiftUiGalleryCharts.jpg */,
+				CEF5670C29EE484D005171AC /* SwiftGalleryMainScreen.2.jpg */,
+				CEF5670F29EE484D005171AC /* SwiftGalleryWheelPicker.jpg */,
+				CEE990632A1D9AA50001A8CC /* SwiftUIGalleryColorPicker.jpg */,
+				CEF5671129EE4A93005171AC /* SwiftGallerySteppers.jpg */,
 				CE47272F25421F6F00C27C3D /* SwiftUIGallery */,
 				CE47274125421F7100C27C3D /* SwiftUIGalleryTests */,
 				CE47274C25421F7100C27C3D /* SwiftUIGalleryUITests */,
@@ -330,6 +349,7 @@
 				CE5C1D5F28B45FEF0064E455 /* SwiftUICharts.swift */,
 				CE8E0CAD26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift */,
 				CEBE271A26D4420D00621C42 /* SwiftUIForms.swift */,
+				CE3F5B9B29E5FBA10083CC93 /* SwiftUIGauges.swift */,
 				CE2A85D626EAD55E001D4C69 /* SwiftUIGeometryReader.swift */,
 				CED926CB26E00F2C0005F5BA /* SwiftUIGroups.swift */,
 				CEA223A426E2F6CF007604E1 /* SwiftUIGroupBox.swift */,
@@ -347,8 +367,9 @@
 				CE064DFE26F5679D00F3F52A /* SwiftUITabs.swift */,
 				CE8E0CAA26CC953700D2142C /* SwiftUIText.swift */,
 				CE44F04326C7586D00DC7264 /* SwiftUITextEditor.swift */,
-				CE37F9432543B3730068AF33 /* SwiftUIToggles.swift */,
-				CEA1A9ED26CF22AF0083D21D /* SwiftUIToolbars.swift */,
+				CE594C4F29D6634F0028D6AA /* SwiftUIToggles.swift */,
+				CE594C5129D663660028D6AA /* SwiftUIToolbarMenu.swift */,
+				CE594C5229D663660028D6AA /* SwiftUIToolbars.swift */,
 				CE2A85D426EABC76001D4C69 /* SwiftUIViewBuilder.swift */,
 			);
 			path = Items;
@@ -495,16 +516,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8C1A972705474C003C1092 /* IMG_4222.jpeg in Resources */,
+				CEFD457929EF671300FE6C32 /* SwiftGalleryMainScreen.1.jpg in Resources */,
 				CE5C1D6228B474080064E455 /* FirstLightSalesWinter.json in Resources */,
 				CE2A85DB26EAF09D001D4C69 /* SwiftUIHostingViewController.xib in Resources */,
+				CEFD457829EF670D00FE6C32 /* SwiftGallery.Text.jpg in Resources */,
 				CEFD014E2696918D004AB134 /* MissionPatches.plist in Resources */,
 				CE47273825421F7000C27C3D /* Preview Assets.xcassets in Resources */,
+				CEE990642A1D9AA50001A8CC /* SwiftUIGalleryColorPicker.jpg in Resources */,
 				CE9F94032898BE130019CC79 /* FirstLightSales.json in Resources */,
-				CE8C1A982705474C003C1092 /* IMG_4219.jpeg in Resources */,
+				CEFD457B29EF671B00FE6C32 /* SwiftGalleryWheelPicker.jpg in Resources */,
 				CE47273525421F7000C27C3D /* Assets.xcassets in Resources */,
 				CE070D18289E5DC40071A361 /* StoryboardTest.storyboard in Resources */,
+				CEE990622A1D9A380001A8CC /* SwiftUIGalleryGauge.jpg in Resources */,
+				CEFD457A29EF671700FE6C32 /* SwiftGalleryMainScreen.2.jpg in Resources */,
 				CEB3016C269E51EE007C4479 /* Spacemissions.json in Resources */,
+				CEFD457C29EF671F00FE6C32 /* SwiftGallerySteppers.jpg in Resources */,
+				CEE990602A1D86190001A8CC /* SwiftUiGalleryCharts.jpg in Resources */,
+				CEFD457729EF5D8D00FE6C32 /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +565,7 @@
 				CE2E9066289C66BE00141FCE /* SwiftUIGalleryApp.swift in Sources */,
 				CE2A85CF26EAA498001D4C69 /* BadgeBackground.swift in Sources */,
 				CE85B2A026E8920D00DDDA76 /* SwiftUILazyGrids.swift in Sources */,
+				CE594C5329D663660028D6AA /* SwiftUIToolbarMenu.swift in Sources */,
 				CE47273325421F6F00C27C3D /* ContentView.swift in Sources */,
 				CEBE271D26D498E900621C42 /* SwiftUIProgressView.swift in Sources */,
 				CE2A85D726EAD55E001D4C69 /* SwiftUIGeometryReader.swift in Sources */,
@@ -548,19 +577,18 @@
 				CE2A85DD26EBFDA0001D4C69 /* SwiftUIBridgeUIKit.swift in Sources */,
 				CE4F541D26CB4D4F0000ABCD /* SwiftUIScrollView.swift in Sources */,
 				CE2A85D126EAA498001D4C69 /* RotatedBadgeSymbol.swift in Sources */,
+				CE3F5B9C29E5FBA10083CC93 /* SwiftUIGauges.swift in Sources */,
 				CE47278425426B0900C27C3D /* SwiftUIButtons.swift in Sources */,
 				CEBE271B26D4420D00621C42 /* SwiftUIForms.swift in Sources */,
 				CE064DF726F1755A00F3F52A /* SwiftUIRotationGesture.swift in Sources */,
 				CE070D16289E5D6D0071A361 /* testfinnder.m in Sources */,
 				CE52168E268A9EA400C52279 /* SwiftUISegmentedPicker.swift in Sources */,
-				CE37F9442543B3730068AF33 /* SwiftUIToggles.swift in Sources */,
 				CE064DF926F1759100F3F52A /* SwiftUILongPressGesture.swift in Sources */,
 				CEB30172269FB506007C4479 /* MissionCard.swift in Sources */,
 				CEA223A526E2F6CF007604E1 /* SwiftUIGroupBox.swift in Sources */,
 				CE472768254237D800C27C3D /* GalleryItem.swift in Sources */,
 				CE5C1D6028B45FEF0064E455 /* SwiftUICharts.swift in Sources */,
 				CE8E0CAB26CC953700D2142C /* SwiftUIText.swift in Sources */,
-				CEA1A9EE26CF22AF0083D21D /* SwiftUIToolbars.swift in Sources */,
 				CE37F9492543B4160068AF33 /* SwiftUIImages.swift in Sources */,
 				CE9F9409289A0B010019CC79 /* FirstLightSales.swift in Sources */,
 				CED926D026E058FD0005F5BA /* USRussianMissions.swift in Sources */,
@@ -570,8 +598,10 @@
 				CE521686268A9DD800C52279 /* SwiftUIInlinePicker.swift in Sources */,
 				CE521690268AA17200C52279 /* SwiftUIDatePicker.swift in Sources */,
 				CE064DFB26F175D600F3F52A /* SwiftUIDragGesture.swift in Sources */,
+				CE594C5029D6634F0028D6AA /* SwiftUIToggles.swift in Sources */,
 				CE6C3F0C26BCB29A002C5778 /* SwiftUILinks.swift in Sources */,
 				CEDFB2CC28946C2200F3850A /* SwiftUILayout.swift in Sources */,
+				CE594C5429D663660028D6AA /* SwiftUIToolbars.swift in Sources */,
 				CE8E0CAE26CDF45900D2142C /* SwiftUIDynamicViewContentView.swift in Sources */,
 				CE44F04026C46C8200DC7264 /* SwiftUISteppers.swift in Sources */,
 				CE44F04426C7586D00DC7264 /* SwiftUITextEditor.swift in Sources */,
@@ -672,7 +702,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -727,7 +757,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -749,6 +779,7 @@
 				DEVELOPMENT_TEAM = TPJ4QB3N7U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIGallery/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -756,9 +787,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dangerouskittens.SwiftUIGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 14.7;
 			};
 			name = Debug;
@@ -775,6 +809,7 @@
 				DEVELOPMENT_TEAM = TPJ4QB3N7U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIGallery/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -782,8 +817,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dangerouskittens.SwiftUIGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 14.7;
 			};
 			name = Release;
